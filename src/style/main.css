@@ -1,1 +1,12 @@
-/*# sourceMappingURL=main.css.map */
+@font-face {
+  font-family: bukhariScript;
+  src: url(./fonts/Bukhari-Script.otf);
+}
+@font-face {
+  font-family: genty;
+  src: url(./fonts/GentyDemo-Regular.otf);
+}
+@font-face {
+  font-family: glacialIndifference;
+  src: url(./fonts/GlacialIndifference-Regular.otf);
+}/*# sourceMappingURL=main.css.map */
