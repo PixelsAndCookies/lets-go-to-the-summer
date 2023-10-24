@@ -1,14 +1,16 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home/Home.jsx'
+import { Header } from './components/Header/Header.jsx'
+import { Home } from './pages/Home/Home.jsx'
+import { Holiday } from './pages/Holiday/Holiday.jsx'
 
-function App() {
+export default function App() {
     return (
         <div className="App">
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/holiday" element={<Holiday />} />
             </Routes>
         </div>
     )
 }
-
-export default App
