@@ -1,3 +1,9 @@
+import { FlashBanner } from '../../components/FlashBanner/FlashBanneer'
+
 export const Home = () => {
-    return <main></main>
+    return (
+        <main>
+            <FlashBanner />
+        </main>
+    )
 }
