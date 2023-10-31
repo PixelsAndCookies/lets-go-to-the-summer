@@ -9,4 +9,16 @@
 @font-face {
   font-family: glacialIndifference;
   src: url(./fonts/GlacialIndifference-Regular.otf);
+}
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.flashinfo-categ {
+  background-color: #d0d0cf;
+}
+
+.flashinfo-text {
+  background-color: #fddbcb;
 }/*# sourceMappingURL=main.css.map */
