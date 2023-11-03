@@ -1,8 +1,9 @@
-$color-primary: #0996a5;
-$color-secondary: #d0d0cf;
-$color-tertiary: #fddbcb;
-$color-quaternary: #faa433;
-$color-quinary: #ce4847;
+$color-blue: #0996a5;
+$color-red: #ce4847;
+$color-yellow: #faa433;
+$color-pink: #fddbcb;
+$color-grey: #686868;
+$color-white: #ffffff;
 
 @font-face {
     font-family: bukhariScript;
@@ -16,5 +17,5 @@ $color-quinary: #ce4847;
 
 @font-face {
     font-family: glacialIndifference;
-    src: url(./fonts/GlacialIndifference-Regular.otf);
+    src: url(./fonts/GlacialIndifference-Bold.otf)
 }
