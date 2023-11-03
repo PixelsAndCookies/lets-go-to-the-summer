@@ -1,6 +1,13 @@
 .flashinfo-categ {
-    background-color: $color-secondary;
+    background-color: $color-red;
+    color: $color-white;
+    font-family: glacialIndifference;
+    padding: 0.5rem;
+    font-size: 1.2rem;
 }
 .flashinfo-text {
-    background-color: $color-tertiary;
+    background-color: $color-pink;
+    color: $color-grey;
+    font-family: glacialIndifference;
+    padding: 0.5rem;
 }
