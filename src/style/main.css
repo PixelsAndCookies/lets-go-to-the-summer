@@ -69,19 +69,6 @@ header {
   justify-content: center;
 }
 
-h1 {
-  color: #0996a5;
-  font-family: bukhariScript;
-  font-size: 3rem;
-  text-align: center;
-}
-
-h1 span {
-  font-family: glacialIndifference;
-  color: #686868;
-  font-size: 2rem;
-}
-
 .flashinfo-categ {
   background-color: #ce4847;
   color: #ffffff;
@@ -95,4 +82,17 @@ h1 span {
   color: #686868;
   font-family: glacialIndifference;
   padding: 0.5rem;
+}
+
+h1 {
+  color: #0996a5;
+  font-family: bukhariScript;
+  font-size: 3rem;
+  text-align: center;
+}
+
+h1 span {
+  font-family: glacialIndifference;
+  color: #686868;
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
