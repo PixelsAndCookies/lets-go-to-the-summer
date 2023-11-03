@@ -1,13 +1,16 @@
+import breakingNews from '../../data/breaking-news.json'
+
 export const FlashBanner = () => {
     return (
         <div>
-            <h2 className="flashinfo-categ">FLASH INFO : {categ}</h2>
-            <p className="flashinfo-text">lala</p>
+            {breakingNews.map((text, id) => {
+                return (
+                    <div className="flashinfo-container" key={id}>
+                        <p className="flashinfo-categ">BREAKING NEWS : {text.title}</p>
+                        <p className="flashinfo-text">{text.content}</p>
+                    </div>
+                )
+            })}
         </div>
     )
 }
-
-const categ = () => {
-    
-}
- 
