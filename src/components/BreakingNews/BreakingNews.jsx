@@ -1,4 +1,4 @@
-import breakingNews from '../../data/breaking-news.json'
+import breakingNews from '../../data/breaking-news'
 
 export const BreakingNews = () => {
     return (
