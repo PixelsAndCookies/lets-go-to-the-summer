@@ -97,6 +97,14 @@ h1 span {
   padding: 0.5rem;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
 footer {
   background-color: #faa433;
 }/*# sourceMappingURL=main.css.map */
