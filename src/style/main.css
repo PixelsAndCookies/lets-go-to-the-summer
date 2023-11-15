@@ -105,6 +105,9 @@ h1 span {
   display: none;
 }
 
-footer {
+.footer__avatar {
+  width: 100%;
+}
+.footer__text {
   background-color: #faa433;
 }/*# sourceMappingURL=main.css.map */
