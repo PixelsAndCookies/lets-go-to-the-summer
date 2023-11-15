@@ -1,21 +1,26 @@
 [
     {
+        "id": 0,
         "title": "BASKET",
         "content": "Le pieds de Jade s'est-il remis de ce terrible accident ? Sa saison était déjà finie avant même d'avoir commencé ? Son équipe nous en dit plus..."
     },
     {
+        "id": 1,
         "title": "CHINON",
         "content": "Une famille éméchée chante 'moumou la mouette' en pensant être drôle. Le retour de la beaufitude est-il proche ?"
     },
     {
+        "id": 2,
         "title": "METEO",
         "content": "Des températures très chaudes sont annoncées pour l'été 2024, pensez à vous hydrater, n'oubliez pas le rosé !"
     },
     {
+        "id": 3,
         "title": "ANIMALIER",
         "content": "La reine des mouettes portée disparue"
     },
     {
+        "id": 4,
         "title": "NATURE",
         "content": "Un viticulteur abasourdis suite à la disparition de ses vignes dans la nuit, le mystère reste entier"
     }
