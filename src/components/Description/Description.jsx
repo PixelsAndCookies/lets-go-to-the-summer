@@ -1,15 +1,8 @@
-import description from '../../data/description.json'
-
-export const Description = () => {
+export const Description = ({title, content}) => {
     return (
         <>
-            {description.map((text, id) => {
-                return (
-                    <div key={id}>
-                        <p>{text.content}</p>
-                    </div>
-                )
-            })}
+            <h2>{title}</h2>
+            <p>{content}</p>
         </>
     )
 }
