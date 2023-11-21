@@ -1,4 +1,4 @@
-export const Description = ({title, content}) => {
+export const Description = ({ title, content }) => {
     return (
         <>
             <h2>{title}</h2>
