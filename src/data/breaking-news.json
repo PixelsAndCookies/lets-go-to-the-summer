@@ -1,26 +1,41 @@
 [
     {
         "id": 0,
-        "title": "BASKET",
-        "content": "Le pieds de Jade s'est-il remis de ce terrible accident ? Sa saison était déjà finie avant même d'avoir commencé ? Son équipe nous en dit plus..."
-    },
-    {
-        "id": 1,
         "title": "CHINON",
         "content": "Une famille éméchée chante 'moumou la mouette' en pensant être drôle. Le retour de la beaufitude est-il proche ?"
     },
     {
+        "id": 1,
+        "title": "BASKET",
+        "content": "Le pieds de Jade s'est-il remis de ce terrible accident ? Sa saison était déjà finie avant même d'avoir commencé ? Son équipe nous en dit plus..."
+    },
+    {
         "id": 2,
+        "title": "FAIT DIVERS",
+        "content": "Un homme brutalise une adolescente avec un luminaire"
+    },
+    {
+        "id": 3,
         "title": "METEO",
         "content": "Des températures très chaudes sont annoncées pour l'été 2024, pensez à vous hydrater, n'oubliez pas le rosé !"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "ANIMALIER",
         "content": "La reine des mouettes portée disparue"
     },
     {
-        "id": 4,
+        "id": 5,
+        "title": "SPORT",
+        "content": "La première édition des Olympiades s'est déroulée.... à Chinon"
+    },
+    {
+        "id": 6,
+        "title": "CULTURE",
+        "content": "Le salon du barbecue ouvrira à nouveau ses portes en 2024"
+    },
+    {
+        "id": 7,
         "title": "NATURE",
         "content": "Un viticulteur abasourdis suite à la disparition de ses vignes dans la nuit, le mystère reste entier"
     }
