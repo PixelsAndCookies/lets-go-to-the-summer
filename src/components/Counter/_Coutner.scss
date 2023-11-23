@@ -1,0 +1,47 @@
+div.counter-container{
+    position:relative;
+    text-align: center;
+    margin:2rem 0;
+
+    img{
+        width:10rem;
+    }
+
+    p{
+        position:absolute;
+        top:25%;
+        left:50%;
+        transform: translate(-50%);
+        font-size:2rem;
+        color:$color-yellow;
+        font-family: Genty;
+
+        span{
+            display:none;
+        }
+    }
+}
+
+@media screen and (min-width: 860px){
+    div.counter-container {
+        img {
+            width: 17rem;
+        }
+
+        p {
+            position: absolute;
+            top: 22%;
+            left: 50%;
+            transform: translate(-50%);
+            font-size: 3rem;
+            color: $color-yellow;
+            font-family: Genty;
+
+            span {
+                display:block;
+                font-size:2rem;
+            }
+        }
+    }
+}
+

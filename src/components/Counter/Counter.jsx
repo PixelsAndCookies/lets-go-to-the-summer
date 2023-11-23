@@ -20,9 +20,10 @@ export const Counter = () => {
     }, [])
     return (
         <div className="counter-container">
-            <img src={counterLogo} alt="" />
+            <img src={counterLogo} alt="logo counter vacances" />
             <p>
-                J-{timeLeft.days}d {timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s
+                J-{timeLeft.days} 
+                <span>{timeLeft.hours}h {timeLeft.minutes}m {timeLeft.seconds}s</span>
             </p>
         </div>
     )

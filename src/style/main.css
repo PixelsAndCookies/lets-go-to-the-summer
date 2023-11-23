@@ -105,6 +105,45 @@ h1 span {
   display: none;
 }
 
+div.counter-container {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0;
+}
+div.counter-container img {
+  width: 10rem;
+}
+div.counter-container p {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 2rem;
+  color: #faa433;
+  font-family: Genty;
+}
+div.counter-container p span {
+  display: none;
+}
+
+@media screen and (min-width: 860px) {
+  div.counter-container img {
+    width: 17rem;
+  }
+  div.counter-container p {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 3rem;
+    color: #faa433;
+    font-family: Genty;
+  }
+  div.counter-container p span {
+    display: block;
+    font-size: 2rem;
+  }
+}
 .footer__avatar {
   width: 100%;
 }
