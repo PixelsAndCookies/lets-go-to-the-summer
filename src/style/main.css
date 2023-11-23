@@ -69,8 +69,8 @@ header {
   justify-content: center;
 }
 
-main {
-  width: 90%;
+.main-container {
+  width: 55%;
   margin: auto;
 }
 
@@ -92,7 +92,7 @@ h1 span {
   color: #ffffff;
   font-family: glacialIndifference;
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .news-text {
@@ -101,6 +101,7 @@ h1 span {
   font-family: glacialIndifference;
   padding: 0.5rem;
   margin: 0.5rem 0;
+  font-size: 1.2rem;
 }
 
 .visible {
@@ -151,32 +152,41 @@ div.counter-container p span {
   }
 }
 .cards-container {
-  border: 2px solid red;
   margin: auto;
   display: flex;
   justify-content: space-between;
 }
-
-.card {
-  border: 1px solid blue;
+.cards-container .card {
   height: 450px;
+  box-shadow: 0rem 1rem 2rem -0.7rem #686868;
 }
-.card__img {
+.cards-container .card--0 {
+  border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+}
+.cards-container .card--1 {
+  border-radius: 1.5rem 0rem 1.5rem 0rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.cards-container .card--2 {
+  border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+}
+.cards-container .card__img {
   width: 320px;
   height: 85%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.card__img--0 {
+.cards-container .card__img--0 {
   border-radius: 1.5rem 1.5rem 12rem 0rem;
 }
-.card__img--1 {
+.cards-container .card__img--1 {
   border-radius: 12rem 0rem 1.5rem 0rem;
 }
-.card__img--2 {
+.cards-container .card__img--2 {
   border-radius: 0rem 1.5rem 0rem 12rem;
 }
-.card__date {
+.cards-container .card__date {
   font-family: genty;
   color: #686868;
   font-size: 2rem;
