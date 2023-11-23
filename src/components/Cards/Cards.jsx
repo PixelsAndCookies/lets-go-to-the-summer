@@ -2,15 +2,14 @@ import cards from '../../data/cards-data.json'
 
 export const Cards = () => {
     return (
-        <section>
-            {cards.map((card) => {
+        <section className="cards-container">
+            {cards.map((holiday) => {
+                const imageClass = `card__img card__img--${holiday.id}`
                 return (
-                    <div className="cards-container" key={card.id}>
-                        <div className="card">
-                            <img src={card.cover} alt="" />
-                            <p>{card.title}</p>
-                        </div>
-                    </div>
+                    <article className="card" key={holiday.id}>
+                        <img className={imageClass} src={holiday.cover} alt="" />
+                        <p className='card__date'>{holiday.title}</p>
+                    </article>
                 )
             })}
         </section>
