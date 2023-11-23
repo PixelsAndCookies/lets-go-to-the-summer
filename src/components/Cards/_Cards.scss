@@ -1,32 +1,43 @@
 .cards-container {
-    border: 2px solid red;
     margin: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.card {
-    border: 1px solid blue;
-    height: 450px;
-    &__img {
-        width: 320px;
-        height: 85%;
-        object-fit: cover;
+    & .card {
+        height: 450px;
+        box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
         &--0 {
-            border-radius: 1.5rem 1.5rem 12rem 0rem;
+            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
         }
         &--1 {
-            border-radius: 12rem 0rem 1.5rem 0rem;
+            border-radius: 1.5rem 0rem 1.5rem 0rem;
+            display: flex;
+            flex-direction: column-reverse;
         }
         &--2 {
-            border-radius: 0rem 1.5rem 0rem 12rem;
+            border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+        }
+        &__img {
+            width: 320px;
+            height: 85%;
+            object-fit: cover;
+            &--0 {
+                border-radius: 1.5rem 1.5rem 12rem 0rem;
+            }
+            &--1 {
+                border-radius: 12rem 0rem 1.5rem 0rem;
+            }
+            &--2 {
+                border-radius: 0rem 1.5rem 0rem 12rem;
+            }
+        }
+        &__date {
+            font-family: genty;
+            color: $color-grey;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
         }
     }
-    &__date {
-        font-family: genty;
-        color: $color-grey;
-        font-size: 2rem;
-        text-align: center;
-        padding: 1rem;
-    }
+    
 }
+
