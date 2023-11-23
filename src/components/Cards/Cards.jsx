@@ -4,11 +4,12 @@ export const Cards = () => {
     return (
         <section className="cards-container">
             {cards.map((holiday) => {
+                const cardClass = `card card--${holiday.id}`
                 const imageClass = `card__img card__img--${holiday.id}`
                 return (
-                    <article className="card" key={holiday.id}>
-                        <img className={imageClass} src={holiday.cover} alt="" />
-                        <p className='card__date'>{holiday.title}</p>
+                    <article className={cardClass} key={holiday.id}>
+                        <img className={imageClass} src={holiday.cover} alt="Photo de couverture des vacances" />
+                        <p className="card__date">{holiday.title}</p>
                     </article>
                 )
             })}
