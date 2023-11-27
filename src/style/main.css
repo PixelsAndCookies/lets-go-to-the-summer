@@ -28,10 +28,9 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
+} 
 
 body {
-  line-height: 1;
   max-width: 1480px;
   margin: auto;
 }
@@ -71,11 +70,6 @@ table {
   font-family: mainPolice;
   src: url(./fonts/DarkerGrotesque-Bold.ttf);
 }
-header {
-  display: flex;
-  justify-content: center;
-}
-
 .main-container {
   width: 100%;
   margin: auto;
@@ -96,7 +90,7 @@ h1 span {
 
 @media screen and (min-width: 860px) {
   .main-container {
-    width: 55%;
+    width: 80%;
   }
   h1 {
     font-size: 6.5rem;
@@ -181,36 +175,39 @@ div.counter-container p span {
   }
 }
 .cards-container {
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
 }
 .cards-container .card {
-  height: 450px;
+  width: 30%;
+  min-height: 30rem;
+  display: flex;
   box-shadow: 0rem 1rem 2rem -0.7rem #686868;
 }
-.cards-container .card--0 {
+.cards-container .card--2023 {
+  flex-direction: column;
   border-radius: 1.5rem 1.5rem 0rem 1.5rem;
 }
-.cards-container .card--1 {
+.cards-container .card--2024 {
   border-radius: 1.5rem 0rem 1.5rem 0rem;
-  display: flex;
   flex-direction: column-reverse;
 }
-.cards-container .card--2 {
+.cards-container .card--2025 {
+  flex-direction: column;
   border-radius: 0rem 1.5rem 1.5rem 1.5rem;
 }
 .cards-container .card__img {
-  width: 320px;
   height: 85%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cards-container .card__img--0 {
+.cards-container .card__img--2023 {
   border-radius: 1.5rem 1.5rem 12rem 0rem;
 }
-.cards-container .card__img--1 {
+.cards-container .card__img--2024 {
   border-radius: 12rem 0rem 1.5rem 0rem;
 }
-.cards-container .card__img--2 {
+.cards-container .card__img--2025 {
   border-radius: 0rem 1.5rem 0rem 12rem;
 }
 .cards-container .card__date {
@@ -222,18 +219,36 @@ div.counter-container p span {
 }
 
 @media screen and (min-width: 860px) {
-  .cards-container {
-    display: flex;
-    justify-content: space-between;
+  .cards-container .card {
+    width: 32%;
+    min-height: 52rem;
+  }
+  .cards-container .card__date {
+    font-size: 5rem;
+    padding: 3rem 1rem;
   }
 }
-.footer__avatar {
+footer {
+  color: white;
   width: 100%;
+  position: relative;
+  font-size: 2rem;
 }
-.footer__text {
+footer img {
+  width: 100%;
+  margin: 0;
+  transform: translateY(10%);
+}
+footer .content {
+  position: relative;
   background-color: #faa433;
 }
 
+@media screen and (min-width: 860px) {
+  footer {
+    font-size: 2.3rem;
+  }
+}
 html {
   font-size: 62.5%;
 }
