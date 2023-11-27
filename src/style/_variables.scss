@@ -6,16 +6,16 @@ $color-grey: #686868;
 $color-white: #ffffff;
 
 @font-face {
-    font-family: bukhariScript;
-    src: url(./fonts/Bukhari-Script.otf);
+    font-family: titlePolice;
+    src: url(./fonts/GentyDemo-Regular.woff);
 }
 
 @font-face {
-    font-family: genty;
-    src: url(./fonts/GentyDemo-Regular.otf);
+    font-family: mainPolice;
+    src: url(./fonts/DarkerGrotesque-Bold.ttf);
 }
 
 @font-face {
-    font-family: glacialIndifference;
-    src: url(./fonts/GlacialIndifference-Bold.otf)
+    font-family: mainPolice;
+    src: url(./fonts/DarkerGrotesque-Bold.ttf);
 }
