@@ -1,23 +1,26 @@
 .news-categ {
     background-color: $color-red;
     color: $color-white;
-    font-family: glacialIndifference;
+    font-family: mainPolice;
     padding: 0.5rem;
-    font-size: 1.8rem;
+    font-size: 3rem;
+    font-weight:600;
 }
 .news-text {
     background-color: $color-pink;
     color: $color-grey;
-    font-family: glacialIndifference;
+    font-family: mainPolice;
     padding: 0.5rem;
     margin: 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
-.visible {
-    display: block;
-}
+@media screen and (min-width: 860px) {
+    .news-categ {
+        font-size: 4rem;
+    }
 
-.hidden {
-    display: none;
+    .news-text {
+        font-size: 3rem;
+    }
 }
