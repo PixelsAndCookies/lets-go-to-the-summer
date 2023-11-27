@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import cards from '../../data/cards-data.json'
 
 export const Cards = () => {
@@ -8,8 +9,10 @@ export const Cards = () => {
                 const imageClass = `card__img card__img--${holiday.id}`
                 return (
                     <article className={cardClass} key={holiday.id}>
-                        <img className={imageClass} src={holiday.cover} alt="Photo de couverture des vacances" />
-                        <p className="card__date">{holiday.title}</p>
+                        <Link to={`/holidays/${holiday.id}`}>
+                            <img className={imageClass} src={holiday.cover} alt="Photo de couverture des vacances" />
+                            <p className="card__date">{holiday.title}</p>
+                        </Link>
                     </article>
                 )
             })}
