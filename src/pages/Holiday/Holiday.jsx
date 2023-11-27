@@ -1,3 +1,17 @@
+import { Day } from "../../components/Day/Day"
+import { Logo } from "../../components/Logo/Logo"
+import { Navbar } from "../../components/Navbar/Navbar"
+
 export const Holiday = () => {
-    return <main></main>
+    return (
+        <>
+            <header>
+                <Logo />
+                <Navbar />
+            </header>
+            <main>
+                <Day />
+            </main>
+        </>
+    )
 }
