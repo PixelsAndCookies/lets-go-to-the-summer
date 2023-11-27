@@ -12,7 +12,7 @@ export const Home = () => {
           Souvenirs d&apos;été <br />
           <span>Les aventures fun-tastiques en famille</span>
         </h1>
-        <Description />
+        <Description item="presentation" />
         <Counter />
         <Cards />
       </div>
