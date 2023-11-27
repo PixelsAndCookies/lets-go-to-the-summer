@@ -112,6 +112,10 @@ h1 span {
   display: none;
 }
 
+#section_presentation {
+  background-color: #ce4847;
+}
+
 div.counter-container {
   position: relative;
   text-align: center;
