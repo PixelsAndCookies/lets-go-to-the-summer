@@ -6,4 +6,21 @@
 @import '../components/Description/Description';
 @import '../components/Counter/Coutner';
 @import '../components/Cards/Cards';
-@import '../components/Footer/Footer'
+@import '../components/Footer/Footer';
+
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: mainPolice;
+    font-size:2.3rem;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
