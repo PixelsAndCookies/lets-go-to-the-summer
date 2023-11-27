@@ -14,6 +14,13 @@ html {
 
 body{
     font-family: mainPolice;
-    font-size:23px;
+    font-size:2.3rem;
 }
 
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}

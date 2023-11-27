@@ -1,16 +1,31 @@
 .main-container {
-    width: 55%;
+    width: 100%;
     margin: auto;
 }
 
 h1 {
     color: $color-blue;
     font-family: titlePolice;
-    font-size: 6.5rem;
+    font-size: 5rem;
     text-align: center;
 }
 h1 span {
     font-family: mainPolice;
     color: $color-grey;
-    font-size: 4.5rem;
+    font-size: 3rem;
+}
+
+
+@media screen and (min-width: 860px) {
+.main-container {
+        width: 55%;
+    }
+
+    h1 {
+        font-size: 6.5rem;
+    }
+
+    h1 span {
+        font-size: 4.5rem;
+    }
 }

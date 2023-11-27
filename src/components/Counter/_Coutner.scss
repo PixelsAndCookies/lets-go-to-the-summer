@@ -12,7 +12,7 @@ div.counter-container{
         top:25%;
         left:50%;
         transform: translate(-50%);
-        font-size:2rem;
+        font-size:2.5rem;
         color:$color-yellow;
         font-family: titlePolice;
 
@@ -33,13 +33,13 @@ div.counter-container{
             top: 22%;
             left: 50%;
             transform: translate(-50%);
-            font-size: 3rem;
+            font-size: 3.5rem;
             color: $color-yellow;
             font-family: titlePolice;
 
             span {
                 display:block;
-                font-size:2rem;
+                font-size:2.5rem;
             }
         }
     }

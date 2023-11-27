@@ -36,6 +36,10 @@ body {
   margin: auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 ol, ul {
   list-style: none;
 }
@@ -73,29 +77,40 @@ header {
 }
 
 .main-container {
-  width: 55%;
+  width: 100%;
   margin: auto;
 }
 
 h1 {
   color: #0996a5;
   font-family: titlePolice;
-  font-size: 6.5rem;
+  font-size: 5rem;
   text-align: center;
 }
 
 h1 span {
   font-family: mainPolice;
   color: #686868;
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 
+@media screen and (min-width: 860px) {
+  .main-container {
+    width: 55%;
+  }
+  h1 {
+    font-size: 6.5rem;
+  }
+  h1 span {
+    font-size: 4.5rem;
+  }
+}
 .news-categ {
   background-color: #ce4847;
   color: #ffffff;
   font-family: mainPolice;
   padding: 0.5rem;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -105,17 +120,17 @@ h1 span {
   font-family: mainPolice;
   padding: 0.5rem;
   margin: 0.5rem 0;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
-.visible {
-  display: block;
+@media screen and (min-width: 860px) {
+  .news-categ {
+    font-size: 4rem;
+  }
+  .news-text {
+    font-size: 3rem;
+  }
 }
-
-.hidden {
-  display: none;
-}
-
 div.counter-container {
   position: relative;
   text-align: center;
@@ -129,7 +144,7 @@ div.counter-container p {
   top: 25%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #faa433;
   font-family: titlePolice;
 }
@@ -146,19 +161,17 @@ div.counter-container p span {
     top: 22%;
     left: 50%;
     transform: translate(-50%);
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #faa433;
     font-family: titlePolice;
   }
   div.counter-container p span {
     display: block;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 }
 .cards-container {
   margin: auto;
-  display: flex;
-  justify-content: space-between;
 }
 .cards-container .card {
   height: 450px;
@@ -193,11 +206,17 @@ div.counter-container p span {
 .cards-container .card__date {
   font-family: titlePolice;
   color: #686868;
-  font-size: 5rem;
+  font-size: 2rem;
   text-align: center;
   padding: 1rem;
 }
 
+@media screen and (min-width: 860px) {
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 footer {
   color: white;
   width: 100%;
@@ -213,6 +232,12 @@ footer .content {
   background-color: #faa433;
 }
 
+@media screen and (min-width: 860px) {
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 html {
   font-size: 62.5%;
 }
@@ -220,4 +245,12 @@ html {
 body {
   font-family: mainPolice;
   font-size: 23px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
