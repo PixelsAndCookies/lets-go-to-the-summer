@@ -1,6 +1,9 @@
 @import './reset.scss';
 @import './variables.scss';
 @import '../pages/Home/Home';
+@import '../pages/Holiday/Holiday';
+@import '../components/Navbar/Navbar';
+@import '../components/Day/Day';
 @import '../components/BreakingNews/BreakingNews';
 @import '../components/Description/Description';
 @import '../components/Counter/Coutner';
@@ -11,9 +14,9 @@ html {
     font-size: 62.5%;
 }
 
-body{
+body {
     font-family: mainPolice;
-    font-size:2.3rem;
+    font-size: 2.3rem;
 }
 
 .visible {
