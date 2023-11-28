@@ -25,3 +25,4 @@ dist-ssr
 
 .eslintrc.cjs
 .prettierrc
+yarn-lock

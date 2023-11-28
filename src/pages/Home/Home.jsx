@@ -1,8 +1,8 @@
-import { Logo } from '../../components/Logo/Logo'
-import { Counter } from '../../components/Counter/Counter'
-import { BreakingNews } from '../../components/BreakingNews/BreakingNews'
-import { Cards } from '../../components/Cards/Cards'
-import { Description } from '../../components/Description/Description'
+import { Logo } from '../../components/Logo/Logo';
+import { Counter } from '../../components/Counter/Counter';
+import { BreakingNews } from '../../components/BreakingNews/BreakingNews';
+import { Cards } from '../../components/Cards/Cards';
+import { Description } from '../../components/Description/Description';
 
 export const Home = () => {
     return (
@@ -17,11 +17,12 @@ export const Home = () => {
                         Souvenirs d&apos;été <br />
                         <span>Les aventures fun-tastiques en famille</span>
                     </h1>
-                    <Description item="presentation" />
+                    <Description content="presentation" />
                     <Counter />
                     <Cards />
+                    <Description content="informations" />
                 </div>
             </main>
         </>
-    )
-}
+    );
+};
