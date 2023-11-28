@@ -5,11 +5,11 @@ import { Navbar } from "../../components/Navbar/Navbar"
 export const Holiday = () => {
     return (
         <>
-            <header>
+            <header className="holiday-header">
                 <Logo />
                 <Navbar />
             </header>
-            <main>
+            <main className="holiday-main">
                 <Day />
             </main>
         </>
