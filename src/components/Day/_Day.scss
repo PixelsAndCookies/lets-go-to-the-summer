@@ -1,0 +1,29 @@
+.articleDay { // style global à chacun des articles ( ensemble des jours )
+    border: 2px solid cyan;
+    border-radius: 20px;
+    h2 {
+        font-family: titlePolice;
+    }
+    // Style propre à l'article en question ( chaque jours )
+    &--Samedi12 { 
+        color: red;
+    }
+    &--Dimanche13 {
+        color: red;
+    }
+    &--Lundi14 {
+        color: red;
+    }
+    &--Mardi15 {
+        color: red;
+    }
+    &--Mercredi16 {
+        color: red;
+    }
+    &--Jeudi17 {
+        color: red;
+    }
+    &--Vendredi18 {
+        color: red;
+    }
+}
