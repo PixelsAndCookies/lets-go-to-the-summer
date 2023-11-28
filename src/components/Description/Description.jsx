@@ -1,14 +1,21 @@
-import description from "../../data/description.json";
+import descriptionJson from '../../data/description.json';
 
 export const Description = (props) => {
+    const content = descriptionJson[props.content];
+    const infos = descriptionJson.informations;
 
-  const item = description[props.item];
-  return (
-    <section>
-        <div key={item.id}>
-          <h2>{item.title}</h2>
-          <p>{item.content}</p>
-        </div>
-    </section>
-  );
+    if (content === infos) {
+        return (
+            <article key={content.id} className="description">
+                <h2>{content.title}</h2>
+                <p>{content.text}</p>
+            </article>
+        );
+    } else {
+        return (
+            <article key={content.id} className="description">
+                <p>{content.text}</p>
+            </article>
+        );
+    }
 };
