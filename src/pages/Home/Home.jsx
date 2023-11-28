@@ -7,10 +7,10 @@ import { Description } from '../../components/Description/Description';
 export const Home = () => {
     return (
         <>
-            <header>
+            <header className='home-header'>
                 <Logo />
             </header>
-            <main>
+            <main className="home-main">
                 <BreakingNews />
                 <div className="main-container">
                     <h1>
