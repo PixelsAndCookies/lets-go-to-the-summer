@@ -1,6 +1,6 @@
 .main-container {
     width: 100%;
-    margin: auto;
+    margin: 6rem auto;
 }
 
 h1 {
@@ -11,6 +11,7 @@ h1 {
 }
 h1 span {
     font-family: mainPolice;
+    font-weight:700;
     color: $color-grey;
     font-size: 3rem;
 }
