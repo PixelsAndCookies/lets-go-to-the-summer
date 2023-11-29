@@ -14,9 +14,20 @@ html {
     font-size: 62.5%;
 }
 
-body {
+body{
+    position:relative;
     font-family: mainPolice;
     font-size: 2.3rem;
+}
+
+.App{
+    overflow: hidden;
+    position: relative;
+}
+
+.App{
+    overflow: hidden;
+    position: relative;
 }
 
 .visible {
@@ -25,4 +36,144 @@ body {
 
 .hidden {
     display: none;
+}
+
+.red-cercle {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100rem;
+    height: 100rem;
+    z-index:-10;
+    border-radius: 50%;
+    background: linear-gradient(330deg, rgba(255, 255, 255, 0) 35%, rgba(206, 72, 71, 1) 100%);
+}
+
+.blue-triangle{
+    position: absolute;
+    top:100%;
+    left:100%;
+    width: 100rem;
+    height: 100rem;
+    z-index:-10;
+}
+
+@-webkit-keyframes rotating_1 {
+    from {
+        -webkit-transform: rotate(0deg);
+        top:0;
+    }
+    10%{ //2
+        left: 60%;
+        top:10%;
+    }
+    20%{ //3
+        left: -20%;
+        top: 40%;
+    }
+    30%{ //4
+        left: 10%;
+        top: 80%;
+    }
+    40%{  //5
+        left: 50%;
+        top: 60%;
+    }
+    50%{ //6
+        left: -20%;
+        top: 25%;
+    }
+    60%{ //7
+        left:25%;
+        top:-20%;
+    }
+    70% { //8
+        left:70%;
+        top:45%;
+    }
+    80% { //9
+        left: -20%;
+        top: 60%;
+    }
+    90% { //10
+        left: 25%;
+        top: 70%;
+    }
+    to {
+        top: 0;
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotating_2 {
+    from {
+        -webkit-transform: rotate(0deg);
+        top: 0;
+    }
+
+    10% {
+        //4
+        left: 10%;
+        top: 80%;
+    }
+
+    20% {
+        //5
+        left: 50%;
+        top: 60%;
+    }
+
+    30% {
+        //6
+        left: -20%;
+        top: 25%;
+    }
+
+    40% {
+        //7
+        left: 25%;
+        top: -20%;
+    }
+
+    50% {
+        //8
+        left: 70%;
+        top: 45%;
+    }
+
+    60% {
+        //9
+        left: -20%;
+        top: 60%;
+    }
+
+    70% {
+        //10
+        left: 25%;
+        top: 70%;
+    }
+
+    80% {
+        //2
+        left: 60%;
+        top: 10%;
+    }
+
+    90% {
+        //3
+        left: -20%;
+        top: 40%;
+    }
+
+    to {
+        top: 0;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.rotating_1{
+    -webkit-animation: rotating_1 120s linear infinite;
+}
+
+.rotating_2 {
+    -webkit-animation: rotating_2 120s linear infinite;
 }
