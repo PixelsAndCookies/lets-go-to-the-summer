@@ -6,12 +6,12 @@ export const Navbar = () => {
         <nav >
             <ul>
                 <li>
-                    <Link to="/">Accueil</Link>
+                    <Link to="/" className='navLink'>Accueil</Link>
                 </li>
                 {holidays.map((holiday) => {
                     return (
                         <li key={holiday.id}>
-                            <Link to={`/holidays/${holiday.id}`}>{holiday.title}</Link>
+                            <Link to={`/holidays/${holiday.id}`} className='navLink'>{holiday.title}</Link>
                         </li>
                     )
                 })}
