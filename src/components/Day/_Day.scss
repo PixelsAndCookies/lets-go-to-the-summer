@@ -1,8 +1,11 @@
 .articleDay { // style global à chacun des articles ( ensemble des jours )
-    border: 2px solid cyan;
+    background-color: $color-white;
+    border: 2px dashed black;
     border-radius: 20px;
     h2 {
+        text-align: center;
         font-family: titlePolice;
+        color: $color-grey;
     }
     // Style propre à l'article en question ( chaque jours )
     &--Samedi12 { 
