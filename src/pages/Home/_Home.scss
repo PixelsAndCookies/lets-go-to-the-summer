@@ -1,3 +1,9 @@
+header.home-header{
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(14deg, rgba(255, 255, 255, 0) 65%, rgba(250, 164, 51, 1) 100%);
+}
+
 .main-container {
     width: 100%;
     margin: 6rem auto;
@@ -9,13 +15,13 @@ h1 {
     font-size: 5rem;
     text-align: center;
 }
+
 h1 span {
     font-family: mainPolice;
     font-weight:700;
     color: $color-grey;
     font-size: 3rem;
 }
-
 
 @media screen and (min-width: 860px) {
 .main-container {
