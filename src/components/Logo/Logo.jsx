@@ -4,7 +4,7 @@ import logo from '../../assets/logo/Logo_sans_fond.svg'
 export const Logo = () => {
     return (
         <Link to="/">
-            <img src={logo} alt="Logo Summer" />
+            <img src={logo} alt="Logo Summer" className='logo'/>
         </Link>
     )
 }
