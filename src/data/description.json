@@ -2,16 +2,36 @@
     "presentation": {
         "id": "presentation",
         "title": null,
-        "text": "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. laboris nisi ut aliquip.. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        "text": [
+            "Jeudi 27 octobre 2022",
+            "Sylvain a créé le groupe “Eté 2023",
+            "Sylvain vous a ajouté(e)",
+            "Comme une évidence. Dispersés à travers toute la France et malgré les rares occasions de se retrouver, toujours le même bonheur à chaque opportunité. Chaque personne qui complète ce groupe est une brique essentielle qui rajoute son quota de générosité, d’humour et d’enthousiasme. L’évidence, c’était de partir en vacances tous ensemble !",
+            "Quatre jours après la création de cette conversation, les vacances étaient pliées : destination la Hardonnière, cagnotte créée et budget calculé ! Il n’y avait plus qu’à compter les jours avant la grande réunion de famille. Toute une année d’attente pour une semaine de bonheur mais quelle semaine !",
+            "Laissez-nous vous partager quelques extraits de ces moments de rire, de partage et de convivialité. Bienvenue à Chinon !"
+        ]
     },
+
     "informations": {
         "id": "informations",
         "title": "Informations",
-        "text": [
+        "info_2023": [
             "Prochain départ à destination de Chinon",
             "Adresse du domène",
             "Lien vers le fichier excel",
             "Lien vers la cagnotte"
+        ],
+        "info_2024": [
+            "Retour à Chinon",
+            "Même adresse que l'année dernière",
+            "Lien vers le fichier excel",
+            "Lien vers la cagnotte"
+        ],
+        "info_2025": [
+            "Destination mystère",
+            "Adresse du futur domène",
+            "Lien vers le futur fichier excel",
+            "Lien vers la futur cagnotte"
         ]
     }
 }

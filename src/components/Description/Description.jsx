@@ -6,14 +6,18 @@ export const Description = (props) => {
 
     if (content === infos) {
         return (
-            <article key={content.id} className="description">
+            <article key={content.id} className="description informations">
                 <h2>{content.title}</h2>
-                <p>{content.text}</p>
+                <div className="text">
+                    <p>{content.info_2023}</p>
+                    <p>{content.info_2024}</p>
+                    <p>{content.info_2025}</p>
+                </div>
             </article>
         );
     } else {
         return (
-            <article key={content.id} className="description">
+            <article key={content.id} className="description presentation">
                 <p>{content.text}</p>
             </article>
         );
