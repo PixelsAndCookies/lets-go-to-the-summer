@@ -8,13 +8,13 @@
     },
 
     "pictures": [
-      "20230812_1.jpg",
-      "20230812_2.jpg",
-      "20230812_3.jpg",
-      "20230812_4.jpg",
-      "20230812_5.jpg",
-      "20230812_6.jpg",
-      "20230812_7.jpg"
+      "pictures/2023/20230812/20230812_1.jpg",
+      "pictures/2023/20230812/20230812_2.jpg",
+      "pictures/2023/20230812/20230812_3.jpg",
+      "pictures/2023/20230812/20230812_4.jpg",
+      "pictures/2023/20230812/20230812_5.jpg",
+      "pictures/2023/20230812/20230812_6.jpg",
+      "pictures/2023/20230812/20230812_7.jpg"
     ],
     "sentences": ""
   },
@@ -26,12 +26,12 @@
       "2": "Mais la vraie question du jour : sauce barbecue ou sauce béarnaise ?"
     },
     "pictures": [
-      "20230813_1.jpg",
-      "20230813_2.jpg",
-      "20230813_3.jpg",
-      "20230813_4.jpg",
-      "20230813_5.jpg",
-      "20230813_6.jpg"
+      "pictures/2023/20230813/20230813_1.jpg",
+      "pictures/2023/20230813/20230813_2.jpg",
+      "pictures/2023/20230813/20230813_3.jpg",
+      "pictures/2023/20230813/20230813_4.jpg",
+      "pictures/2023/20230813/20230813_5.jpg",
+      "pictures/2023/20230813/20230813_6.jpg"
     ],
     "sentences": ""
   },
@@ -44,13 +44,12 @@
       "3": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi."
     },
     "pictures": [
-      "20230814_1.jpg",
-      "20230814_2.jpg",
-      "20230814_3.jpg",
-      "20230814_4.jpg",
-      "20230814_5.jpg",
-      "20230814_6.jpg",
-      "20230814_7.jpg"
+      "pictures/2023/20230814/20230814_1.jpg",
+      "pictures/2023/20230814/20230814_2.jpg",
+      "pictures/2023/20230814/20230814_3.jpg",
+      "pictures/2023/20230814/20230814_4.gif",
+      "pictures/2023/20230814/20230814_5.jpg",
+      "pictures/2023/20230814/20230814_6.jpg"
     ],
     "sentences": "“ Faut fermer la porte du four à pizza ou pas ?”"
   },
@@ -61,15 +60,15 @@
       "1": "Insta VS Réalité"
     },
     "pictures": [
-      "20230815_1.jpg",
-      "20230815_2.jpg",
-      "20230815_3.jpg",
-      "20230815_4.jpg",
-      "20230815_5.jpg",
-      "20230815_6.jpg",
-      "20230815_7.jpg",
-      "20230815_8.jpg",
-      "20230815_9.jpg"
+      "pictures/2023/20230815/20230815_1.jpg",
+      "pictures/2023/20230815/20230815_2.jpg",
+      "pictures/2023/20230815/20230815_3.jpg",
+      "pictures/2023/20230815/20230815_4.gif",
+      "pictures/2023/20230815/20230815_5.jpg",
+      "pictures/2023/20230815/20230815_6.jpg",
+      "pictures/2023/20230815/20230815_7.jpg",
+      "pictures/2023/20230815/20230815_8.jpg",
+      "pictures/2023/20230815/20230815_9.gif"
     ],
     "sentences": "“Ton mec il aime les défis ? “"
   },
@@ -82,17 +81,17 @@
       "3": "Annecdote : Arrivée de Vincent au domaine qui découvre qu’il va dormir... dans sa voiture !"
     },
     "pictures": [
-      "20230816_1.jpg",
-      "20230816_2.jpg",
-      "20230816_3.jpg",
-      "20230816_4.jpg",
-      "20230816_5.jpg",
-      "20230816_6.jpg",
-      "20230816_7.jpg",
-      "20230816_8.jpg",
-      "20230816_9.jpg",
-      "20230816_10.jpg",
-      "20230816_11.jpg"
+      "pictures/2023/20230816/20230816_1.jpeg",
+      "pictures/2023/20230816/20230816_2.jpg",
+      "pictures/2023/20230816/20230816_3.jpg",
+      "pictures/2023/20230816/20230816_4.jpg",
+      "pictures/2023/20230816/20230816_5.jpg",
+      "pictures/2023/20230816/20230816_6.jpg",
+      "pictures/2023/20230816/20230816_7.jpg",
+      "pictures/2023/20230816/20230816_8.jpg",
+      "pictures/2023/20230816/20230816_9.jpg",
+      "pictures/2023/20230816/20230816_10.jpg",
+      "pictures/2023/20230816/20230816_11.gif"
     ],
     "sentences": "“I believe i can flyyyy”"
   },
@@ -105,13 +104,14 @@
       "3": "La soirée se termine avec un concours de plats légendaires où tout le monde finira à l’eau, avec ou sans consentement. Cédric le premier !"
     },
     "pictures": [
-      "20230817_1.jpg",
-      "20230817_2.jpg",
-      "20230817_3.jpg",
-      "20230817_4.jpg",
-      "20230817_5.jpg",
-      "20230817_6.jpg",
-      "20230817_7.jpg"
+      "pictures/2023/20230817/20230817_1.jpg",
+      "pictures/2023/20230817/20230817_2.jpg",
+      "pictures/2023/20230817/20230817_3.jpg",
+      "pictures/2023/20230817/20230817_4.jpg",
+      "pictures/2023/20230817/20230817_5.jpg",
+      "pictures/2023/20230817/20230817_6.gif",
+      "pictures/2023/20230817/20230817_7.jpg",
+      "pictures/2023/20230817/20230817_8.gif"
     ],
     "sentences": ""
   },
@@ -140,11 +140,11 @@
       }
     },
     "pictures": [
-      "20230818_1.jpg",
-      "20230818_2.jpg",
-      "20230818_3.jpg",
-      "20230818_4.jpg",
-      "20230818_5.jpg"
+      "pictures/2023/20230818/20230818_1.jpg",
+      "pictures/2023/20230818/20230818_2.jpg",
+      "pictures/2023/20230818/20230818_3.jpg",
+      "pictures/2023/20230818/20230818_4.jpg",
+      "pictures/2023/20230818/20230818_5.gif"
     ],
     "sentences": ""
   }
