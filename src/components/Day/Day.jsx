@@ -1,15 +1,25 @@
 import days from '../../data/days.json'
 
-export const Day = () => {    
+export const Day = () => {
     return (
         <section>
             {days.map((day) => {
-                const articleClass = `articleDay articleDay--${day.id}`
+                const articleClassName = `articleDay articleDay--${day.id}`
                 return (
-                    <article key={day.id} className={articleClass}>
+                    <article key={day.id} className={articleClassName}>
                         <h2>{day.title}</h2>
-                        <p></p>
+                        <div>
+                            {Object.keys(day.texts).map((textKey) => {
+                                const textsContent = day.texts[textKey]
+                                return (
+                                    <p key={textKey}>
+                                        {typeof textsContent === 'string' ? textsContent : ''}
+                                    </p>
+                                )
+                            })}
+                        </div>
                         <img src="" alt="" />
+                        <>{day.quotes !== null && <p>{day.quotes}</p>}</>
                     </article>
                 )
             })}
