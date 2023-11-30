@@ -9,9 +9,10 @@ export const Description = (props) => {
             <article key={content.id} className="description informations">
                 <h2>{content.title}</h2>
                 <div className="text">
-                    <p>{content.info_2023}</p>
-                    <p>{content.info_2024}</p>
-                    <p>{content.info_2025}</p>
+                    <p>{content.calendrier}</p>
+                    <p>{content.localisation}</p>
+                    <p>{content.organisation}</p>
+                    <p>{content.cagnotte}</p>
                 </div>
             </article>
         );

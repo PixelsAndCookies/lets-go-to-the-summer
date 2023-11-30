@@ -15,23 +15,9 @@
     "informations": {
         "id": "informations",
         "title": "Informations",
-        "info_2023": [
-            "Prochain départ à destination de Chinon",
-            "Adresse du domène",
-            "Lien vers le fichier excel",
-            "Lien vers la cagnotte"
-        ],
-        "info_2024": [
-            "Retour à Chinon",
-            "Même adresse que l'année dernière",
-            "Lien vers le fichier excel",
-            "Lien vers la cagnotte"
-        ],
-        "info_2025": [
-            "Destination mystère",
-            "Adresse du futur domène",
-            "Lien vers le futur fichier excel",
-            "Lien vers la futur cagnotte"
-        ]
+        "calendrier": "C:UsersRoullandDesktopDevDuDimancheIconescalendrier.png",
+        "localisation": "",
+        "organisation": "",
+        "cagnotte": ""
     }
 }
