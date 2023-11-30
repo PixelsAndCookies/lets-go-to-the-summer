@@ -1,86 +1,151 @@
 [
-    {
-        "id": "Samedi12",
-        "title": "Samedi 12 Août",
-        "texts": {
-            "1": "12h - L’histoire commence sur les berges de la Loire face à la forteresse de Chinon lorsque nos aventuriers vacanciers se retrouvent pour le pique-nique de retrouvailles à l’arrache. On organise les courses d’un côté sur un post-it qu’on oublie d’emmener, on abuse de la buvette de l’autre mais l’important c’est d’aller chercher le fût de bière avant tout !",
-            "2": "17h - Armé de ses valises et des 74 litres d’alcool, le groupe débarque à la découverte du domaine de la Hardonnière et premier constat : le photographe du site est nul à chier. Le domaine est gigantesque, jardin, piscine, salle des fêtes, jacuzzi, ambiance champêtre au rendez-vous."
-        },
+  {
+    "id": "Samedi12",
+    "title": "Samedi 12 Août",
+    "texts": {
+      "1": "12h - L’histoire commence sur les berges de la Loire face à la forteresse de Chinon lorsque nos aventuriers vacanciers se retrouvent pour le pique-nique de retrouvailles à l’arrache. On organise les courses d’un côté sur un post-it qu’on oublie d’emmener, on abuse de la buvette de l’autre mais l’important c’est d’aller chercher le fût de bière avant tout !",
+      "2": "17h - Armé de ses valises et des 74 litres d’alcool, le groupe débarque à la découverte du domaine de la Hardonnière et premier constat : le photographe du site est nul à chier. Le domaine est gigantesque, jardin, piscine, salle des fêtes, jacuzzi, ambiance champêtre au rendez-vous."
+    },
 
-        "pictures": [],
-        "sentences": ""
+    "pictures": [
+      "20230812_1.jpg",
+      "20230812_2.jpg",
+      "20230812_3.jpg",
+      "20230812_4.jpg",
+      "20230812_5.jpg",
+      "20230812_6.jpg",
+      "20230812_7.jpg"
+    ],
+    "sentences": ""
+  },
+  {
+    "id": "Dimanche13",
+    "title": "Dimanche 13 Août",
+    "texts": {
+      "1": "La semaine de barbecue est officiellement ouverte ! Déménagement des tables dans la pelouse et premier grand déjeuner tous ensemble à l’ombre des arbres les pieds dans l’herbe. Journée plaisir, journée loisirs : piscine, billard, fléchettes et hamac. Le bonheur de cet endroit se révèle alors à nous : le choix d’être ensemble au même endroit en faisant les choses comme on l’entend sans être les uns sur les autres.",
+      "2": "Mais la vraie question du jour : sauce barbecue ou sauce béarnaise ?"
     },
-    {
-        "id": "Dimanche13",
-        "title": "Dimanche 13 Août",
-        "texts": {
-            "1": "La semaine de barbecue est officiellement ouverte ! Déménagement des tables dans la pelouse et premier grand déjeuner tous ensemble à l’ombre des arbres les pieds dans l’herbe. Journée plaisir, journée loisirs : piscine, billard, fléchettes et hamac. Le bonheur de cet endroit se révèle alors à nous : le choix d’être ensemble au même endroit en faisant les choses comme on l’entend sans être les uns sur les autres.",
-            "2": "Mais la vraie question du jour : sauce barbecue ou sauce béarnaise ?"
-        },
-        "pictures": [],
-        "sentences": ""
+    "pictures": [
+      "20230813_1.jpg",
+      "20230813_2.jpg",
+      "20230813_3.jpg",
+      "20230813_4.jpg",
+      "20230813_5.jpg",
+      "20230813_6.jpg"
+    ],
+    "sentences": ""
+  },
+  {
+    "id": "Lundi14",
+    "title": "Lundi 14 Août",
+    "texts": {
+      "1": "Vignes, accrobranche et four à pizza",
+      "2": "Session accrobranche en forêt pour le petit groupe d’aventuriers. Jade et son magnifique grand écart ont marqué les esprits !",
+      "3": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi."
     },
-    {
-        "id": "Lundi14",
-        "title": "Lundi 14 Août",
-        "texts": {
-            "1": "Vignes, accrobranche et four à pizza",
-            "2": "Session accrobranche en forêt pour le petit groupe d’aventuriers. Jade et son magnifique grand écart ont marqué les esprits !",
-            "3": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi."
-        },
-        "pictures": [],
-        "sentences": "“ Faut fermer la porte du four à pizza ou pas ?”"
+    "pictures": [
+      "20230814_1.jpg",
+      "20230814_2.jpg",
+      "20230814_3.jpg",
+      "20230814_4.jpg",
+      "20230814_5.jpg",
+      "20230814_6.jpg",
+      "20230814_7.jpg"
+    ],
+    "sentences": "“ Faut fermer la porte du four à pizza ou pas ?”"
+  },
+  {
+    "id": "Mardi15",
+    "title": "Mardi 15 Août",
+    "texts": {
+      "1": "Insta VS Réalité"
     },
-    {
-        "id": "Mardi15",
-        "title": "Mardi 15 Août",
-        "texts": {
-            "1": "Insta VS Réalité"
-        },
-        "pictures": [],
-        "sentences": "“Ton mec il aime les défis ? “"
+    "pictures": [
+      "20230815_1.jpg",
+      "20230815_2.jpg",
+      "20230815_3.jpg",
+      "20230815_4.jpg",
+      "20230815_5.jpg",
+      "20230815_6.jpg",
+      "20230815_7.jpg",
+      "20230815_8.jpg",
+      "20230815_9.jpg"
+    ],
+    "sentences": "“Ton mec il aime les défis ? “"
+  },
+  {
+    "id": "Mercredi16",
+    "title": "Mercredi 16 Août",
+    "texts": {
+      "1": "Annecdote : Petite visite de cave matinale pour le petit groupe. Promenade à pied chez les voisins de la Hardonnière pour découvrir de superbes massifs de mures acidulées et un établissement fermés. Quelques cailloux plus tard, nous rejoignons en voiture “le Domaine des 4 vents” à Cravant-les-Côteaux pour une dégustation multiple qui fera des heureux et des nauséeux.",
+      "2": "Visite de la forteresse de Chinon avec au programme Escape Game monumental !",
+      "3": "Annecdote : Arrivée de Vincent au domaine qui découvre qu’il va dormir... dans sa voiture !"
     },
-    {
-        "id": "Mercredi16",
-        "title": "Mercredi 16 Août",
-        "texts": {
-            "1": "Annecdote : Petite visite de cave matinale pour le petit groupe. Promenade à pied chez les voisins de la Hardonnière pour découvrir de superbes massifs de mures acidulées et un établissement fermés. Quelques cailloux plus tard, nous rejoignons en voiture “le Domaine des 4 vents” à Cravant-les-Côteaux pour une dégustation multiple qui fera des heureux et des nauséeux.",
-            "2": "Visite de la forteresse de Chinon avec au programme Escape Game monumental !",
-            "3": "Annecdote : Arrivée de Vincent au domaine qui découvre qu’il va dormir... dans sa voiture !"
-        },
-        "pictures": [],
-        "sentences": "“I believe i can flyyyy”"
+    "pictures": [
+      "20230816_1.jpg",
+      "20230816_2.jpg",
+      "20230816_3.jpg",
+      "20230816_4.jpg",
+      "20230816_5.jpg",
+      "20230816_6.jpg",
+      "20230816_7.jpg",
+      "20230816_8.jpg",
+      "20230816_9.jpg",
+      "20230816_10.jpg",
+      "20230816_11.jpg"
+    ],
+    "sentences": "“I believe i can flyyyy”"
+  },
+  {
+    "id": "Jeudi17",
+    "title": "Jeudi 17 Août",
+    "texts": {
+      "1": "Alors que les journées défilent et que les châteaux ne se visitent toujours pas, le petit groupe exclusivement masculin se rend au musée des blindés de Saumur pour une exposition de 800 chars sur plus de 22 000m².",
+      "2": "La soirée continuera autour de quatre belles côtes de bœuf au barbecue",
+      "3": "La soirée se termine avec un concours de plats légendaires où tout le monde finira à l’eau, avec ou sans consentement. Cédric le premier !"
     },
-    {
-        "id": "Jeudi17",
-        "title": "Jeudi 17 Août",
-        "texts": {
-            "1": "Alors que les journées défilent et que les châteaux ne se visitent toujours pas, le petit groupe exclusivement masculin se rend au musée des blindés de Saumur pour une exposition de 800 chars sur plus de 22 000m².",
-            "2": "La soirée continuera autour de quatre belles côtes de bœuf au barbecue",
-            "3": "La soirée se termine avec un concours de plats légendaires où tout le monde finira à l’eau, avec ou sans consentement. Cédric le premier !"
-        },
-        "pictures": [],
-        "sentences": ""
+    "pictures": [
+      "20230817_1.jpg",
+      "20230817_2.jpg",
+      "20230817_3.jpg",
+      "20230817_4.jpg",
+      "20230817_5.jpg",
+      "20230817_6.jpg",
+      "20230817_7.jpg"
+    ],
+    "sentences": ""
+  },
+  {
+    "id": "Vendredi18",
+    "title": "Vendredi 18 Août",
+    "texts": {
+      "1": {
+        "name": "Olympiades Chinon 2023",
+        "list": [
+          "Petit bac",
+          "Circuit",
+          "Dégustation à l’aveugle",
+          "Cache cache (qui n’a pas eu lieu)",
+          "Fléchettes"
+        ]
+      },
+      "2": {
+        "name": "Quatre équipes",
+        "list": [
+          "Cédric, Didier, Gaëlle, Morgane",
+          "Laurine, Jérémy, Sylvain, Alexandre (petit)",
+          "Axel, Muriel, Jade, Vincent",
+          "Elodie, Sandrine, Camille, Alex"
+        ]
+      }
     },
-    {
-        "id": "Vendredi18",
-        "title": "Vendredi 18 Août",
-        "texts": {
-            "1": {
-                "name": "Olympiades Chinon 2023",
-                "list": ["Petit bac", "Circuit", "Dégustation à l’aveugle", "Cache cache (qui n’a pas eu lieu)", "Fléchettes"]
-            },
-            "2": {
-                "name": "Quatre équipes",
-                "list": [
-                    "Cédric, Didier, Gaëlle, Morgane",
-                    "Laurine, Jérémy, Sylvain, Alexandre (petit)",
-                    "Axel, Muriel, Jade, Vincent",
-                    "Elodie, Sandrine, Camille, Alex"
-                ]
-            }
-        },
-        "pictures": [],
-        "sentences": ""
-    }
+    "pictures": [
+      "20230818_1.jpg",
+      "20230818_2.jpg",
+      "20230818_3.jpg",
+      "20230818_4.jpg",
+      "20230818_5.jpg"
+    ],
+    "sentences": ""
+  }
 ]
