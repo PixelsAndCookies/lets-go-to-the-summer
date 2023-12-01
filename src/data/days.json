@@ -8,13 +8,41 @@
         },
 
         "pictures": [
-            "pictures/2023/20230812/20230812_1.jpg",
-            "pictures/2023/20230812/20230812_2.jpg",
-            "pictures/2023/20230812/20230812_3.jpg",
-            "pictures/2023/20230812/20230812_4.jpg",
-            "pictures/2023/20230812/20230812_5.jpg",
-            "pictures/2023/20230812/20230812_6.jpg",
-            "pictures/2023/20230812/20230812_7.jpg"
+            {
+                "id": 2023081201,
+                "src": "pictures/2023/20230812/20230812_1.jpg",
+                "alt": "Photo de la forteresse royal de Chinon vue de l'aire de pic-nic"
+            },
+            {
+                "id": 2023081202,
+                "src": "pictures/2023/20230812/20230812_2.jpg",
+                "alt": "Photo de la forteresse royal de Chinon vue du parking"
+            },
+            {
+                "id": 2023081203,
+                "src": "pictures/2023/20230812/20230812_3.jpg",
+                "alt": "Photo des vignes de la Hardonnière"
+            },
+            {
+                "id": 2023081204,
+                "src": "pictures/2023/20230812/20230812_4.jpg",
+                "alt": "Photo du puit de la Hardonnière"
+            },
+            {
+                "id": 2023081205,
+                "src": "pictures/2023/20230812/20230812_5.jpg",
+                "alt": "Photo de la salle des fêtes de la Hardonnière"
+            },
+            {
+                "id": 2023081206,
+                "src": "pictures/2023/20230812/20230812_6.jpg",
+                "alt": "Photo du jaccuzzi de la Hardonnière"
+            },
+            {
+                "id": 2023081207,
+                "src": "pictures/2023/20230812/20230812_7.jpg",
+                "alt": "Photo de la piscine de la Hardonnière"
+            }
         ],
         "quotes": null
     },
@@ -26,12 +54,36 @@
             "2": "Mais la vraie question du jour : sauce barbecue ou sauce béarnaise ?"
         },
         "pictures": [
-            "pictures/2023/20230813/20230813_1.jpg",
-            "pictures/2023/20230813/20230813_2.jpg",
-            "pictures/2023/20230813/20230813_3.jpg",
-            "pictures/2023/20230813/20230813_4.jpg",
-            "pictures/2023/20230813/20230813_5.jpg",
-            "pictures/2023/20230813/20230813_6.jpg"
+            {
+                "id": 2023081301,
+                "src": "pictures/2023/20230813/20230813_1.jpg",
+                "alt": "Photo d'Alex et Axel au barbecue"
+            },
+            {
+                "id": 2023081302,
+                "src": "pictures/2023/20230813/20230813_2.jpg",
+                "alt": "Photo d'une partie de billard avec Baptiste, Laurine et Axel"
+            },
+            {
+                "id": 2023081303,
+                "src": "pictures/2023/20230813/20230813_3.jpg",
+                "alt": "Photo de Didier dans le hamac"
+            },
+            {
+                "id": 2023081304,
+                "src": "pictures/2023/20230813/20230813_4.jpg",
+                "alt": "Photo de la piscine avec Alex, Alexandre, Baptiste et Sylvain"
+            },
+            {
+                "id": 2023081305,
+                "src": "pictures/2023/20230813/20230813_5.jpg",
+                "alt": "Photo du repas de midi avec tout le monde"
+            },
+            {
+                "id": 2023081306,
+                "src": "pictures/2023/20230813/20230813_6.jpg",
+                "alt": "Photo du repas de midi"
+            }
         ],
         "quotes": null
     },
@@ -44,12 +96,36 @@
             "3": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi."
         },
         "pictures": [
-            "pictures/2023/20230814/20230814_1.jpg",
-            "pictures/2023/20230814/20230814_2.jpg",
-            "pictures/2023/20230814/20230814_3.jpg",
-            "pictures/2023/20230814/20230814_4.gif",
-            "pictures/2023/20230814/20230814_5.jpg",
-            "pictures/2023/20230814/20230814_6.jpg"
+            {
+                "id": 2023081401,
+                "src": "pictures/2023/20230814/20230814_1.jpg",
+                "alt": "Photo d'un tournesol"
+            },
+            {
+                "id": 2023081402,
+                "src": "pictures/2023/20230814/20230814_2.jpg",
+                "alt": "Photo de grappe de raisin dans les vignes"
+            },
+            {
+                "id": 2023081403,
+                "src": "pictures/2023/20230814/20230814_3.jpg",
+                "alt": "Photo du barbecue"
+            },
+            {
+                "id": 2023081404,
+                "src": "pictures/2023/20230814/20230814_4.gif",
+                "alt": "Gif de l'après-midi accrobranche"
+            },
+            {
+                "id": 2023081405,
+                "src": "pictures/2023/20230814/20230814_5.jpg",
+                "alt": "Photo de l'apéro du soir"
+            },
+            {
+                "id": 2023081406,
+                "src": "pictures/2023/20230814/20230814_6.jpg",
+                "alt": "Photo d'une pizza entrain de cuire dans le four à pizza"
+            }
         ],
         "quotes": "“ Faut fermer la porte du four à pizza ou pas ?”"
     },
@@ -60,15 +136,51 @@
             "1": "Insta VS Réalité"
         },
         "pictures": [
-            "pictures/2023/20230815/20230815_1.jpg",
-            "pictures/2023/20230815/20230815_2.jpg",
-            "pictures/2023/20230815/20230815_3.jpg",
-            "pictures/2023/20230815/20230815_4.gif",
-            "pictures/2023/20230815/20230815_5.jpg",
-            "pictures/2023/20230815/20230815_6.jpg",
-            "pictures/2023/20230815/20230815_7.jpg",
-            "pictures/2023/20230815/20230815_8.jpg",
-            "pictures/2023/20230815/20230815_9.gif"
+            {
+                "id": 2023081501,
+                "src": "pictures/2023/20230815/20230815_1.jpg",
+                "alt": "Photo de la matinée pétanque avec Didier, Axel et Cédric"
+            },
+            {
+                "id": 2023081502,
+                "src": "pictures/2023/20230815/20230815_2.jpg",
+                "alt": "Photo de la partie de pétanque"
+            },
+            {
+                "id": 2023081503,
+                "src": "pictures/2023/20230815/20230815_3.jpg",
+                "alt": "Photo de la partie de pétanque avec Sylvain, Didier et Alex"
+            },
+            {
+                "id": 2023081504,
+                "src": "pictures/2023/20230815/20230815_4.gif",
+                "alt": "Gif de la douche surprise de Cédric"
+            },
+            {
+                "id": 2023081505,
+                "src": "pictures/2023/20230815/20230815_5.jpg",
+                "alt": "Photo d'un verre de vin à côté d'un liminaire avec un couché de soleil en arrière plan"
+            },
+            {
+                "id": 2023081506,
+                "src": "pictures/2023/20230815/20230815_6.jpg",
+                "alt": "Photo des coulisses de la photo du couché de soleil"
+            },
+            {
+                "id": 2023081507,
+                "src": "pictures/2023/20230815/20230815_7.jpg",
+                "alt": "Photo de Sandrine pendant le repas"
+            },
+            {
+                "id": 2023081508,
+                "src": "pictures/2023/20230815/20230815_8.jpg",
+                "alt": "Photo de Murielle, Laurine et Morgane à l'apéro"
+            },
+            {
+                "id": 2023081509,
+                "src": "pictures/2023/20230815/20230815_9.gif",
+                "alt": "Gif de Morgane et Laurine qui font des grimaces"
+            }
         ],
         "quotes": "“Ton mec il aime les défis ? “"
     },
@@ -81,17 +193,61 @@
             "3": "Annecdote : Arrivée de Vincent au domaine qui découvre qu’il va dormir... dans sa voiture !"
         },
         "pictures": [
-            "pictures/2023/20230816/20230816_1.jpeg",
-            "pictures/2023/20230816/20230816_2.jpg",
-            "pictures/2023/20230816/20230816_3.jpg",
-            "pictures/2023/20230816/20230816_4.jpg",
-            "pictures/2023/20230816/20230816_5.jpg",
-            "pictures/2023/20230816/20230816_6.jpg",
-            "pictures/2023/20230816/20230816_7.jpg",
-            "pictures/2023/20230816/20230816_8.jpg",
-            "pictures/2023/20230816/20230816_9.jpg",
-            "pictures/2023/20230816/20230816_10.jpg",
-            "pictures/2023/20230816/20230816_11.gif"
+            {
+                "id": 2023081601,
+                "src": "pictures/2023/20230816/20230816_1.jpeg",
+                "alt": "Photo de Didier lors de la dégustation de vin"
+            },
+            {
+                "id": 2023081602,
+                "src": "pictures/2023/20230816/20230816_2.jpg",
+                "alt": "Photo des ruines de la forteresse de Chinon"
+            },
+            {
+                "id": 2023081603,
+                "src": "pictures/2023/20230816/20230816_3.jpg",
+                "alt": "Photo de la ville de Chinon vue depuis la forteresse"
+            },
+            {
+                "id": 2023081604,
+                "src": "pictures/2023/20230816/20230816_4.jpg",
+                "alt": "Photo d'Axel et Laurine"
+            },
+            {
+                "id": 2023081605,
+                "src": "pictures/2023/20230816/20230816_5.jpg",
+                "alt": "Photo du squelette en armure sur son trône"
+            },
+            {
+                "id": 2023081606,
+                "src": "pictures/2023/20230816/20230816_6.jpg",
+                "alt": "Photo d'Axel, Laurine, Alex, Morgane, Didier et Sandrine pendant l'escape game"
+            },
+            {
+                "id": 2023081607,
+                "src": "pictures/2023/20230816/20230816_7.jpg",
+                "alt": "Photo de Sandrine, Laurine, Alex, Jade, Axel et Baptiste autour du squelette"
+            },
+            {
+                "id": 2023081608,
+                "src": "pictures/2023/20230816/20230816_8.jpg",
+                "alt": "Photo de Sylvain et du squelette"
+            },
+            {
+                "id": 2023081609,
+                "src": "pictures/2023/20230816/20230816_9.jpg",
+                "alt": "Photo des templiers Alex et Axel"
+            },
+            {
+                "id": 2023081610,
+                "src": "pictures/2023/20230816/20230816_10.jpg",
+                "alt": "Photo d'Alex en templier"
+            },
+            {
+                "id": 2023081611,
+                "src": "pictures/2023/20230816/20230816_11.gif",
+                "alt": "Gif d'Alex et Axel en templier"
+            }
         ],
         "quotes": "“I believe i can flyyyy”"
     },
@@ -104,14 +260,46 @@
             "3": "La soirée se termine avec un concours de plats légendaires où tout le monde finira à l’eau, avec ou sans consentement. Cédric le premier !"
         },
         "pictures": [
-            "pictures/2023/20230817/20230817_1.jpg",
-            "pictures/2023/20230817/20230817_2.jpg",
-            "pictures/2023/20230817/20230817_3.jpg",
-            "pictures/2023/20230817/20230817_4.jpg",
-            "pictures/2023/20230817/20230817_5.jpg",
-            "pictures/2023/20230817/20230817_6.gif",
-            "pictures/2023/20230817/20230817_7.jpg",
-            "pictures/2023/20230817/20230817_8.gif"
+            {
+                "id": 2023081701,
+                "src": "pictures/2023/20230817/20230817_1.jpg",
+                "alt": "Photo de l'entrée du musée des blindés"
+            },
+            {
+                "id": 2023081702,
+                "src": "pictures/2023/20230817/20230817_2.jpg",
+                "alt": "Photo de Didier à côté d'un char Tigre Royal"
+            },
+            {
+                "id": 2023081703,
+                "src": "pictures/2023/20230817/20230817_3.jpg",
+                "alt": "Photo de Cédric à côté d'un char Tigre II "
+            },
+            {
+                "id": 2023081704,
+                "src": "pictures/2023/20230817/20230817_4.jpg",
+                "alt": "Photo d'un morceau du mur de Berlin"
+            },
+            {
+                "id": 2023081705,
+                "src": "pictures/2023/20230817/20230817_5.jpg",
+                "alt": "Photo des 4 côtes de boeuf cuites sur le barbecue"
+            },
+            {
+                "id": 2023081706,
+                "src": "pictures/2023/20230817/20230817_6.gif",
+                "alt": "Gif d'un plat arrière d'Axel, Sylvain et Alex"
+            },
+            {
+                "id": 2023081707,
+                "src": "pictures/2023/20230817/20230817_7.jpg",
+                "alt": "Photo des 4 côtes de boeuf sur le barbecue"
+            },
+            {
+                "id": 2023081708,
+                "src": "pictures/2023/20230817/20230817_8.gif",
+                "alt": "Gif du kidnapping de Cédric pour son bain de minuit"
+            }
         ],
         "quotes": null
     },
@@ -140,11 +328,31 @@
             }
         },
         "pictures": [
-            "pictures/2023/20230818/20230818_1.jpg",
-            "pictures/2023/20230818/20230818_2.jpg",
-            "pictures/2023/20230818/20230818_3.jpg",
-            "pictures/2023/20230818/20230818_4.jpg",
-            "pictures/2023/20230818/20230818_5.gif"
+            {
+                "id": 2023081801,
+                "src": "pictures/2023/20230818/20230818_1.jpg",
+                "alt": "Photo d'une pizza maison après cuisson"
+            },
+            {
+                "id": 2023081802,
+                "src": "pictures/2023/20230818/20230818_2.jpg",
+                "alt": "Photo de tous le monde lors de la soirée pizza"
+            },
+            {
+                "id": 2023081803,
+                "src": "pictures/2023/20230818/20230818_3.jpg",
+                "alt": "Photo de tous le monde lors de la soirée pizza"
+            },
+            {
+                "id": 2023081804,
+                "src": "pictures/2023/20230818/20230818_4.jpg",
+                "alt": "Photo des pizzas"
+            },
+            {
+                "id": 2023081805,
+                "src": "pictures/2023/20230818/20230818_5.gif",
+                "alt": "Gif des têtes de tout le monde"
+            }
         ],
         "quotes": null
     }
