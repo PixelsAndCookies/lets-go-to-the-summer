@@ -1,32 +1,40 @@
-.articleDay { // style global à chacun des articles ( ensemble des jours )
+.dayCard { // style global à chacun des articles ( ensemble des jours )
     background-color: $color-white;
-    border: 2px dashed black;
+    box-shadow: $color-grey 0.1rem 0.1rem 1rem;
     border-radius: 20px;
-    h2 {
+    padding: 5rem;
+    margin:5rem;
+    h2 {        
         text-align: center;
+        margin-bottom: 3rem;
         font-family: titlePolice;
         color: $color-grey;
     }
+    &__photo { // -------TEST-------- //
+        width: 200px;
+    }
     // Style propre à l'article en question ( chaque jours )
-    &--Samedi12 { 
+    &--Samedi12 { // -------TEST-------- //
+        .text { 
+            color: black;
+        }
+    }
+    &--Dimanche13 { // -------TEST-------- //
         color: red;
     }
-    &--Dimanche13 {
+    &--Lundi14 { // -------TEST-------- //
         color: red;
     }
-    &--Lundi14 {
+    &--Mardi15 { // -------TEST-------- //
         color: red;
     }
-    &--Mardi15 {
+    &--Mercredi16 { // -------TEST-------- //
         color: red;
     }
-    &--Mercredi16 {
+    &--Jeudi17 { // -------TEST-------- //
         color: red;
     }
-    &--Jeudi17 {
-        color: red;
-    }
-    &--Vendredi18 {
+    &--Vendredi18 { // -------TEST-------- //
         color: red;
     }
 }
