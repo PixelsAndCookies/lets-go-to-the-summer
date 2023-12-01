@@ -2,27 +2,33 @@ import days from '../../data/days.json'
 
 export const Day = () => {
     return (
-        <section>
+        <>
             {days.map((day) => {
-                const articleClassName = `articleDay articleDay--${day.id}`
                 return (
-                    <article key={day.id} className={articleClassName}>
+                    <article key={day.id} className={`dayCard dayCard--${day.id}`}>
                         <h2>{day.title}</h2>
-                        <div>
-                            {Object.keys(day.texts).map((textKey) => {
-                                const textsContent = day.texts[textKey]
-                                return (
-                                    <p key={textKey}>
-                                        {typeof textsContent === 'string' ? textsContent : ''}
-                                    </p>
-                                )
-                            })}
-                        </div>
-                        <img src="" alt="" />
-                        <>{day.quotes !== null && <p>{day.quotes}</p>}</>
+                        {Object.keys(day.texts).map((index) => {
+                            return (
+                                <p key={index} className="text">
+                                    {typeof day.texts[index] === 'string' ? day.texts[index] : ''}
+                                </p>
+                            )
+                        })}
+                        {/*{day.contents.map((content) => {
+                            <p key={content.id}>{content.text}</p>
+                        })}*/}
+                        {day.pictures.map((picture) => (
+                            <img
+                                key={picture.id}
+                                className={`dayCard__photo dayCard--${day.id}__photo dayCard--${day.id}__photo--${picture.id}`}
+                                src={`/${picture.src}`}
+                                alt={picture.alt}
+                            />
+                        ))}
+                        <>{day.quotes !== null && <q className="quotes">{day.quotes}</q>}</>
                     </article>
                 )
             })}
-        </section>
+        </>
     )
 }
