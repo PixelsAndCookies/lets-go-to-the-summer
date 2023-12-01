@@ -6,8 +6,13 @@
     height: 15rem;
 }
 
-.holiday-main {    
+.holiday-main {
     padding: 5rem 3rem;
-    background: linear-gradient(180deg, $color-blue, white);
-    
+    background: linear-gradient(
+        $color-blue,
+        $color-white,
+        $color-white,
+        $color-white,
+        $color-blue
+    );
 }
