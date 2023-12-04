@@ -12,7 +12,7 @@
     {
         "id": 2,
         "title": "FAIT DIVERS",
-        "content": "Un homme brutalise une adolescente avec un luminaire"
+        "content": "Un homme brutalise une adolescente avec un luminaire."
     },
     {
         "id": 3,
@@ -22,21 +22,21 @@
     {
         "id": 4,
         "title": "ANIMALIER",
-        "content": "La reine des mouettes portée disparue"
+        "content": "La reine des mouettes portée disparue."
     },
     {
         "id": 5,
         "title": "SPORT",
-        "content": "La première édition des Olympiades s'est déroulée.... à Chinon"
+        "content": "La première édition des Olympiades s'est déroulée.... à Chinon."
     },
     {
         "id": 6,
         "title": "CULTURE",
-        "content": "Le salon du barbecue ouvrira à nouveau ses portes en 2024"
+        "content": "Le salon du barbecue ouvrira à nouveau ses portes en 2024."
     },
     {
         "id": 7,
         "title": "NATURE",
-        "content": "Un viticulteur abasourdis suite à la disparition de ses vignes dans la nuit, le mystère reste entier"
+        "content": "Un viticulteur abasourdis suite à la disparition de ses vignes dans la nuit, le mystère reste entier."
     }
 ]
