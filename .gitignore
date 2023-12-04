@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 public/pictures/2023/*
+src/style/main.css
 src/style/main.css.map
 
 # Editor directories and files
