@@ -4,18 +4,35 @@
     font-family: mainPolice;
     padding: 0.5rem;
     font-size: 3rem;
-    font-weight:800;
+    font-weight: 800;
 }
-.news-text {
+.news-text-bg {
     background-color: $color-pink;
     color: $color-grey;
     font-family: mainPolice;
-    font-weight:600;
+    font-weight: 600;
     padding: 2rem 1rem;
     margin: 1.5rem 0;
     font-size: 2rem;
 }
-
+.news-container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+@keyframes animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.news-text {
+    animation: animation 10s linear infinite;
+}
+.news-text-title {
+    font-weight: 900;
+}
 @media screen and (min-width: 860px) {
     .news-categ {
         font-size: 4rem;
