@@ -7,11 +7,32 @@ header.home-header{
 .main-container {
     width: 100%;
     margin: 6rem auto;
-}
 
+    & > p {
+        color: $color-blue;
+        font-family: titlePolice;
+        font-size:5rem;
+        text-align:center;
+
+        span{
+            font-family:mainPolice;
+            font-weight:700;
+            color:$color-grey;
+            font-size:3rem;
+        }
+    }
+}
 
 @media screen and (min-width: 860px) {
     .main-container {
-            width: 80%;
+        width: 80%;
+        
+        & > p{
+            font-size:6.5rem;
+        
+            span{
+                font-size:4.5rem;
+            }
+        }
     }
 }
