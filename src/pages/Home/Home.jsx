@@ -12,11 +12,13 @@ export const Home = () => {
                 <path d="M99.6363 832.288C47.4015 853.376 -7.72616 809.016 1.69682 753.479L119.299 60.3521C128.495 6.15103 192.591 -18.1632 235.422 16.3015L769.73 446.24C812.561 480.705 802.525 548.518 751.547 569.099L99.6363 832.288Z" fill="url(#paint0_linear_220_37)"/>
                 <defs>
                     <linearGradient id="paint0_linear_220_37" x1="244.994" y1="767.729" x2="439.159" y2="200.293" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#0996A5"/>
-                    <stop offset="1" stop-color="#D9D9D9" stop-opacity="0"/>
+                    <stop stopColor="#0996A5"/>
+                    <stop offset="1" stopColor="#D9D9D9" stopOpacity="0"/>
                     </linearGradient>
                 </defs>
             </svg>
+
+            
 
 
             <header className="home-header">
@@ -25,10 +27,10 @@ export const Home = () => {
             <main className="home-main">
                 <BreakingNews />
                 <div className="main-container">
-                    <h1>
+                    <p>
                         Souvenirs d&apos;été <br />
                         <span>Les aventures fun-tastiques en famille</span>
-                    </h1>
+                    </p>
                     <Description content="presentation" />
                     <Counter />
                     <Cards />

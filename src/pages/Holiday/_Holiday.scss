@@ -1,9 +1,5 @@
 .holiday-header {
-    border-radius: 0 0 2rem 2rem;
-    box-shadow: $color-grey 0.5rem 0.5rem 0.5rem;
-    display: flex;
-    justify-content: space-between;
-    height: 15rem;
+    display:block;
 }
 
 .holiday-main {
@@ -15,4 +11,15 @@
         $color-white,
         $color-blue
     );
+}
+
+@media screen and (min-width: 860px) {
+    .holiday-header {
+        border-radius: 0 0 2rem 2rem;
+        box-shadow: $color-grey 0.5rem 0.5rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        height: 15rem;
+        padding: 0 3rem;
+    }
 }

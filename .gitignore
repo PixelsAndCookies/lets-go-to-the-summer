@@ -29,3 +29,5 @@ src/style/main.css.map
 .eslintrc.cjs
 .prettierrc
 yarn.lock
+src/style/main.css.map
+src/style/main.css
