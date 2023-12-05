@@ -2,23 +2,26 @@ import descriptionJson from '../../data/description.json';
 
 export const Description = (props) => {
     const content = descriptionJson[props.content];
-    const infos = descriptionJson.informations;
-
-    if (content === infos) {
-        return (
-            <article key={content.id} className="description informations">
-                <h2>{content.title}</h2>
-                <div className="text">
-                    <p>{content.calendrier}</p>
-                    <p>{content.localisation}</p>
-                    <p>{content.organisation}</p>
-                    <p>{content.cagnotte}</p>
-                </div>
-            </article>
+    if (content.id === "informations") {
+        const items = content.items;
+        return (   
+        <article key={content.id} className={content.id + " description"}>
+            <h2>{content.title}</h2>
+            <div className="content">
+                {items.map((item) => (
+                    <div>
+                        {item.lien ? 
+                        <a href={item.lien} target="_blank"><img src={item.icon} alt={item.id}/></a> : 
+                        <img src={item.icon} alt={item.id}/>} 
+                        <p dangerouslySetInnerHTML={ {__html: item.text} }></p>
+                    </div>
+                ))}
+            </div>
+        </article> 
         );
     } else {
         return (
-            <article key={content.id} className="description presentation">
+            <article key={content.id} className={content.id + " description"}>
                 <p>{content.text}</p>
             </article>
         );

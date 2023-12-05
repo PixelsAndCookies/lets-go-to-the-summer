@@ -15,9 +15,32 @@
     "informations": {
         "id": "informations",
         "title": "Informations",
-        "calendrier": "C:UsersRoullandDesktopDevDuDimancheIconescalendrier.png",
-        "localisation": "",
-        "organisation": "",
-        "cagnotte": ""
+        "items":[
+            {
+                "id": "calendrier",
+                "text":"Prochaines vacances </br> Du 13 au 19 Juillet 2024",
+                "lien": "",
+                "icon": "/src/assets/icons/calendrier.png"
+            },
+            {
+              "id": "localisation",
+              "text": "4 La Hardonnière, 37500 Cravant-les-Côteaux",
+              "lien": "https://www.google.com/maps/place/La+Hardonni%C3%A8re+-+le+coeur+de+la+Loire/@47.1506205,0.2986211,15.75z/data=!4m15!1m8!3m7!1s0x47fd403e119e4861:0xa26d69a17b207c4e!2sLa+Hardonni%C3%A8re,+37500+Cravant-les-C%C3%B4teaux!3b1!8m2!3d47.1513595!4d0.3016296!16s%2Fg%2F1thcm3zt!3m5!1s0x47fd4159908753d9:0xf2d8fee1c99567c!8m2!3d47.1522324!4d0.30229!16s%2Fg%2F11m0py14vt?entry=ttu",
+              "icon": "/src/assets/icons/carte.png"
+            },
+            {
+              "id": "organisation",
+              "text":"Fichier excel partagé",
+              "lien": "https://docs.google.com/spreadsheets/d/1TFABSd0NWloROtwJBvOaC0TJCzzBrsNa/edit#gid=1922217425",
+              "icon": "/src/assets/icons/exceller.png"
+            },
+            {
+              "id": "cagnotte",
+              "text":"Cagnotte",
+              "lien": "https://app.lyf.eu/pot/fr/24a109f8-2402-4999-9008-ab127f299e22",
+              "icon": "/src/assets/icons/tirelire.png"
+            }
+        ]
+      
     }
 }

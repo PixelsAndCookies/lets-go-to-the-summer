@@ -1,36 +1,54 @@
 article.description {
     background-color: rgba(255, 255, 255, 0.95);
     color: $color-grey;
-    width: 100%;
-    height: auto;
     text-align: center;
-    padding: 2rem;
+    padding: 3rem;
     margin: 5rem 0;
     box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    line-height: 2.5rem;
-
+    
     h2 {
+        font-size:4rem;
         margin-bottom: 2rem;
-        color: $color-red;
+        color: $color-yellow;
         font-family: titlePolice;
-        p {
-            margin-bottom: 0;
-            padding: 0;
-        }
     }
-    &.informations .text {
+    
+    &.informations .content {
         display: flex;
-        margin: 1rem 0;
+        justify-content: space-around;
         flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: flex-start;
-        margin: 1rem 0;
-        &.info_2023 {
-            padding: 0 15rem;
+        flex-wrap: wrap;
+        align-items: baseline;
+
+        div{
+            width:calc(100% / 2 - 4rem);
+
+            img{
+                max-height:10rem;
+                margin-bottom:1rem;
+            }
         }
     }
+
     &.presentation {
         flex-direction: column;
+    }
+}
+
+
+@media screen and (min-width: 860px) {
+    article.description {
+        h2 {
+            font-size: 5rem;
+        }
+
+        &.informations .content {
+            flex-wrap: nowrap;
+            
+            div {
+                width: calc(100% / 4 - 4rem);
+            }
+        }
     }
 }
