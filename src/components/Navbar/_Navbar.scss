@@ -1,29 +1,34 @@
 nav {   
-    display: none;
+    display: flex;
+    width: 60%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom:3rem;
 
     ul {
         display: flex;
         justify-content: space-around;
 
-        li {
+        li{
+            display:flex;
+            align-items: center;
             background-color: $color-blue;
-            border-radius: 1rem;
-            padding: 0.5rem 3rem ;
-
-            .navLink {
+            border-radius: 2rem;
+            text-align: center;
+            padding: 1rem 3rem;
+            a {
+                
                 color: $color-white;
                 font-family: mainPolice;
+                font-size: 3rem;
                 font-weight: bold;
-                text-decoration: none;
             }
-        }
+        } 
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (max-width: 860px) {
     nav{
-        
+        display:none;
     }
 }

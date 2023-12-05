@@ -1,22 +1,24 @@
+
+body:has(.holiday-header){
+    background: linear-gradient($color-blue,
+                $color-white,
+                $color-white,
+                $color-white,
+                $color-blue );
+}
+
 .holiday-header {
     display:block;
+    background-color:$color-white;
 }
 
 .holiday-main {
-    padding: 5rem 3rem;
-    background: linear-gradient(
-        $color-blue,
-        $color-white,
-        $color-white,
-        $color-white,
-        $color-blue
-    );
+    padding: 5rem 3rem; 
 }
 
 @media screen and (min-width: 860px) {
     .holiday-header {
         border-radius: 0 0 2rem 2rem;
-        box-shadow: $color-grey 0.5rem 0.5rem 0.5rem;
         display: flex;
         justify-content: space-between;
         height: 15rem;
