@@ -18,9 +18,6 @@ export const Home = () => {
                 </defs>
             </svg>
 
-            
-
-
             <header className="home-header">
                 <Logo />
             </header>
