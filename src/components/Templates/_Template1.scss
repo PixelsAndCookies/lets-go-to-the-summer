@@ -1,0 +1,42 @@
+&__samedi12 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__text {
+        padding: 5rem 15rem;
+        &--1 {
+            order: 0;
+        }
+        &--2 {
+            order: 2;
+        }
+    }
+    &__container-img {
+        order: 1;      
+        & img {
+            width: 40rem;
+            margin: 0.2rem;
+            padding: 0.8rem;
+            border: 0.1rem solid lightgrey; // A REMPLACER PAR UNE VARIABLE DE COULEUR
+            border-radius: 1rem;
+            object-fit: fill;
+        }
+        &--2023081202 {
+            height: 25rem;
+        }
+        &--2023081204 {
+            height: 30rem;
+        }
+        &--2023081207 {
+            height: 25rem;
+        }
+    }
+}
+&__dimanche13 {
+    display: flex;
+    &__container-img {
+        & img {                
+            width: 30rem;
+        }
+    }
+}
