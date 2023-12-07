@@ -1,18 +1,15 @@
-&__samedi12 {
+.samedi12 {
     display: flex;
     flex-direction: column;
     text-align: center;
-    &__text {
+    &__p {
         padding: 5rem 15rem;
-        &--1 {
-            order: 0;
-        }
-        &--2 {
+        &--text2 {
             order: 2;
         }
     }
-    &__container-img {
-        order: 1;      
+
+    &__containerImg {
         & img {
             width: 40rem;
             margin: 0.2rem;
@@ -29,14 +26,6 @@
         }
         &--2023081207 {
             height: 25rem;
-        }
-    }
-}
-&__dimanche13 {
-    display: flex;
-    &__container-img {
-        & img {                
-            width: 30rem;
         }
     }
 }
