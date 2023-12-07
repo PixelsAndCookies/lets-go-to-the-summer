@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import breakingNews from '../../data/breaking-news';
 
@@ -7,7 +8,7 @@ export const BreakingNews = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setSelectedId((prevId) => (prevId + 1) % breakingNews.length);
-        }, 2000);
+        }, breakingNews[selectedId]);
 
         return () => {
             clearInterval(interval);
@@ -15,26 +16,22 @@ export const BreakingNews = () => {
     }, []);
 
     return (
-        <div>
-            {breakingNews.map((news) => (
-                <div
-                    key={news.id}
-                    className={`news-container ${
-                        news.id === selectedId ? 'visible' : 'hidden'
-                    }`}
-                >
-                    <p className="news-categ">BREAKING NEWS</p>
-                    <div className="news-text-bg">
-                        <p className="news-text">
+        <div className="news-container">
+            <p className="news-categ">BREAKING NEWS</p>
+            <div className="news-text-bg news-text">
+                <p>
+                    {breakingNews.map((news) => (
+                        <React.Fragment key={news.id}>
+                            {' '}
                             <strong className="news-text-title">
                                 {news.title}
-                            </strong>{' '}
-                            : {news.content}
-                        </p>
-                    </div>
-                </div>
-            ))}
+                            </strong>
+                            {' : '}
+                            {news.content}
+                        </React.Fragment>
+                    ))}
+                </p>
+            </div>
         </div>
     );
 };
-

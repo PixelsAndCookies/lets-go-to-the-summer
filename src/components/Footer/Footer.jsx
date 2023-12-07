@@ -1,22 +1,18 @@
-import avatargroup from '/pictures/avatars_group_cut.png'
+import avatargroup from '/pictures/avatars_group_cut.png';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        
         <footer>
             <img src={avatargroup} alt="" />
-            <div className='content'>
-                <ul>
-                    <li>A Propos</li>
-                    <li>FAQ</li>
-                    <li>Qui sommes-nous ?</li>
-                </ul>
-                <ul>
-                    <li>Contact</li>
-                    <li>CGU</li>
-                    <li>Mentions légales</li>
-                </ul>
-            </div>
+            <ul className="content">
+                <li>
+                    <Link to="/about">A propos</Link>
+                </li>
+                <li>FAQ</li>
+                <li>Licences</li>
+                <li>Made by Studio Balignon-an</li>
+            </ul>
         </footer>
-    )
-}
+    );
+};

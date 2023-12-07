@@ -20,24 +20,23 @@
     overflow: hidden;
 }
 
-.news-text {
-    animation: animation 1s linear infinite;
+.news-text p {
+    animation: text-animation linear 50s infinite;
 }
 
-@keyframes animation {
+@keyframes text-animation {
     0% {
-        transform: translateY(0);
-        opacity: 1;
+        transform: translateX(100%);
     }
     100% {
-        transform: translateY(-40px);
-        opacity: 0;
+        transform: translateX(-770%);
     }
 }
 
 .news-text-title {
     font-weight: 900;
 }
+
 @media screen and (min-width: 860px) {
     .news-categ {
         font-size: 4rem;
