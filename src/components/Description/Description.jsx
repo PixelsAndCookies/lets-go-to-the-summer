@@ -21,8 +21,8 @@ export const Description = (props) => {
         );
     } else {
         return (
-            <article key={content.id} className={content.id + " description"}>
-                <p>{content.text}</p>
+            <article key={content.id} className={content.id + " description"}
+                dangerouslySetInnerHTML={ {__html: content.text} }>
             </article>
         );
     }

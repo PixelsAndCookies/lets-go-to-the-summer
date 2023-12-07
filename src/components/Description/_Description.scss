@@ -31,8 +31,14 @@ article.description {
         }
     }
 
-    &.presentation {
-        flex-direction: column;
+    &.presentation p{
+        margin-bottom:1rem;
+        i{
+            font-style: italic;
+        }
+        b{
+            font-weight: 600;
+        }
     }
 }
 
