@@ -1,0 +1,13 @@
+.dimanche13 {
+    display: flex;
+    &__containerTxt {
+        &__text {
+            color: $color-yellow;
+        }
+    }    
+    &__containerImg {
+        & img {
+            width: 25rem;
+        }
+    }
+}
