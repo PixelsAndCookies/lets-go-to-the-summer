@@ -2,6 +2,7 @@
 @import './variables.scss';
 @import '../pages/Home/Home';
 @import '../pages/Holiday/Holiday';
+@import '../pages/Error404/Error404';
 @import '../components/Logo/Logo';
 @import '../components/Navbar/Navbar';
 @import '../components/Day/Day';
@@ -22,13 +23,13 @@ html {
     font-size: 62.5%;
 }
 
-body{
-    position:relative;
+body {
+    position: relative;
     font-family: mainPolice;
     font-size: 2.3rem;
 }
 
-.App{
+.App {
     overflow: hidden;
     position: relative;
 }
@@ -43,62 +44,75 @@ body{
 
 .red-cercle {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100rem;
     height: 100rem;
-    z-index:-10;
+    z-index: -10;
     border-radius: 50%;
-    background: linear-gradient(330deg, rgba(255, 255, 255, 0) 35%, rgba(206, 72, 71, 1) 100%);
+    background: linear-gradient(
+        330deg,
+        rgba(255, 255, 255, 0) 35%,
+        rgba(206, 72, 71, 1) 100%
+    );
 }
 
-.blue-triangle{
+.blue-triangle {
     position: absolute;
-    top:100%;
-    left:100%;
+    top: 100%;
+    left: 100%;
     width: 100rem;
     height: 100rem;
-    z-index:-10;
+    z-index: -10;
 }
 
 @-webkit-keyframes rotating_1 {
     from {
         -webkit-transform: rotate(0deg);
-        top:0;
+        top: 0;
     }
-    10%{ //2
+    10% {
+        //2
         left: 60%;
-        top:10%;
+        top: 10%;
     }
-    20%{ //3
+    20% {
+        //3
         left: -20%;
         top: 40%;
     }
-    30%{ //4
+    30% {
+        //4
         left: 10%;
         top: 80%;
     }
-    40%{  //5
+    40% {
+        //5
         left: 50%;
         top: 60%;
     }
-    50%{ //6
+    50% {
+        //6
         left: -20%;
         top: 25%;
     }
-    60%{ //7
-        left:25%;
-        top:-20%;
+    60% {
+        //7
+        left: 25%;
+        top: -20%;
     }
-    70% { //8
-        left:70%;
-        top:45%;
+    70% {
+        //8
+        left: 70%;
+        top: 45%;
     }
-    80% { //9
+    80% {
+        //9
         left: -20%;
         top: 60%;
     }
-    90% { //10
+    90% {
+        //10
         left: 25%;
         top: 70%;
     }
@@ -168,7 +182,7 @@ body{
     }
 }
 
-.rotating_1{
+.rotating_1 {
     -webkit-animation: rotating_1 120s linear infinite;
 }
 
