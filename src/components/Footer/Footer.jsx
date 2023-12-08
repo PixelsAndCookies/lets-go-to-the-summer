@@ -9,8 +9,12 @@ export const Footer = () => {
                 <li>
                     <Link to="/about">A propos</Link>
                 </li>
-                <li>FAQ</li>
-                <li>Licences</li>
+                <li>
+                    <Link to="/faq">FAQ</Link>
+                </li>
+                <li>
+                    <Link to="/licences">Licences</Link>
+                </li>
                 <li>Made by Studio Balignon-an</li>
             </ul>
         </footer>

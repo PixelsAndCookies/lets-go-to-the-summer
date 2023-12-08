@@ -1,0 +1,17 @@
+.main-error {
+    display: flex;
+    justify-content: center;
+}
+
+.section-error {
+    width: 50%;
+    height: auto;
+    margin: 10rem 0;
+}
+
+.section-error p {
+    text-align: center;
+    font-family: titlePolice;
+    color: $color-pink;
+    font-size: 10rem;
+}

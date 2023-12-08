@@ -4,6 +4,8 @@ import { Holiday } from './pages/Holiday/Holiday.jsx';
 import { About } from './pages/About/About.jsx';
 import { Footer } from './components/Footer/Footer.jsx';
 import { Error404 } from './pages/Error404/Error404.jsx';
+import { Faq } from './pages/Faq/Faq.jsx';
+import { Licences } from './pages/Licences/Licences.jsx';
 import './style/main.scss';
 
 export default function App() {
@@ -13,6 +15,8 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/holidays/:id" element={<Holiday />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/faq" element={<Faq />} />
+                <Route path="/licences" element={<Licences />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
