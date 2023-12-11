@@ -112,7 +112,7 @@
             },
             {
                 "id": "text3",
-                "text": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi."
+                "text": "L’occasion de profiter du four à pizza commence par la lecture de son mode d’emploi.<br />“ Faut fermer la porte du four à pizza ou pas ?”"
             }
         ],
         "pictures": [
@@ -153,10 +153,22 @@
         "id": "mardi15",
         "title": "Mardi 15 Août",
         "contents": [
-            {
-                "id": "text1",
-                "text": "Insta VS Réalité"
-            }
+          {
+            "id": "text1",
+            "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, debitis suscipit cum accusamus maxime."
+          },
+          {
+            "id": "text2",
+            "text": "Ton mec il aime les défis ? <br /> Perspiciatis reprehenderit molestiae est fugiat eligendi incidunt cumque officia quia aliquid."
+          },
+          {
+            "id": "text3",
+            "text": "Insta VS Réalité"
+          },
+          {
+            "id": "text4",
+            "text": "At esse autem delectus culpa."
+          }
         ],
         "pictures": [
             {
@@ -204,8 +216,7 @@
                 "src": "pictures/2023/20230815/20230815_9.gif",
                 "alt": "Gif de Morgane et Laurine qui font des grimaces"
             }
-        ],
-        "quotes": "“Ton mec il aime les défis ? “"
+        ]
     },
     {
         "id": "mercredi16",

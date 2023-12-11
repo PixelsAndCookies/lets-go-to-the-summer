@@ -14,7 +14,8 @@
             width: 40rem;
             margin: 0.2rem;
             padding: 0.8rem;
-            border: 0.1rem solid lightgrey; // A REMPLACER PAR UNE VARIABLE DE COULEUR
+            background-color:$color-white;
+            border: 0.1rem solid $color-lightgrey;
             border-radius: 1rem;
             object-fit: fill;
         }

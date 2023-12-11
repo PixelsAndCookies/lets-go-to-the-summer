@@ -1,13 +1,62 @@
 .dimanche13 {
     display: flex;
     &__containerTxt {
+        width:25%;
         &__text {
             color: $color-yellow;
         }
     }    
     &__containerImg {
-        & img {
-            width: 25rem;
+        width:75%;
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+
+        figure{
+            background-color:$color-white;
+            border: 0.1rem solid $color-lightgrey;
+            width:27%;
+            margin:1rem;
+            padding:1rem;
+            border-radius:1rem;
+
+            figcaption {
+                text-align: center;
+                font-style: italic;
+            }
         }
+
+        figure:nth-of-type(1){
+            transform: rotate(-13deg) translateX(2rem);
+        }
+
+        figure:nth-of-type(2) {
+            transform:translateY(4rem);
+        }
+
+        figure:nth-of-type(3) {
+            transform: rotate(20deg) translate(-19px, 12px);
+        }
+
+        figure:nth-of-type(4) {
+            transform: rotate(-0.6deg) translate(20px, -20px);
+            width:36%;
+
+        }
+        figure:nth-of-type(5) {
+            transform: rotate(-12deg) translate(-1px, 19px);
+        }
+        figure:nth-of-type(6) {
+                transform:  translate(-10px, -20px);
+        }
+
+
+        
+
+
+
+
     }
 }
