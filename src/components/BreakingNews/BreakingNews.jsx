@@ -1,19 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
 import breakingNews from '../../data/breaking-news';
 
 export const BreakingNews = () => {
-    const [selectedId, setSelectedId] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSelectedId((prevId) => (prevId + 1) % breakingNews.length);
-        }, breakingNews[selectedId]);
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
 
     return (
         <div className="news-container">
