@@ -14,7 +14,6 @@ export const Template2 = ({ day }) => {
                     <figure key={picture.id}
                         className={day.id+"__containerImg--"+picture.id}>
                     <img
-                        
                         src={`/${picture.src}`}
                         alt={picture.alt}
                     />
