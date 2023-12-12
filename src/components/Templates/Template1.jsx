@@ -1,22 +1,23 @@
 export const Template1 = ({ day }) => {
+    const template = "template1";
     return (
-        <section key={day.id} className={day.id}>
+        <section key={day.id} className={template}>
             {day.contents.map((content) => (
-                    <p key={content.id} className={day.id+"__p"+day.id+"__p--"+content.id}>
-                        {content.text}
-                    </p>
+            <p key={content.id} className={content.id}>
+                {content.text}
+            </p>
             ))}
-            <div className={day.id+"__containerImg"}>
-                {day.pictures.map((picture) => (
+            <div className={"containerImg"}>
+                {day.pictures.map((picture,index) => (
                     <img
                         key={picture.id}
-                        className={day.id+"__containerImg--"+picture.id}
+                        className={"picture"+index}
                         src={"/"+picture.src}
                         alt={picture.alt}
                     />
                 ))}
             </div>
-            {day.quotes !== null && <q className={day.id+"__quotes"}>{day.quotes}</q>}
+            {day.quotes !== null && <q className="quotes">{day.quotes}</q>}
         </section>
     )
 }
