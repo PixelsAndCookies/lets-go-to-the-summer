@@ -12,10 +12,6 @@ body:has(.holiday-header){
     background-color:$color-white;
 }
 
-.holiday-main {
-    padding: 5rem 3rem; 
-}
-
 @media screen and (min-width: 860px) {
     .holiday-header {
         border-radius: 0 0 2rem 2rem;
@@ -23,5 +19,8 @@ body:has(.holiday-header){
         justify-content: space-between;
         height: 15rem;
         padding: 0 3rem;
+    }
+    .holiday-main {
+        padding: 5rem 3rem;
     }
 }
