@@ -1,23 +1,52 @@
-.dimanche13 {
-    display: flex;
+.template2 {
+
     &__containerTxt {
-        width:25%;
-        &__text {
+        border-radius: 0rem 3rem 3rem 3rem;
+        background-color:$color-white;
+
+        p {
+            padding: 1rem;
             color: $color-yellow;
+            text-align: center;
+            font-family: mainPolice;
+            font-size: 2rem;
+            font-weight: 400; 
         }
-    }    
+
+        form{
+            width: 100%;
+            padding:1rem;
+
+            div{
+                max-width:100%;
+                label {
+                    font-size:2rem;
+                    font-family: titlePolice;
+                }
+                .progressBar{
+                    max-width: 100%;
+                    background-color:#e0e0de;
+                    height:1rem;
+                    width:90%;
+                    border-radius:5rem;
+                    margin:1rem;
+
+                    .filler{
+                        height: 100%;
+                        border-radius: inherit;
+                        background-color: #0996A5;
+                    }
+                }
+            }
+        }
+    }  
+
     &__containerImg {
-        width:75%;
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-evenly;
+       width:100%;
 
         figure{
             background-color:$color-white;
             border: 0.1rem solid $color-lightgrey;
-            width:27%;
             margin:1rem;
             padding:1rem;
             border-radius:1rem;
@@ -27,36 +56,85 @@
                 font-style: italic;
             }
         }
+    }
+}
 
-        figure:nth-of-type(1){
-            transform: rotate(-13deg) translateX(2rem);
+@media screen and (min-width: 860px) {
+    .template2 {
+        &__containerTxt {
+            margin-bottom:2rem;
+
+            p {
+                padding: 2.4rem;
+                font-size: 2.3rem;
+                font-weight: 600;
+                line-height: 150%;
+            }
+
+            form {
+                padding: 2.4rem;
+            }
         }
 
-        figure:nth-of-type(2) {
-            transform:translateY(4rem);
+        &__containerImg {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            align-content: center;
+
+            figure {
+                background-color: $color-white;
+                border: 0.1rem solid $color-lightgrey;
+                width: 27%;
+                margin: 1rem;
+                padding: 1rem;
+                border-radius: 1rem;
+
+                figcaption {
+                    text-align: center;
+                    font-style: italic;
+                }
+            }
+
+            figure:nth-of-type(1) {
+                transform: rotate(-13deg) translateX(2rem);
+            }
+
+            figure:nth-of-type(2) {
+                transform: translateY(4rem);
+            }
+
+            figure:nth-of-type(3) {
+                transform: rotate(20deg) translate(-19px, 12px);
+            }
+
+            figure:nth-of-type(4) {
+                transform: rotate(-0.6deg) translate(20px, -20px);
+                width: 36%;
+            }
+
+            figure:nth-of-type(5) {
+                transform: rotate(-12deg) translate(-1px, 19px);
+            }
+
+            figure:nth-of-type(6) {
+                transform: translate(-10px, -20px);
+            }
         }
+    }
 
-        figure:nth-of-type(3) {
-            transform: rotate(20deg) translate(-19px, 12px);
+
+}
+@media screen and (min-width: 1300px) {
+    .template2 {
+        display: flex;
+        &__containerTxt {
+            width: 25%;
         }
-
-        figure:nth-of-type(4) {
-            transform: rotate(-0.6deg) translate(20px, -20px);
-            width:36%;
-
+        &__containerImg {
+            width: 75%;
         }
-        figure:nth-of-type(5) {
-            transform: rotate(-12deg) translate(-1px, 19px);
-        }
-        figure:nth-of-type(6) {
-                transform:  translate(-10px, -20px);
-        }
-
-
-        
-
-
-
-
     }
 }
