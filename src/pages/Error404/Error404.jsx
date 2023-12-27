@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const Error404 = () => {
     return (
         <>
@@ -6,8 +8,13 @@ export const Error404 = () => {
                     <h3>Oupsi ?</h3>
                     <p>
                         La page que vous recherchez n'est actuellement pas
-                        disponible.{' '}
+                        disponible.
                     </p>
+                    <button>
+                        <Link to={'/'}>
+                            <p>Retour</p>
+                        </Link>
+                    </button>
                 </section>
             </main>
         </>
