@@ -6,12 +6,13 @@
 .section-error {
     width: 50%;
     height: auto;
-    margin: 10rem 0;
+    margin: 6rem 0;
 }
 
-.section-error p {
+.section-error h3 {
     text-align: center;
     font-family: titlePolice;
     color: $color-pink;
     font-size: 10rem;
+    margin-bottom: 3rem;
 }
