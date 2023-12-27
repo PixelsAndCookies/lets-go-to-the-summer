@@ -7,10 +7,10 @@ export const Error404 = () => {
                 <section className="section-error">
                     <h3>Oupsi ?</h3>
                     <p>
-                        La page que vous recherchez n'est actuellement pas
+                        La page que vous recherchez n&apos;est actuellement pas
                         disponible.
                     </p>
-                    <button>
+                    <button className='btn btn-return'>
                         <Link to={'/'}>
                             <p>Retour</p>
                         </Link>
