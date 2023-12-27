@@ -1,0 +1,122 @@
+article:has(.template7) h2 {
+    display: none;
+}
+
+.template7 {
+    
+    display: grid;
+
+    p, img{
+        position: relative;
+        object-fit: cover;
+        background-color: $color-white;
+        border: .1rem $color-lightgrey solid;
+        border-radius: .5rem;
+        padding: 1rem;
+    }
+
+    img{
+        padding-bottom: 1.5em;
+    }
+
+    //  LIGNE 1
+    .txt0 {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        transform: translate(16px, 25px) rotate(-3deg);
+        z-index: 1;
+    }
+
+    .picture0 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .picture2 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        transform: translate(-5px, 27px) rotate(2deg);
+    }
+
+
+
+    // LIGNE 2
+    .picture4 {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        transform: translate(0px, -17px) rotate(-2deg);
+        z-index: 20;
+    }
+
+    
+    p.title{
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: titlePolice;
+        padding:3rem;
+        transform: translateY(-7px);
+        z-index: 3;
+    }
+
+    .picture3 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 6;
+        z-index:10;
+        transform: translate(40px, 10px);
+    }
+
+    .picture1 {
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-row-start: 7;
+        grid-row-end: 10;
+        transform: translate(21px, -67px) rotate(2deg);
+        z-index: 40;
+    }
+
+    .picture5 {
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 7;
+        z-index:15;
+        transform: translate(21px, -20px) rotate(3deg);
+    }
+
+    .txt1 {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 6;
+        grid-row-end: 8;
+        z-index:30;
+        transform: translate(-10px, -14px);
+        width: 90%;
+    }
+
+
+    .txt2 {
+        grid-column-start: 6;
+        grid-column-end: 9;
+        grid-row-start: 7;
+        grid-row-end: 9;
+
+        transform: translate(14px, -45px) rotate(-8deg);
+        z-index: 40;
+    }
+
+}
