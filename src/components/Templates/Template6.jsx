@@ -1,7 +1,5 @@
 export const Template6 = ({ day }) => {
     const template = 'template6';
-    console.log(day);
-
     const firstPicture = day.pictures.length > 0 ? day.pictures[0] : null;
 
     return (
@@ -16,12 +14,12 @@ export const Template6 = ({ day }) => {
                 )}
             </div>
             <div className="container">
-                {day.pictures.map((picture, index) => (
+                {day.pictures.slice(1).map((picture, index) => (
                     <img
                         key={'picture' + index}
                         src={'/' + picture.src}
                         alt={picture.alt}
-                        className={'picture' + index}
+                        className={'picture' + (index+1)}
                     />
                 ))}
                 {day.contents.map((content, index) => (

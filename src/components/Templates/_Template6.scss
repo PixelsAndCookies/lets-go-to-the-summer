@@ -1,4 +1,8 @@
 .template6 {
+    .picture0 {
+        border-radius: 20px;
+    }
+
     .container {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -9,12 +13,6 @@
             height: 100%;
             object-fit: cover;
             border-radius: 3rem;
-        }
-
-        .picture0 {
-            grid-column: 1/13;
-            grid-row: 1;
-            border-radius: 20px 3rem;
         }
 
         .picture1 {
