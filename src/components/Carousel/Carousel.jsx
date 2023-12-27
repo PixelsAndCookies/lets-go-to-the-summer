@@ -1,18 +1,46 @@
-import { useState } from 'react'
-import arrow from '../../assets/icons/carousel-arrow.png'
+import { useEffect, useState, useCallback } from 'react'
 
 export const Carousel = ({ slides }) => {
     const [currentSlide, setCurrentSlide] = useState(0)
-    const length = slides.length
-    const previousSlide = () => {
-        setCurrentSlide(currentSlide === 0 ? length - 1 : currentSlide - 1)
+    const [autoPlay, setAutoPlay] = useState(true)
+
+    const slideLeft = () => {
+        setCurrentSlide((prevSlide) => (prevSlide === 0 ? slides.length - 1 : prevSlide - 1))
     }
-    const nextSlide = () => {
-        setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1)
-    }
+    const memoizedSlideRight = useCallback(() => {
+        setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1))
+    }, [slides])
+
+    useEffect(() => {
+        let timeOut = null
+
+        const handleAutoPlay = () => {
+            if (autoPlay) {
+                memoizedSlideRight()
+                timeOut = setTimeout(handleAutoPlay, 2500)
+            }
+        }
+
+        timeOut = setTimeout(handleAutoPlay, 2500)
+
+        const cleanUp = () => {
+            clearTimeout(timeOut)
+        }
+
+        return () => {
+            cleanUp()
+        }
+    }, [autoPlay, memoizedSlideRight])
 
     return (
-        <div className="carousel">
+        <div
+            className="carousel"
+            onMouseEnter={() => {
+                setAutoPlay(false)
+            }}
+            onMouseLeave={() => {
+                setAutoPlay(true)
+            }}>
             {slides.map((picture, index) => {
                 return (
                     <img
@@ -25,15 +53,24 @@ export const Carousel = ({ slides }) => {
                     />
                 )
             })}
-            <button className="carousel__arrow carousel__arrow--left" onClick={previousSlide}>
-                <img src={arrow} alt="Flèche gauche" />
+            <button className="btn carousel__arrow carousel__arrow--left" onClick={slideLeft}>
+                &lt; {/* Flèche gauche */}
             </button>
-            <button className="carousel__arrow carousel__arrow--right" onClick={nextSlide}>
-                <img src={arrow} alt="Flèche droite" />
+            <button className="btn carousel__arrow carousel__arrow--right" onClick={memoizedSlideRight}>
+                &gt; {/* Flèche droite */}
             </button>
-            <span className="carousel__counter">
-                {currentSlide + 1}/{length}
-            </span>
+            <div className="carousel__dots">
+                {slides.map((_, index) => (
+                    <span
+                        key={index}
+                        className={
+                            index === currentSlide
+                                ? 'carousel__dots__dot carousel__dots__dot--active'
+                                : 'carousel__dots__dot'
+                        }
+                        onClick={() => setCurrentSlide(index)}></span>
+                ))}
+            </div>
         </div>
     )
 }
