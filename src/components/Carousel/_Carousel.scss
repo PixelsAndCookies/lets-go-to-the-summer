@@ -1,5 +1,8 @@
-.carousel {    
-    height: 60rem;
+.carousel {
+    height: 65rem;
+    :hover {
+        cursor: pointer;
+    }
     &__invisible {
         display: none;
     }
@@ -8,29 +11,41 @@
         width: 100%;
         height: 100%;
         object-fit: contain;
-        border-radius: 2.5rem;
+        border-radius: 2rem;
+        background-color: rgba(200, 200, 200, 0.4);
     }
     &__arrow {
         position: relative;
         border: none;
-        background-color: transparent;
-        width: 10rem;
+        height: 3rem;
+        width: 3rem;
         &--left {
-            top: -35rem;
-            left: -10rem;
-            transform: rotate(90deg);
+            bottom: 35rem;
+            left: 1rem;
         }
         &--right {
-            top: -35rem;
-            left: 110rem;
-            transform: rotate(270deg);
+            bottom: 35rem;
+            left: 115rem;
         }
     }
-    &__counter {
+    &__dots {
         position: relative;
         display: flex;
         justify-content: center;
-        top: -15rem;
-        color: $color-white;
+        bottom: 7rem;
+        margin-top: 1rem;
+        &__dot {
+            align-self: center;
+            width: 1.2rem;
+            height: 1.2rem;
+            margin: 0 0.5rem;
+            background-color: $color-blue;
+            border-radius: 50%;
+            cursor: pointer;
+            &--active {
+                background-color: $color-yellow;
+                transform: scale(1.3);
+            }
+        }
     }
 }
