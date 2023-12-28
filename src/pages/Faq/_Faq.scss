@@ -1,0 +1,19 @@
+.faq {
+    margin: 3rem 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid $color-lightgrey;
+}
+
+.question {
+    font-weight: 800;
+    color: $color-blue;
+    margin-bottom: 1.5rem;
+}
+
+.no-border {
+    border: none;
+}
+
+.link {
+    color: $color-yellow;
+}
