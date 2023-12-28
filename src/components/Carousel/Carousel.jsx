@@ -40,7 +40,8 @@ export const Carousel = ({ slides }) => {
             }}
             onMouseLeave={() => {
                 setAutoPlay(true)
-            }}>
+            }}
+        >
             {slides.map((picture, index) => {
                 return (
                     <img
@@ -56,7 +57,10 @@ export const Carousel = ({ slides }) => {
             <button className="btn carousel__arrow carousel__arrow--left" onClick={slideLeft}>
                 &lt; {/* Flèche gauche */}
             </button>
-            <button className="btn carousel__arrow carousel__arrow--right" onClick={memoizedSlideRight}>
+            <button
+                className="btn carousel__arrow carousel__arrow--right"
+                onClick={memoizedSlideRight}
+            >
                 &gt; {/* Flèche droite */}
             </button>
             <div className="carousel__dots">
@@ -68,7 +72,8 @@ export const Carousel = ({ slides }) => {
                                 ? 'carousel__dots__dot carousel__dots__dot--active'
                                 : 'carousel__dots__dot'
                         }
-                        onClick={() => setCurrentSlide(index)}></span>
+                        onClick={() => setCurrentSlide(index)}
+                    ></span>
                 ))}
             </div>
         </div>
