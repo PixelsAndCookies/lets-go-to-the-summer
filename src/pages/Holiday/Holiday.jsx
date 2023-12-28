@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import { Error404 } from '../Error404/Error404'
 import { Logo } from '../../components/Logo/Logo'
 import { Navbar } from '../../components/Navbar/Navbar'
@@ -14,13 +14,24 @@ import { Template7 } from '../../components/Templates/Template7'
 import days from '../../data/days.json'
 
 export const Holiday = () => {
-    // Extrait la valeur du paramètre 'year' de l'URL. Ex: "/holidays/20xx", 'year' prendra la valeur '20xx'
     const { year } = useParams()
-    // Utilise la valeur extraite de l'URL 'year' pour accéder à la liste des jours spécifique à cette année dans le JSON 'days'
     const yearsList = days.years[year]
-    // Si 'yearsList' existe et a une propriété 'days', alors 'Object.values(yearsList.days)' extrait les valeurs de cette liste de jours dans 'daysList'
-    const [daysList] = useState(yearsList && yearsList.days ? Object.values(yearsList.days) : null)
-    
+    const [daysList, setDaysList] = useState(null)
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        if (yearsList && yearsList.days) {
+            const daysArray = Object.values(yearsList.days);
+            setDaysList(daysArray);
+
+            if (daysArray.length === 0) {
+                navigate('/error404');
+            }
+        } else {
+            navigate('/error404');
+        }
+    }, [year, yearsList, navigate]);
+
     if (!daysList) {
         return <Error404 />
     }
