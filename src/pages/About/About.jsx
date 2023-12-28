@@ -6,10 +6,10 @@ export const About = () => {
             <header className="home-header">
                 <Logo />
             </header>
-            <main className='main-container'>
+            <main className="main-container">
                 <article className="description">
                     <h2>A propos</h2>
-                    <p>
+                    <p style={{ lineHeight: 1.3 }}>
                         Quelques petites informations concernant ce site.
                         <br></br>
                         Ce site est crée par la famille, pour la famille ! Par
