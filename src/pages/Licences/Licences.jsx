@@ -9,10 +9,54 @@ export const Licences = () => {
             <main className="main-container">
                 <article className="description">
                     <h2>Licences</h2>
-                    <p>Polices</p>
-                    <p>Emoticons</p>
-                    <p>Emojis</p>
-                    <p>Photos libres de droit</p>
+
+                    <div className="faq-licences">
+                        <h3>Emoticons</h3>
+                        <p>Designer : Freepik </p>
+                        <p>https://www.freepik.com/</p>
+                    </div>
+
+                    <div className="faq-licences">
+                        <h3>Emojis</h3>
+                        <p>Designer : Morgane Roulland </p>
+                        <p>Application : Avatoon</p>
+                    </div>
+
+                    <div className="faq-licences">
+                        <h3>Photographies et vidéos</h3>
+                        <p>
+                            Les photos et vidéos des membres de la famille
+                            Pargaud, Roulland, Belletre et Perret sont
+                            strictement réservées à un usage privé et non
+                            commercial. Tous les droits sont réservés aux
+                            auteurs et/ou sujets des dites photos/vidéos.
+                        </p>
+                        <p>
+                            Toutes autres photos et images sont libres de droit
+                            (source : Pexels et Canva)
+                        </p>
+                    </div>
+
+                    <div className="faq-licences no-border">
+                        <h3>Polices</h3>
+                        <aside>
+                            <p>Designer : Ilham Herry</p>
+                            <p>Font : Genty</p>
+                            <p> https://dribbble.com/Ilhamherry</p>
+                        </aside>
+                        <aside>
+                            <p>Designer : Gabriel Lam, ViệtAnh Nguyễn </p>
+                            <p>Font : Darker Grotesque</p>
+                            <p>https://github.com/bettergui/DarkerGrotesque</p>
+                        </aside>
+                        <aside>
+                            <p>Designer : Hendra Pratama</p>
+                            <p>Font : Bukhary Script</p>
+                            <p>
+                                https://www.creativefabrica.com/designer/mikrojihad-typefounder/ref/2081/
+                            </p>
+                        </aside>
+                    </div>
                 </article>
             </main>
         </>

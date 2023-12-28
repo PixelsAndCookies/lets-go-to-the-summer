@@ -5,12 +5,12 @@ export const Error404 = () => {
         <>
             <main className="main-error home-header">
                 <section className="section-error">
-                    <h3>Oupsi ?</h3>
+                    <h2>Oupsi ?</h2>
                     <p>
                         La page que vous recherchez n&apos;est actuellement pas
                         disponible.
                     </p>
-                    <button className='btn btn-return'>
+                    <button className="btn btn-return">
                         <Link to={'/'}>
                             <p>Retour</p>
                         </Link>
