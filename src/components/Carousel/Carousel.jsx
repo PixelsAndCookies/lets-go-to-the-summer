@@ -42,45 +42,72 @@ export const Carousel = ({ slides }) => {
                 setAutoPlay(true)
             }}
         >
-            <div className="carousel__container">
-                <button className="btn carousel__arrow carousel__arrow--left" onClick={slideLeft}>
-                    &lt; {/* Flèche gauche */}
-                </button>
+            <div className="container">
                 {slides.map((picture, index) => (
-                    <div className="container" key={picture.id}>
+                    <div className="container__slide" key={picture.id}>
                         <img
                             src={'/' + picture.src}
                             alt=""
                             className={
                                 index === currentSlide
-                                    ? 'container__image container__image--visible'
-                                    : 'container__image container__image--invisible'
+                                    ? 'container__slide__img container__slide__img--visible'
+                                    : 'container__slide__img container__slide__img--invisible'
                             }
                         />
                         {index === currentSlide && (
-                            <img src={'/' + picture.src} alt="" className="container__background" />
+                            <img
+                                src={'/' + picture.src}
+                                alt=""
+                                className="container__slide__background"
+                            />
                         )}
                     </div>
                 ))}
+                <button className="container__arrow container__arrow--left" onClick={slideLeft}>
+                    &lt; {/* Flèche gauche */}
+                </button>
                 <button
-                    className="btn carousel__arrow carousel__arrow--right"
+                    className="container__arrow container__arrow--right"
                     onClick={memoizedSlideRight}
                 >
                     &gt; {/* Flèche droite */}
                 </button>
-                <div className="carousel__dots">
+                <div className="container__dots">
                     {slides.map((_, index) => (
                         <span
                             key={index}
                             className={
                                 index === currentSlide
-                                    ? 'carousel__dots__dot carousel__dots__dot--active'
-                                    : 'carousel__dots__dot'
+                                    ? 'container__dots__dot container__dots__dot--active'
+                                    : 'container__dots__dot'
                             }
                             onClick={() => setCurrentSlide(index)}
                         ></span>
                     ))}
                 </div>
+            </div>
+            <div className="miniatures">
+                {slides.map((picture, index) => (
+                    <div
+                        key={picture.id}
+                        className={
+                            index === currentSlide
+                                ? 'miniatures__slide miniatures__slide--active'
+                                : 'miniatures__slide'
+                        }
+                        onClick={() => setCurrentSlide(index)}
+                    >
+                        <img
+                            className={
+                                index === currentSlide
+                                    ? 'miniatures__slide__img miniatures__slide__img--active'
+                                    : 'miniatures__slide__img'
+                            }
+                            src={'/' + picture.src}
+                            alt=""
+                        />
+                    </div>
+                ))}
             </div>
         </div>
     )
