@@ -37,24 +37,24 @@
         }
         &__arrow {
             display: none;
+            background: transparent;
+            border: none;
             justify-content: center;
             align-items: center;
             position: absolute;
             z-index: 1;
-            height: 4rem;
-            width: 4rem;
-            font-size: 4rem;
+            height: 100%;
+            width: 10rem;
+            font-size: 5rem;
             color: $color-yellow;
-            background: transparent;
-            border: none;
             &--left {
                 top: 50%;
-                left: 1rem;
+                left: 0;
                 transform: translateY(-50%);
             }
             &--right {
                 bottom: 50%;
-                right: 1rem;
+                right: 0;
                 transform: translateY(50%);
             }
         }
@@ -68,8 +68,8 @@
             margin-top: 1rem;
             &__dot {
                 align-self: center;
-                width: 1.2rem;
-                height: 1.2rem;
+                width: 1.5rem;
+                height: 1.5rem;
                 margin: 0 0.5rem;
                 background-color: $color-blue;
                 border-radius: 50%;
@@ -87,11 +87,11 @@
         justify-content: space-between;
         &__slide {
             &__img {
-                height: 12rem;
-                width: 12rem;
+                height: 13rem;
+                width: 13rem;
                 object-fit: cover;
                 border-radius: 2rem;
-                opacity: 0.7;
+                opacity: 0.6;
                 &--active {
                     opacity: 1;
                     transform: scale(1.1);

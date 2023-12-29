@@ -1,33 +1,43 @@
 .template5 {
     .container1 {
         display: flex;
+        margin: 0 0 0 5rem;
         &__picture {
-            width: 35rem;
+            width: 25%;
             object-fit: contain;
             border-radius: 3rem 0 3rem 0;
         }
         .text1 {
-            margin: 5rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 0 0 0 7rem;
             align-self: center;
             color: $color-blue;
-            line-height: 3rem;
+            line-height: 5rem;
         }
     }
-    .text2 {
-        display: flex;
-        width: 25%;
-        margin-bottom: 5rem;
-    }
     .container2 {
+        margin-bottom: 5rem;
+        background: linear-gradient(to right, $color-blue, $color-white 60%);
+        border-radius: 0 0 0 2rem;
+        padding: 2rem;         
+        .text2 {
+            width: 30%;
+            font-size: 3rem;
+            font-weight: bolder;
+            
+        }
+    }    
+    .container3 {
         display: flex;
         justify-content: center;
         &__gif {
-            width: 80rem;
+            width: 70%;
             display: flex;
             border-radius: 2rem;
         }
     }
-    .container3 {
+    .container4 {
         text-align: center;
         margin: 5rem 0;
         &__quote {
@@ -36,6 +46,8 @@
             font-size: 5rem;
         }
         .text3 {
+            font-size: 2.5rem;
+            font-weight: bold;
             margin-top: 3rem;
             color: $color-blue;
             line-height: 5rem;
