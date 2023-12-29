@@ -28,17 +28,17 @@ export const Template5 = ({ day }) => {
                 {displayContentById('text1')}
             </div>
             <Carousel slides={filteredPictures} />
-            <div className="container4">{displayContentById('text2')}</div>
-            <div className="container2">
+            <div className="container2">{displayContentById('text2')}</div>
+            <div className="container3">
                 <img
                     key={lastPicture.id}
                     src={'/' + lastPicture.src}
                     alt={lastPicture.alt}
-                    className={'container2__gif'}
+                    className={'container3__gif'}
                 />
             </div>
-            <div className="container3">
-                {day.quotes !== null && <q className="container3__quote">{day.quotes}</q>}
+            <div className="container4">
+                {day.quotes !== null && <q className="container4__quote">{day.quotes}</q>}
                 {displayContentById('text3')}
             </div>
         </section>
