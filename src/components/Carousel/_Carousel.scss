@@ -1,78 +1,101 @@
 .carousel {
     :hover {
         cursor: pointer;
+        .container__arrow {
+            display: flex;
+        }
     }
-
-    &__container {
+    .container {
         position: relative;
         height: 65rem;
-        margin: 5rem 0;
+        margin: 5rem 0 2rem 0;
         overflow: hidden;
-    }
-
-    .container {
-        display: flex;
-        justify-content: center;
-        &__background {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: blur(10px); // Appliquez un flou au fond
-        }
-
-        &__image {
-            position: absolute;
-            top: 0;
-            &--invisible {
-                display: none;
+        &__slide {
+            display: flex;
+            justify-content: center;
+            &__img {
+                position: absolute;
+                top: 0;
+                &--invisible {
+                    display: none;
+                }
+                &--visible {
+                    z-index: 1;
+                    visibility: visible;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
             }
-            &--visible {
-                z-index: 1;
-                visibility: visible;
+            &__background {
+                position: absolute;
                 width: 100%;
                 height: 100%;
-                object-fit: contain;
+                object-fit: cover;
+                filter: blur(10px);
+            }
+        }
+        &__arrow {
+            display: none;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 1;
+            height: 4rem;
+            width: 4rem;
+            font-size: 4rem;
+            color: $color-yellow;
+            background: transparent;
+            border: none;
+            &--left {
+                top: 50%;
+                left: 1rem;
+                transform: translateY(-50%);
+            }
+            &--right {
+                bottom: 50%;
+                right: 1rem;
+                transform: translateY(50%);
+            }
+        }
+        &__dots {
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            bottom: 1rem;
+            width: 100%;
+            margin-top: 1rem;
+            &__dot {
+                align-self: center;
+                width: 1.2rem;
+                height: 1.2rem;
+                margin: 0 0.5rem;
+                background-color: $color-blue;
+                border-radius: 50%;
+                cursor: pointer;
+                &--active {
+                    background-color: $color-yellow;
+                    transform: scale(1.3);
+                }
             }
         }
     }
-
-    &__arrow {        
-        z-index: 2;
-        position: absolute;
-        border: none;
-        height: 3rem;
-        width: 3rem;
-        &--left {
-            top: 50%;
-            left: 1rem;
-            transform: translateY(-50%);
-        }
-        &--right {
-            bottom: 50%;
-            right: 1rem;
-            transform: translateY(50%);
-        }
-    }
-    &__dots {
-        z-index: 2;
-        position: absolute;
+    .miniatures {
         display: flex;
-        justify-content: center;
-        bottom: 1rem;
-        width: 100%;
-        margin-top: 1rem;
-        &__dot {
-            align-self: center;
-            width: 1.2rem;
-            height: 1.2rem;
-            margin: 0 0.5rem;
-            background-color: $color-blue;
-            border-radius: 50%;
-            cursor: pointer;
-            &--active {
-                background-color: $color-yellow;
-                transform: scale(1.3);
+        height: 20rem;
+        justify-content: space-between;
+        &__slide {
+            &__img {
+                height: 12rem;
+                width: 12rem;
+                object-fit: cover;
+                border-radius: 2rem;
+                opacity: 0.7;
+                &--active {
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
             }
         }
     }
