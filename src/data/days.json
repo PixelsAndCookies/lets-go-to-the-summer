@@ -371,21 +371,25 @@
                     "contents": [
                         {
                             "id": "text1",
-                            "text": "Olympiades Chinon 2023 : <ul><li>Petit bac</li><li>Circuit</li><li>Dégustation à l’aveugle</li><li>Cache cache (qui n’a pas eu lieu)</li><li>Fléchettes</li></ul>"
+                            "text": "Olympiades Chinon 2023&nbsp;: <ul><li>Petit bac</li><li>Circuit</li><li>Dégustation à l’aveugle</li><li>Cache cache (qui n’a pas eu lieu)</li><li>Fléchettes</li></ul>"
                         },
                         {
                             "id": "text2",
-                            "text": "Quatre équipes : <ul><li>Cédric, Didier, Gaëlle, Morgane</li><li>Laurine, Jérémy, Sylvain, Alexandre (petit)</li><li>Axel, Muriel, Jade, Vincent</li><li>Elodie, Sandrine, Camille, Alex</li></ul>"
+                            "text": "Quatre équipes&nbsp;: <ul><li>Cédric, Didier, Gaëlle, Morgane</li><li>Laurine, Jérémy, Sylvain, Alexandre (petit)</li><li>Axel, Muriel, Jade, Vincent</li><li>Elodie, Sandrine, Camille, Alex</li></ul>"
                         },
                         {
                             "id": "text3",
-                            "text": "resuilmfdgfd"
+                            "text": "Règles approximatives au Petit Bac, découvertes gustatives surprenantes, perte de voix, de tympans et de chevilles sur le circuit..."
+                        },
+                        {
+                            "id": "text4",
+                            "text": "Heureusement, la journée se termine sur une soirée pizza maison et sur la représentation exclusive et exceptionnelle de la troupe de Moumou !!"
                         }
                     ],
                     "pictures": [
                         {
                             "id": 2023081801,
-                            "src": "pictures/2023/20230818/20230818_1.jpg",
+                            "src": "pictures/2023/20230818/20230818_6.jpg",
                             "alt": "Photo d'une pizza maison après cuisson"
                         },
                         {
@@ -407,11 +411,6 @@
                             "id": 2023081805,
                             "src": "pictures/2023/20230818/20230818_5.gif",
                             "alt": "Gif des têtes de tout le monde"
-                        },
-                        {
-                            "id": 2023081804,
-                            "src": "pictures/2023/20230818/20230818_6.jpg",
-                            "alt": "Photo d'une partie de billard"
                         }
                     ],
                     "quotes": null
