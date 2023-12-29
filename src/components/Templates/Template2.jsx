@@ -33,7 +33,7 @@ export const Template2 = ({ day }) => {
                         src={"/"+picture.src}
                         alt={picture.alt}
                     />
-                    <figcaption>Blabla</figcaption></figure>
+                    <figcaption>{picture.legend}</figcaption></figure>
                 ))}
             </div>
             {day.quotes !== null && <q className={template+"__quotes"}>{day.quotes}</q>}

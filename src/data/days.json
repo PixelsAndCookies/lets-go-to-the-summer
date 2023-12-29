@@ -73,32 +73,38 @@
                         {
                             "id": 2023081301,
                             "src": "pictures/2023/20230813/20230813_1.jpg",
-                            "alt": "Photo d'Alex et Axel au barbecue"
+                            "alt": "Photo d'Alex et Axel au barbecue",
+                            "legend":"Le barbecue"
                         },
                         {
                             "id": 2023081302,
                             "src": "pictures/2023/20230813/20230813_2.jpg",
-                            "alt": "Photo d'une partie de billard avec Baptiste, Laurine et Axel"
+                            "alt": "Photo d'une partie de billard avec Baptiste, Laurine et Axel",
+                            "legend": "Le billard"
                         },
                         {
                             "id": 2023081303,
                             "src": "pictures/2023/20230813/20230813_3.jpg",
-                            "alt": "Photo de Didier dans le hamac"
+                            "alt": "Photo de Didier dans le hamac",
+                            "legend": "Le hamac"
                         },
                         {
                             "id": 2023081304,
                             "src": "pictures/2023/20230813/20230813_4.jpg",
-                            "alt": "Photo de la piscine avec Alex, Alexandre, Baptiste et Sylvain"
+                            "alt": "Photo de la piscine avec Alex, Alexandre, Baptiste et Sylvain",
+                            "legend": "La piscine"
                         },
                         {
                             "id": 2023081305,
                             "src": "pictures/2023/20230813/20230813_5.jpg",
-                            "alt": "Photo du repas de midi avec tout le monde"
+                            "alt": "Photo du repas de midi avec tout le monde",
+                            "legend": "Le déjeuner"
                         },
                         {
                             "id": 2023081306,
                             "src": "pictures/2023/20230813/20230813_6.jpg",
-                            "alt": "Photo du repas de midi"
+                            "alt": "Photo du repas de midi",
+                            "legend": "Manger Bouger"
                         }
                     ],
                     "quotes": null
