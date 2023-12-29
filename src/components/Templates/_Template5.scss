@@ -1,0 +1,46 @@
+.template5 {
+    .container1 {
+        display: flex;
+        &__picture {
+            width: 35rem;
+            object-fit: contain;
+            border-radius: 3rem 0 3rem 0;
+        }
+        .text1 {
+            margin: 5rem;
+            align-self: center;
+            color: $color-blue;
+            line-height: 3rem;
+            white-space: pre;
+        }
+    }
+    .text2 {
+        display: flex;
+        width: 25%;
+        margin-bottom: 5rem;
+    }
+    .container2 {
+        display: flex;
+        justify-content: center;
+        &__gif {
+            width: 80rem;
+            display: flex;
+            border-radius: 2rem;
+        }
+    }
+    .container3 {
+        text-align: center;
+        margin: 5rem 0;
+        &__quote {
+            font-family: titlePolice;
+            color: $color-yellow;
+            font-size: 5rem;
+        }
+        .text3 {
+            margin-top: 3rem;
+            color: $color-blue;
+            line-height: 5rem;
+            white-space: pre;
+        }
+    }
+}
