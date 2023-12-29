@@ -28,7 +28,7 @@ export const Template5 = ({ day }) => {
                 {displayContentById('text1')}
             </div>
             <Carousel slides={filteredPictures} />
-            {displayContentById('text2')}
+            <div className="container4">{displayContentById('text2')}</div>
             <div className="container2">
                 <img
                     key={lastPicture.id}
