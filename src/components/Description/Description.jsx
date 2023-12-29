@@ -9,7 +9,7 @@ export const Description = (props) => {
             <h2>{content.title}</h2>
             <div className="content">
                 {items.map((item) => (
-                    <div key={item}>
+                    <div key={item.id}>
                         {item.lien ? 
                         <a href={item.lien} target="_blank" rel="noreferrer"><img src={item.icon} alt={item.id}/></a> : 
                         <img src={item.icon} alt={item.id}/>} 
