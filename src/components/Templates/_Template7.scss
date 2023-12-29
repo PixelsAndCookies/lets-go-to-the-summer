@@ -8,7 +8,6 @@
         object-fit: cover;
         background-color: $color-white;
         border: .1rem $color-lightgrey solid;
-        border-radius: .5rem;
         padding: 1rem;
         margin:1rem;
     }
@@ -60,10 +59,7 @@
         display: grid;
         align-items: stretch;
         margin-bottom:-10rem;
-        img {
-            padding-bottom: 1.5em;
-            display:inline;
-        }
+
         p {
             padding:2rem;
             ul {
@@ -122,7 +118,7 @@
             grid-column-end: 9;
             grid-row-start: 6;
             grid-row-end: 8;
-            transform: translate(1.4rem, 3.5rem) rotate(-5deg);
+            transform: translate(2.4rem, 6.5rem) rotate(-5deg);
             z-index: 45;
         }
 
@@ -192,14 +188,10 @@
         }
         .txt1{
             width:80%;
-            transform: translate(-1rem, -4.4rem);
         }
-        .txt2{
-            transform: translate(0.4rem, -7.5rem) rotate(-3deg);
-        }
+
         .picture1 {  
-            transform: translate(1.1rem, -12.7rem) rotate(2deg);
-            max-width: 100%;
+            transform: translate(-2rem, -12.7rem) rotate(2deg);
         }
     }
 }
