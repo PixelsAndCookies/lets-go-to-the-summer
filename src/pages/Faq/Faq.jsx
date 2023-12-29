@@ -8,44 +8,44 @@ export const Faq = () => {
             </header>
             <main className="main-container">
                 <article className="description">
-                    <h2>FAQ</h2>
-                    <div className="faq">
-                        <p className="question">
-                            Le site familial est-il visible pour n&apos;importe qui ?
-                        </p>
+                    <h2>F A Q</h2>
+                    <div className="faq-licences">
+                        <h3>
+                            Le site familial est-il visible pour n'importe qui ?
+                        </h3>
                         <p>
                             Non, le site n&apos;est visible que par les membres de
                             celui-ci. Il n&apos;est accessible que si vous avez le
                             mot de passe.
                         </p>
                     </div>
-                    <div className="faq">
-                        <p className="question">
+                    <div className="faq-licences">
+                        <h3>
                             Puis-je communiquer mon mot de passe à des amis pour
                             leur montrer ?
-                        </p>
+                        </h3>
                         <p>
-                            Non, pour la sécurité et l&apos;intimité de chacun, nous
-                            ne communiquerons pas le mot de passe.
+                            Non, pour la sécurité et le respect de l'intimité de
+                            chacun, nous vous demandons de ne pas communiquer le
+                            mot de passe.
                         </p>
                     </div>
-                    <div className="faq">
-                        <p className="question">
-                            Puis-je ajouter du contenu moi-même ?
-                        </p>
+                    <div className="faq-licences">
+                        <h3>Puis-je ajouter du contenu moi-même ?</h3>
                         <p>
                             Non, cette fonctionnalité est réservé pour l&apos;instant
                             aux développeurs. Mais vous pouvez leur communiquer
-                            des annecdotes/photos/idées via le formulaire de
-                            contact ou l&apos;un des (trop) nombreux goupe WhatsApp !
+                            des annecdotes/photos/idées via
+                            {/* des annecdotes/photos/idées via le formulaire de
+                            contact ou */}{' '}
+                            l'un des (trop) nombreux goupe WhatsApp !
                         </p>
                     </div>
-                    <div className="faq no-border">
+                    <div className="faq-licences no-border">
                         <p>
                             Si vous avez des questions ou tout autre suggestion,
-                            n&apos;hésitez pas à nous contacter
-                            {/*<Link to="créerPageContact" className="link">ici</Link> */}{' '}
-                            !
+                            n'hésitez pas à nous contacter{' '}
+                            {/*<Link>ici</Link> */}!
                         </p>
                     </div>
                 </article>

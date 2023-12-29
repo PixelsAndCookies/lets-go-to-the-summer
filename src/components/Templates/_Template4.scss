@@ -16,6 +16,10 @@
             object-fit: cover;
         }
 
+        p{
+            padding:1.5rem;
+        }
+
         .picture0 {
             grid-column-start: 1;
             grid-column-end: 3;
@@ -94,6 +98,11 @@
             grid-row-end: 2;
             border-radius: 3rem 0rem;
             background: #D9D9D9;
+
+            ul{
+                list-style: circle;
+                list-style-position: inside;
+            }
         }
 
         .txt1 {
@@ -126,7 +135,7 @@
             grid-column-end: 3;
             grid-row-start: 4;
             grid-row-end: 5;
-            border-radius: 10rem 3rem;
+            border-radius: 5rem 1rem;
             background: #D9D9D9;
         }
     }

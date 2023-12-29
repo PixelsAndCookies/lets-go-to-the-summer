@@ -37,7 +37,7 @@
     .picture4 {
         order: 9;
     }
-    .picture5 {
+    .txt2 {
         order: 6;
     }
     .picture6 {
@@ -57,13 +57,20 @@
     }
 
     .template7 {
-
         display: grid;
-
-        
+        align-items: stretch;
+        margin-bottom:-10rem;
         img {
             padding-bottom: 1.5em;
             display:inline;
+        }
+        p {
+            padding:2rem;
+            ul {
+                list-style-type: disc;
+                list-style-position: outside;
+                margin: 3rem 0 0 3rem;
+            }
         }
 
         p.title {
@@ -74,6 +81,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
             font-family: titlePolice;
             font-size: 3rem;
             width: 110%;
@@ -101,15 +109,21 @@
             transform: translate(-1.0rem, -1.4rem);
             width: 90%;
         }
-
         .txt2 {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            z-index: 35;
+            transform: translate(1rem, -3.5rem) rotate(3deg);
+        }
+        .txt3 {
             grid-column-start: 6;
             grid-column-end: 9;
-            grid-row-start: 7;
-            grid-row-end: 9;
-            transform: translate(3.4rem, -5.5rem) rotate(-5deg);
-            ;
-            z-index: 40;
+            grid-row-start: 6;
+            grid-row-end: 8;
+            transform: translate(1.4rem, 3.5rem) rotate(-5deg);
+            z-index: 45;
         }
 
         .picture0 {
@@ -155,15 +169,14 @@
             transform: translate(-1rem, -1.7rem) rotate(-2deg);
             z-index: 20;
         }
-
-        .picture5 {
-            grid-column-start: 4;
-            grid-column-end: 7;
-            grid-row-start: 5;
-            grid-row-end: 7;
-            z-index: 15;
-            transform: translate(0rem, -2.0rem) rotate(3deg);
+        .picture5{
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 10;
+            grid-row-end: auto;
         }
+
+        
     }
 }
 
@@ -171,7 +184,10 @@
     .template7{
         transform: translateX(-1rem);
 
-        .title{
+        p{
+            font-size:3rem;
+        }
+        p.title{
             font-size:4rem;
         }
         .txt1{
