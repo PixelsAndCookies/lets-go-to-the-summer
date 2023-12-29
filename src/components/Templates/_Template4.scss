@@ -17,6 +17,10 @@
 
         p{
             padding:1.5rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .picture0 {
@@ -95,21 +99,12 @@
             grid-column-end: 9;
             grid-row-start: 1;
             grid-row-end: 2;
-            border-radius: 3rem 0rem;
-<<<<<<< Updated upstream
-            background: #D9D9D9;
 
             ul{
                 list-style: circle;
                 list-style-position: inside;
                 margin-bottom:1rem;
             }
-=======
-            padding: 1.5rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
->>>>>>> Stashed changes
         }
 
         .txt1 {
@@ -117,11 +112,6 @@
             grid-column-end: 4;
             grid-row-start: 2;
             grid-row-end: 3;
-            border-radius: 0rem 3rem 3rem 0rem;
-            padding: 1.5rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
         }
 
         .txt2 {
@@ -136,8 +126,6 @@
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
-            display: flex;
-            align-items: center;
         }
 
         .txt3 {
@@ -145,20 +133,6 @@
             grid-column-end: 3;
             grid-row-start: 4;
             grid-row-end: 5;
-<<<<<<< Updated upstream
-            border-radius: 5rem 1rem;
-            background: #D9D9D9;
-=======
-            border-radius: 0rem 3rem;
-            padding: 1.5rem;
-            text-align: center;
-            display: flex;
-            align-items: center;
-        }
-
-        .txt0 .txt1 .txt3 {
-            color: $color-yellow;
->>>>>>> Stashed changes
         }
     }
 }
