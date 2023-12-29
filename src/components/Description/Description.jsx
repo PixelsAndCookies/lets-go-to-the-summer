@@ -9,9 +9,9 @@ export const Description = (props) => {
             <h2>{content.title}</h2>
             <div className="content">
                 {items.map((item) => (
-                    <div>
+                    <div key={item}>
                         {item.lien ? 
-                        <a href={item.lien} target="_blank"><img src={item.icon} alt={item.id}/></a> : 
+                        <a href={item.lien} target="_blank" rel="noreferrer"><img src={item.icon} alt={item.id}/></a> : 
                         <img src={item.icon} alt={item.id}/>} 
                         <p dangerouslySetInnerHTML={ {__html: item.text} }></p>
                     </div>
