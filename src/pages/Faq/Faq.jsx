@@ -11,11 +11,11 @@ export const Faq = () => {
                     <h2>FAQ</h2>
                     <div className="faq">
                         <p className="question">
-                            Le site familial est-il visible pour n'importe qui ?
+                            Le site familial est-il visible pour n&apos;importe qui ?
                         </p>
                         <p>
-                            Non, le site n'est visible que par les membres de
-                            celui-ci. Il n'est accessible que si vous avez le
+                            Non, le site n&apos;est visible que par les membres de
+                            celui-ci. Il n&apos;est accessible que si vous avez le
                             mot de passe.
                         </p>
                     </div>
@@ -25,7 +25,7 @@ export const Faq = () => {
                             leur montrer ?
                         </p>
                         <p>
-                            Non, pour la sécurité et l'intimité de chacun, nous
+                            Non, pour la sécurité et l&apos;intimité de chacun, nous
                             ne communiquerons pas le mot de passe.
                         </p>
                     </div>
@@ -34,16 +34,16 @@ export const Faq = () => {
                             Puis-je ajouter du contenu moi-même ?
                         </p>
                         <p>
-                            Non, cette fonctionnalité est réservé pour l'instant
+                            Non, cette fonctionnalité est réservé pour l&apos;instant
                             aux développeurs. Mais vous pouvez leur communiquer
                             des annecdotes/photos/idées via le formulaire de
-                            contact ou l'un des (trop) nombreux goupe WhatsApp !
+                            contact ou l&apos;un des (trop) nombreux goupe WhatsApp !
                         </p>
                     </div>
                     <div className="faq no-border">
                         <p>
                             Si vous avez des questions ou tout autre suggestion,
-                            n'hésitez pas à nous contacter
+                            n&apos;hésitez pas à nous contacter
                             {/*<Link to="créerPageContact" className="link">ici</Link> */}{' '}
                             !
                         </p>
