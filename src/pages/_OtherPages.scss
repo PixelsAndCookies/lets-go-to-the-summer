@@ -1,0 +1,40 @@
+.otherPagesElement {
+    margin: 3rem 6rem;
+    border-bottom: 1px solid $color-lightgrey;
+    padding-bottom: 3rem;
+    .no-border {
+        border: none;
+        padding-bottom: 0;
+    }
+    h3 {
+        font-weight: 800;
+        color: $color-blue;
+        margin-bottom: 1.5rem;
+    }
+    aside {
+        margin: 3rem 0;
+    }
+    input,
+    textarea {
+        margin: 1rem;
+        padding: 1rem;
+        font-family: mainPolice;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    textarea::placeholder {
+        text-align: center;
+    }
+    &.error {
+        .error-message {
+            color: $color-red;
+        }
+        input {
+            border: 2px solid $color-red;
+        }
+    }
+    .btn {
+        padding: 1.5rem;
+    }
+}
