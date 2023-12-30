@@ -25,7 +25,7 @@ export const Licences = () => {
                     <div className="faq-licences">
                         <h3>Photographies et vidéos</h3>
                         <p>
-                            Les photos et vidéos des membres de la famille
+                            Les photos et vidéos des membres des familles
                             Pargaud, Roulland, Belletre et Perret sont
                             strictement réservées à un usage privé et non
                             commercial. Tous les droits sont réservés aux
