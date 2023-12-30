@@ -185,3 +185,34 @@ main {
 .rotating_2 {
     -webkit-animation: rotating_2 120s linear infinite;
 }
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        position: relative;
+        margin: auto;
+        font-family: mainPolice;
+        font-size: 2.3rem;
+        line-height: 1;
+    }
+
+    .App {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .visible {
+        display: none;
+    }
+
+    .red-cercle {
+        display: none;
+    }
+
+    .blue-triangle {
+        display: none;
+    }
+}
