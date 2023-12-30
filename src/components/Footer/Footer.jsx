@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
     return (
         <footer>
-            <img src={avatargroup} alt="" />
+            <img src={avatargroup} alt="" className="avatars" />
             <ul className="content">
                 <li>
                     <Link to="/about">A propos</Link>
