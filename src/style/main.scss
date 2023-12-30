@@ -27,11 +27,15 @@ html {
 
 body {
     position: relative;
-    max-width: 1680px;
     margin: auto;
     font-family: mainPolice;
     font-size: 2.3rem;
-    line-height: 1;    
+    line-height: 1;
+}
+
+main {
+    max-width: 1280px;
+    margin: auto;
 }
 
 .App {

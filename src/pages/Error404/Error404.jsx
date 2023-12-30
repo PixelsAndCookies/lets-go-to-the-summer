@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom';
+import { Navbar } from '../../components/Navbar/Navbar';
 
 export const Error404 = () => {
     return (
         <>
-            <main className="main-error home-header">
+            <header className="holiday-header nav-error">
+                <Navbar />
+            </header>
+            <main className="main-error">
                 <section className="section-error">
                     <h2>Oupsi ?</h2>
                     <p>
