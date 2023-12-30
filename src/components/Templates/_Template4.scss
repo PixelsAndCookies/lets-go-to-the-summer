@@ -15,12 +15,13 @@
             object-fit: cover;
         }
 
-        p{
-            padding:1.5rem;
-            text-align: center;
+        p {
+            padding: 1.5rem;
+            text-align: justify;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
         }
 
         .picture0 {
@@ -100,10 +101,11 @@
             grid-row-start: 1;
             grid-row-end: 2;
 
-            ul{
+            ul {
                 list-style: circle;
                 list-style-position: inside;
-                margin-bottom:1rem;
+                margin-bottom: 2rem;
+                text-align: start;
             }
         }
 
