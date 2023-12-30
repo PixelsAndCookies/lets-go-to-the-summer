@@ -3,6 +3,11 @@
     justify-content: center;
 }
 
+.nav-error {
+    display: flex;
+    justify-content: center;
+}
+
 .section-error {
     width: 50%;
     height: auto;
@@ -28,6 +33,7 @@
     font-weight: bold;
     font-size: 2rem;
     color: $color-white;
+    border: none;
     &-return {
         width: 20%;
         font-family: mainPolice;
