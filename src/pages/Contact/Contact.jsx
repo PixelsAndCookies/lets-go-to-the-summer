@@ -1,31 +1,31 @@
-import { useState } from 'react'
-import { Logo } from '../../components/Logo/Logo'
+import { useState } from 'react';
+import { Logo } from '../../components/Logo/Logo';
 
 export const Contact = () => {
-    const [lastName, setLastName] = useState('')
-    const [lastNameError, setLastNameError] = useState(false)
-    const [firstName, setFirstName] = useState('')
-    const [firstNameError, setFirstNameError] = useState(false)
-    const [message, setMessage] = useState('')
+    const [lastName, setLastName] = useState('');
+    const [lastNameError, setLastNameError] = useState(false);
+    const [firstName, setFirstName] = useState('');
+    const [firstNameError, setFirstNameError] = useState(false);
+    const [message, setMessage] = useState('');
 
     // Définie le format de nom de famille/prénom valide ( RegEx )
-    const validName = (input) => /^[a-zA-Z\s]+$/.test(input)
+    const validName = (input) => /^[a-zA-Z\s]+$/.test(input);
 
     // Gère les changements de contenu dans les inputs
     const handleInputChange = (event, setInput, setError) => {
-        const inputValue = event.target.value
-        setInput(inputValue)
+        const inputValue = event.target.value;
+        setInput(inputValue);
         // Vérifie la validité du nom/prénom
-        setError(!validName(inputValue))
-    }
+        setError(!validName(inputValue));
+    };
 
     // Gère l'envoi du message en redirigeant vers la boite mail
     const handleSubmit = (event) => {
-        event.preventDefault()
-        if (!lastNameError && !firstNameError) {            
-            window.location.href = `mailto:studiobalignon@gmail.com?subject=Message%20de%20${lastName}%20${firstName}&body=${message}`
+        event.preventDefault();
+        if (!lastNameError && !firstNameError) {
+            window.location.href = `mailto:studiobalignon@gmail.com?subject=Message%20de%20${lastName}%20${firstName}&body=${message}`;
         }
-    }
+    };
 
     return (
         <>
@@ -37,7 +37,11 @@ export const Contact = () => {
                     <h2>Contact</h2>
 
                     <form onSubmit={handleSubmit}>
-                        <div className={`otherPagesElement ${lastNameError ? 'error' : ''}`}>
+                        <div
+                            className={`otherPagesElement ${
+                                lastNameError ? 'error' : ''
+                            }`}
+                        >
                             <h3>
                                 <label htmlFor="name">Nom :</label>
                             </h3>
@@ -50,7 +54,11 @@ export const Contact = () => {
                                 maxLength="33"
                                 value={lastName}
                                 onChange={(event) =>
-                                    handleInputChange(event, setLastName, setLastNameError)
+                                    handleInputChange(
+                                        event,
+                                        setLastName,
+                                        setLastNameError
+                                    )
                                 }
                                 required
                             />
@@ -61,7 +69,11 @@ export const Contact = () => {
                             )}
                         </div>
 
-                        <div className={`otherPagesElement ${firstNameError ? 'error' : ''}`}>
+                        <div
+                            className={`otherPagesElement ${
+                                firstNameError ? 'error' : ''
+                            }`}
+                        >
                             <h3>
                                 <label htmlFor="firstName">Prénom :</label>
                             </h3>
@@ -74,7 +86,11 @@ export const Contact = () => {
                                 maxLength="33"
                                 value={firstName}
                                 onChange={(event) =>
-                                    handleInputChange(event, setFirstName, setFirstNameError)
+                                    handleInputChange(
+                                        event,
+                                        setFirstName,
+                                        setFirstNameError
+                                    )
                                 }
                                 required
                             />
@@ -97,7 +113,9 @@ export const Contact = () => {
                                 placeholder="Une question ?&#10;Un avis à donner ?&#10;On vous écoute ici ! &#10;&#x1F60A;"
                                 maxLength="2000"
                                 value={message}
-                                onChange={(event) => setMessage(event.target.value)}
+                                onChange={(event) =>
+                                    setMessage(event.target.value)
+                                }
                                 required
                             ></textarea>
                         </div>
@@ -111,5 +129,5 @@ export const Contact = () => {
                 </article>
             </main>
         </>
-    )
-}
+    );
+};

@@ -1,9 +1,10 @@
 article.description {
+    width: 70%;
+    margin: auto;
     background-color: rgba(255, 255, 255, 0.95);
     color: $color-grey;
     text-align: center;
     padding: 3rem;
-    margin: 5rem 0;
     box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
 
@@ -57,6 +58,6 @@ article.description {
                     transition: transform 0.3s ease-in-out;
                 }
             }
-        }        
+        }
     }
 }
