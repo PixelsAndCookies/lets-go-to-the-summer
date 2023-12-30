@@ -19,29 +19,27 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
 .news-text p {
-    display:inline-block;
-    padding-right:50px;
+    display: inline-block;
+    padding-right: 50px;
     padding-left: 100%;
     animation: text-animation linear 85s infinite;
 }
 
 .news-text-title {
     font-weight: 900;
-    margin-left:3rem;
+    margin-left: 3rem;
 }
 
 @keyframes text-animation {
     0% {
-            transform: translateX(0);
-        }
+        transform: translateX(0);
+    }
 
     100% {
         transform: translateX(-100%);
     }
 }
-
 
 @media screen and (min-width: 860px) {
     .news-categ {
