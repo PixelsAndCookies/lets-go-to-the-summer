@@ -1,8 +1,7 @@
 .template2 {
 
     &__containerTxt {
-        border-radius: 0rem 3rem 3rem 3rem;
-        background-color:$color-white;
+        margin-bottom:2rem;
 
         p {
             padding: 1rem;
@@ -45,11 +44,11 @@
        width:100%;
 
         figure{
-            background-color:$color-white;
-            border: 0.1rem solid $color-lightgrey;
-            margin:1rem;
-            padding:1rem;
-            border-radius:1rem;
+            margin-bottom:3rem;
+            
+            img{
+                border-radius: 1rem;
+                }
 
             figcaption {
                 text-align: center;
@@ -59,9 +58,11 @@
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 880px) {
     .template2 {
         &__containerTxt {
+            border-radius: 0rem 3rem 3rem 3rem;
+            background-color: $color-white;
             margin-bottom:2rem;
 
             p {
@@ -92,9 +93,8 @@
                 padding: 1rem;
                 border-radius: 1rem;
 
-                figcaption {
-                    text-align: center;
-                    font-style: italic;
+                img{
+                    border-radius: 0;
                 }
             }
 

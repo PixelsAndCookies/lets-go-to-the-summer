@@ -3,21 +3,20 @@
     flex-direction: column;
 
     p {
-        padding: 2rem;
-
+        padding:1rem;
         ul {
             list-style-type: disc;
             list-style-position: outside;
             margin: 1rem 0 0 3rem;
         }
     }
+    img{
+        border-radius:1rem;
+    }
     p,
     img {
         position: relative;
         object-fit: cover;
-        background-color: $color-white;
-        border: 0.1rem $color-lightgrey solid;
-        padding: 1rem;
         margin: 1rem;
     }
 
@@ -67,9 +66,20 @@
         margin-bottom: -10rem;
 
         p {
+            padding: 2rem;
             ul {
                 margin: 1rem 0 0 3rem;
             }
+        }
+        img {
+            border-radius: 0;
+        }
+        p,
+        img {
+            background-color: $color-white;
+            border: 0.1rem $color-lightgrey solid;
+            padding: 1rem;
+            margin: 1rem;
         }
         p.title {
             grid-column-start: 4;
@@ -179,10 +189,8 @@
 @media screen and (min-width: 1280px) {
     .template7 {
         transform: translateX(-1rem);
-
-        p {
-            font-size: 3rem;
-        }
+        padding:0 8rem;
+        
         p.title {
             font-size: 4rem;
         }
