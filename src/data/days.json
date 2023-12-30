@@ -74,7 +74,7 @@
                             "id": 2023081301,
                             "src": "pictures/2023/20230813/20230813_1.jpg",
                             "alt": "Photo d'Alex et Axel au barbecue",
-                            "legend":"Le barbecue"
+                            "legend": "Le barbecue"
                         },
                         {
                             "id": 2023081302,
@@ -168,7 +168,7 @@
                     "contents": [
                         {
                             "id": "text1",
-                            "text": "<ul>Règles vestimentaires universelles de la pétanque : <li>Claquettes</li><li>Casquette</li><li>Bermuda</li></ul> Certains se découvrent être de très bons tireurs, d'autres pointeurs ... et certains sont là pour l'ambiance et un bon coup de chance occasionnel&nbsp;!"
+                            "text": "<ul>Règles vestimentaires universelles de la pétanque: <li>Claquettes</li><li>Casquette</li><li>Bermuda</li></ul> Certains se découvrent être de très bons tireurs, d'autres pointeurs ... et certains sont là pour l'ambiance et un bon coup de chance occasionnel&nbsp;!"
                         },
                         {
                             "id": "text2",
@@ -176,7 +176,7 @@
                         },
                         {
                             "id": "text3",
-                            "text": "Insta VS Réalité"
+                            "text": "Insta <br>VS<br> Réalité"
                         },
                         {
                             "id": "text4",
