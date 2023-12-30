@@ -2,16 +2,19 @@
     {
         "id": "2023",
         "title": "2023",
-        "cover": "pictures/forteresse_royale_de_chinon_credit_jean-christophe_coutand.jpg"
+        "cover": "pictures/forteresse_royale_de_chinon_credit_jean-christophe_coutand.jpg",
+        "info": "Ce lien vous redirigera vers la page des vacances 2023"
     },
     {
         "id": "2024",
         "title": "2024",
-        "cover": "pictures/gite-la-hardonniere2_gd.jpg"
+        "cover": "pictures/gite-la-hardonniere2_gd.jpg",
+        "info": "Ce lien vous redirigera vers la page des vacances 2024"
     },
     {
         "id": "2025",
         "title": "Coming Soon",
-        "cover": "pictures/pexels-elaine-bernadine-castro.jpg"
+        "cover": "pictures/pexels-elaine-bernadine-castro.jpg",
+        "info": "Ce lien vous redirigera vers la page des vacances 2025"
     }
 ]
