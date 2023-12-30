@@ -1,21 +1,28 @@
 .cards-container {
     display: flex;
     justify-content: space-around;
-
     & .card {
         width: 30%;
         min-height: 30rem;
         display: flex;
         box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
-        background-color:#ffff;
-        
-        &--2023 {
-            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
-            a{
-                flex-direction: column;
+        background-color: $color-white;
+        overflow: hidden;
+        :hover {
+            .card {
+                &__date {
+                    color: $color-yellow;
+                }
             }
         }
 
+        &--2023 {
+            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+
+            a {
+                flex-direction: column;
+            }
+        }
         &--2024 {
             border-radius: 1.5rem 0rem 1.5rem 0rem;
             flex-direction: column-reverse;
@@ -23,7 +30,6 @@
                 flex-direction: column-reverse;
             }
         }
-
         &--2025 {
             border-radius: 0rem 1.5rem 1.5rem 1.5rem;
             a {
@@ -34,7 +40,6 @@
         &__img {
             height: 85%;
             object-fit: cover;
-
             &--2023 {
                 border-radius: 1.5rem 1.5rem 12rem 0rem;
             }
@@ -58,18 +63,16 @@
 
         a {
             display: flex;
-            height: 100%;
+            height: 100%;            
         }
     }
 }
 
-
 @media screen and (min-width: 860px) {
     .cards-container {
         & .card {
-            width: 32%;
+            width: 30%;
             min-height: 52rem;
-
             &__date {
                 font-size: 5rem;
                 padding: 3rem 1rem;
@@ -77,4 +80,3 @@
         }
     }
 }
-
