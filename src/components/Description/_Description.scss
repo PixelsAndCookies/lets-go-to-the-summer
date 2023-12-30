@@ -6,14 +6,14 @@ article.description {
     margin: 5rem 0;
     box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
     border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
-    
+
     h2 {
-        font-size:4rem;
+        font-size: 4rem;
         margin-bottom: 2rem;
         color: $color-yellow;
         font-family: titlePolice;
     }
-    
+
     &.informations .content {
         display: flex;
         justify-content: space-around;
@@ -21,27 +21,26 @@ article.description {
         flex-wrap: wrap;
         align-items: baseline;
 
-        div{
-            width:calc(100% / 2 - 4rem);
+        div {
+            width: calc(100% / 2 - 4rem);
 
-            img{
-                max-height:10rem;
-                margin-bottom:1rem;
+            img {
+                max-height: 10rem;
+                margin-bottom: 1rem;
             }
         }
     }
 
-    &.presentation p{
-        margin-bottom:1rem;
-        i{
+    &.presentation p {
+        margin-bottom: 1rem;
+        i {
             font-style: italic;
         }
-        b{
+        b {
             font-weight: 600;
         }
     }
 }
-
 
 @media screen and (min-width: 860px) {
     article.description {
@@ -51,10 +50,19 @@ article.description {
 
         &.informations .content {
             flex-wrap: nowrap;
-            
+
             div {
                 width: calc(100% / 4 - 4rem);
+
+                img {
+                    transition: transform 0.5s ease-in-out;
+                }
+
+                &:hover a img {
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease-in-out;
+                }
             }
-        }
+        }        
     }
 }
