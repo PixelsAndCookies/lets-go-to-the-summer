@@ -10,19 +10,19 @@ export const Licences = () => {
                 <article className="description">
                     <h2>Licences</h2>
 
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>Emoticons</h3>
                         <p>Designer : Freepik </p>
                         <p>https://www.freepik.com/</p>
                     </div>
 
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>Emojis</h3>
                         <p>Designer : Morgane Roulland </p>
                         <p>Application : Avatoon</p>
                     </div>
 
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>Photographies et vidéos</h3>
                         <p>
                             Les photos et vidéos des membres des familles
@@ -37,7 +37,7 @@ export const Licences = () => {
                         </p>
                     </div>
 
-                    <div className="faq-licences no-border">
+                    <div className="otherPagesElement no-border">
                         <h3>Polices</h3>
                         <aside>
                             <p>Designer : Ilham Herry</p>
