@@ -9,8 +9,7 @@ export const Template5 = ({ day }) => {
         const matchContent = day.contents.find((content) => content.id === id)
         return (
             matchContent && (
-                <p key={matchContent.id} className={matchContent.id}>
-                    {matchContent.text}
+                <p key={matchContent.id} className={matchContent.id} dangerouslySetInnerHTML={ {__html: matchContent.text}}>
                 </p>
             )
         )
@@ -28,17 +27,16 @@ export const Template5 = ({ day }) => {
                 {displayContentById('text1')}
             </div>
             <Carousel slides={filteredPictures} />
-            <div className="container2">{displayContentById('text2')}</div>
-            <div className="container3">
+            <div className="container2">
                 <img
                     key={lastPicture.id}
                     src={'/' + lastPicture.src}
                     alt={lastPicture.alt}
-                    className={'container3__gif'}
+                    className={'container2__gif'}
                 />
             </div>
-            <div className="container4">
-                {day.quotes !== null && <q className="container4__quote">{day.quotes}</q>}
+            <div className="container3">
+                {day.quotes !== null && <q className="container3__quote">{day.quotes}</q>}
                 {displayContentById('text3')}
             </div>
         </section>
