@@ -1,49 +1,35 @@
 .template5 {
     .container1 {
         display: flex;
-        margin: 0 0 0 5rem;
+        flex-wrap: wrap;
         &__picture {
-            width: 25%;
-            object-fit: contain;
             border-radius: 3rem 0 3rem 0;
+            margin-bottom:1rem;
         }
         .text1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 0 0 0 7rem;
             align-self: center;
+            text-align: justify;
             color: $color-blue;
-            line-height: 5rem;
+            line-height: 120%;;
+
         }
     }
     .container2 {
-        margin-bottom: 5rem;
-        background: linear-gradient(to right, $color-blue, $color-white 60%);
-        border-radius: 0 0 0 2rem;
-        padding: 2rem;         
-        .text2 {
-            width: 30%;
-            font-size: 3rem;
-            font-weight: bolder;
-            
-        }
-    }    
-    .container3 {
-        display: flex;
-        justify-content: center;
+        margin: 1rem 0;
+        text-align: center;
         &__gif {
-            width: 70%;
-            display: flex;
+            width: 100%;
             border-radius: 2rem;
         }
     }
-    .container4 {
+
+    .container3 {
         text-align: center;
-        margin: 5rem 0;
+        margin: 2rem 0;
         &__quote {
             font-family: titlePolice;
             color: $color-yellow;
-            font-size: 5rem;
+            font-size: 3rem;
         }
         .text3 {
             font-size: 2.5rem;
@@ -51,6 +37,48 @@
             margin-top: 3rem;
             color: $color-blue;
             line-height: 5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .template5 {
+        .container1 {
+            flex-wrap: nowrap;
+            &__picture{
+                width: 25%;
+                object-fit: cover;
+                object-position: left;
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 860px){
+    .template5 {
+        .container2 {
+            &__gif {
+                width: 80%;
+            }
+        }
+
+        .container3 {
+            text-align: center;
+            margin: 5rem 0;
+
+            &__quote {
+                font-size: 5rem;
+            }
+
+            .text3 {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-top: 3rem;
+                color: $color-blue;
+                line-height: 5rem;
+            }
         }
     }
 }

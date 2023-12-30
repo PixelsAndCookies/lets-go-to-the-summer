@@ -1,7 +1,8 @@
-.home-header h1, .holiday-header h1{
+.home-header h1,
+.holiday-header h1 {
     display: block;
     min-height: 17rem;
-    width: 100%;      
+    width: 100%;
     margin: auto;
 }
 .home-header {
@@ -13,253 +14,254 @@ h1 {
     fill: $color-blue;
     position: relative;
 
-    a{
-        &>span {
+    a {
+        & > span {
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
         }
-        
-        &>span:first-of-type {
+
+        & > span:first-of-type {
             top: 0;
-    
+
             &::before,
             &::after {
-                content: "";
+                content: '';
                 display: block;
                 width: 3rem;
-                border: .3rem $color-pink solid;
+                border: 0.3rem $color-pink solid;
                 position: absolute;
                 top: 75%;
             }
-    
+
             &::before {
                 left: -11%;
             }
-    
+
             &::after {
                 right: -11%;
             }
-    
+
             .warp {
                 display: block;
                 position: relative;
                 font-family: logoPolice;
                 font-size: 4rem;
                 color: $color-blue;
-                text-shadow: .2rem .2rem #b6cccd;
+                text-shadow: 0.2rem 0.2rem #b6cccd;
                 width: 22.7rem;
                 height: 9.3rem;
-    
+
                 [class*='warp__'] {
                     display: block;
                     position: absolute;
                 }
-    
+
                 .warp__0 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(3.8rem, 4rem) rotate(-0.87rad);
                 }
-    
+
                 .warp__1 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(6.3rem, 2rem) rotate(-0.44rad);
                 }
-    
+
                 .warp__2 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(8.5rem, 1.5rem) rotate(-0.18rad);
                 }
-    
+
                 .warp__3 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(9.9rem, 1.3rem) rotate(-0.07rad);
                 }
-    
+
                 .warp__4 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(11rem, 1.3rem) rotate(0.02rad);
                 }
-    
+
                 .warp__5 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(28rem, 7.9rem) rotate(0.17rad);
                 }
-    
+
                 .warp__6 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(14.8rem, 2.5rem) rotate(0.4rad);
                 }
-    
+
                 .warp__7 {
                     transform-origin: 50% 4.3rem;
                     transform: translate(16.6rem, 3.8rem) rotate(0.8rad);
                 }
             }
         }
-    
-        &>span:nth-of-type(2) {
+
+        & > span:nth-of-type(2) {
             font-family: mainPolice;
             top: 6.5rem;
             font-weight: 800;
             color: $color-red;
             font-size: 2.5rem;
             left: 49%;
-    
+
             &::first-letter {
                 text-transform: capitalize;
             }
         }
-    
-        &>span:nth-of-type(3) {
+
+        & > span:nth-of-type(3) {
             top: 9rem;
             font-family: titlePolice;
             color: $color-yellow;
             font-size: 8rem;
             text-transform: capitalize;
-            text-shadow: .3rem .3rem $color-red;
+            text-shadow: 0.3rem 0.3rem $color-red;
         }
-    } 
+    }
 }
 
 @media screen and (min-width: 860px) {
-   
-    .home-header h1 {  
-        min-height:21rem;
-        a{
-            &>span:first-of-type {
-                    &::before,
-                    &::after {
-                        width: 7.5rem;
-                    }
-            
-                    &::before {
-                        left: -38%;
-                    }
-            
-                    &::after {
-                        right: -38%;
-                    }
-            
-                    .warp {
-                        font-size: 5rem;
-                        text-shadow: .3rem .3rem #b6cccd;
-            
+    .home-header h1 {
+        min-height: 21rem;
+        a {
+            & > span:first-of-type {
+                &::before,
+                &::after {
+                    width: 7.5rem;
+                }
+
+                &::before {
+                    left: -38%;
+                }
+
+                &::after {
+                    right: -38%;
+                }
+
+                .warp {
+                    font-size: 5rem;
+                    text-shadow: 0.3rem 0.3rem #b6cccd;
+
                     .warp__0 {
                         transform: translate(2.2rem, 4rem) rotate(-0.87rad);
                     }
-        
+
                     .warp__1 {
                         transform: translate(5.3rem, 2rem) rotate(-0.44rad);
                     }
-        
+
                     .warp__2 {
                         transform: translate(7.8rem, 1.5rem) rotate(-0.18rad);
                     }
-        
+
                     .warp__3 {
                         transform: translate(9.9rem, 1.3rem) rotate(-0.07rad);
                     }
-        
+
                     .warp__4 {
                         transform: translate(11.3rem, 1.3rem) rotate(0.02rad);
                     }
-        
+
                     .warp__5 {
                         transform: translate(28rem, 7.9rem) rotate(0.17rad);
                     }
-        
+
                     .warp__6 {
                         transform: translate(15.9rem, 2.5rem) rotate(0.4rad);
                     }
-        
+
                     .warp__7 {
                         transform: translate(18.5rem, 3.8rem) rotate(0.8rad);
                     }
                 }
             }
-        
-            &>span:nth-of-type(2) {
+
+            & > span:nth-of-type(2) {
                 top: 7.5rem;
                 font-size: 3rem;
                 left: 49.5%;
             }
-        
-            &>span:nth-of-type(3) {
+
+            & > span:nth-of-type(3) {
                 top: 10rem;
                 font-size: 11.5rem;
-                text-shadow: .4rem .4rem $color-red;
+                text-shadow: 0.4rem 0.4rem $color-red;
             }
         }
     }
 
-    .holiday-header h1 {  
-        min-height:auto;
-        width:26rem;
-        margin:0;
-        a{
-            &>span:first-of-type {
+    .holiday-header h1 {
+        min-height: auto;
+        width: 26rem;
+        margin: 0;
+        a {
+            & > span:first-of-type {
                 &::before,
                 &::after {
                     width: 4.5rem;
-                    border: .2rem $color-pink solid;
+                    border: 0.2rem $color-pink solid;
                 }
-        
+
                 &::before {
                     left: -7%;
                 }
-        
+
                 &::after {
                     right: -7%;
                 }
-        
+
                 .warp {
                     font-size: 3.5rem;
-                    text-shadow: .2rem .2rem #b6cccd;
-        
+                    text-shadow: 0.2rem 0.2rem #b6cccd;
+
                     .warp__0 {
-                            transform: translate(6.1rem, 4rem) rotate(-0.87rad);
-                        }
-                    
+                        transform: translate(6.1rem, 4rem) rotate(-0.87rad);
+                    }
+
                     .warp__1 {
                         transform: translate(7.4rem, 2.7rem) rotate(-0.44rad);
                     }
-                
+
                     .warp__2 {
                         transform: translate(8.9rem, 2.2rem) rotate(-0.25rad);
                     }
-                
+
                     .warp__3 {
                         transform: translate(10rem, 2.2rem) rotate(-0.07rad);
                     }
-                
+
                     .warp__4 {
                         transform: translate(11.5rem, 1.8rem) rotate(0.02rad);
                     }
-                
+
                     .warp__5 {
                         transform: translate(28rem, 7.9rem) rotate(0.17rad);
                     }
-                
+
                     .warp__6 {
                         transform: translate(14.3rem, 3.2rem) rotate(0.4rad);
                     }
-                
+
                     .warp__7 {
                         transform: translate(15rem, 4.1rem) rotate(0.7rad);
                     }
                 }
             }
-        
-            &>span:nth-of-type(2) {
+
+            & > span:nth-of-type(2) {
                 font-size: 2rem;
             }
-        
-            &>span:nth-of-type(3) {
+
+            & > span:nth-of-type(3) {
                 top: 8.5rem;
                 font-size: 7rem;
-                text-shadow: .3rem .3rem $color-red;
+                text-shadow: 0.3rem 0.3rem $color-red;
             }
         }
     }
 }
+
+

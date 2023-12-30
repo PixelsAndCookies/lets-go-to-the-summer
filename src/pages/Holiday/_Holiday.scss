@@ -1,15 +1,16 @@
-
-body:has(.holiday-header){
-    background: linear-gradient($color-blue,
-                $color-white,
-                $color-white,
-                $color-white,
-                $color-blue );
+body:has(.holiday-header) {
+    background: linear-gradient(
+        $color-blue,
+        $color-white,
+        $color-white,
+        $color-white,
+        $color-blue
+    );
 }
 
 .holiday-header {
-    display:block;
-    background-color:$color-white;
+    display: block;
+    background-color: $color-white;
 }
 
 @media screen and (min-width: 860px) {
@@ -22,5 +23,14 @@ body:has(.holiday-header){
     }
     .holiday-main {
         padding: 5rem 3rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    body:has(.holiday-header) {
+        background: none;
+    }
+    .holiday-main {
+        padding: 0;
     }
 }

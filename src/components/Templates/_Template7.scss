@@ -7,22 +7,22 @@
         position: relative;
         object-fit: cover;
         background-color: $color-white;
-        border: .1rem $color-lightgrey solid;
+        border: 0.1rem $color-lightgrey solid;
         padding: 1rem;
-        margin:1rem;
+        margin: 1rem;
     }
 
-    .txt0{
+    .txt0 {
         order: 1;
     }
-    .txt1{
+    .txt1 {
         order: 8;
     }
     .txt2 {
         order: 10;
     }
-    .picture0{
-        order:2;
+    .picture0 {
+        order: 2;
     }
     .picture1 {
         order: 7;
@@ -42,15 +42,12 @@
     .picture6 {
         order: 5;
     }
-    p.title{
-        display:none;
+    p.title {
+        display: none;
     }
-
 }
 
-
 @media screen and (min-width: 860px) {
-
     article:has(.template7) h2 {
         display: none;
     }
@@ -58,10 +55,10 @@
     .template7 {
         display: grid;
         align-items: stretch;
-        margin-bottom:-10rem;
+        margin-bottom: -10rem;
 
         p {
-            padding:2rem;
+            padding: 2rem;
             ul {
                 list-style-type: disc;
                 list-style-position: outside;
@@ -102,7 +99,7 @@
             grid-row-start: 6;
             grid-row-end: 8;
             z-index: 30;
-            transform: translate(-1.0rem, -1.4rem);
+            transform: translate(-1rem, -1.4rem);
             width: 90%;
         }
         .txt2 {
@@ -127,7 +124,7 @@
             grid-column-end: 7;
             grid-row-start: 1;
             grid-row-end: 3;
-            transform: translate(-1rem,1.5rem);
+            transform: translate(-1rem, 1.5rem);
         }
 
         .picture1 {
@@ -165,32 +162,30 @@
             transform: translate(-1rem, -1.7rem) rotate(-2deg);
             z-index: 20;
         }
-        .picture5{
+        .picture5 {
             grid-column-start: 1;
             grid-column-end: 9;
             grid-row-start: 10;
             grid-row-end: auto;
         }
-
-        
     }
 }
 
-@media screen and (min-width: 1280px){
-    .template7{
+@media screen and (min-width: 1280px) {
+    .template7 {
         transform: translateX(-1rem);
 
-        p{
-            font-size:3rem;
+        p {
+            font-size: 3rem;
         }
-        p.title{
-            font-size:4rem;
+        p.title {
+            font-size: 4rem;
         }
-        .txt1{
-            width:80%;
+        .txt1 {
+            width: 80%;
         }
 
-        .picture1 {  
+        .picture1 {
             transform: translate(-2rem, -12.7rem) rotate(2deg);
         }
     }

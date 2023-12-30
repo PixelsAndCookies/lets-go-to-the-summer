@@ -1,4 +1,4 @@
-.template3{
+.template3 {
     .containerImg {
         display: grid;
         grid-gap: 2rem;
@@ -7,7 +7,6 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 0rem 3rem;
         }
 
         .picture0 {
@@ -15,7 +14,7 @@
             grid-column-end: 2;
             grid-row-start: 1;
             grid-row-end: 2;
-            border-radius: 0rem 3rem 3rem 3rem;
+            border-radius: 0rem 0rem 3rem 3rem;
         }
 
         .picture1 {
@@ -23,6 +22,7 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 2;
+            border-radius: 3rem 3rem 0rem 0rem;
         }
 
         .picture2 {
@@ -44,6 +44,7 @@
             grid-column-end: 2;
             grid-row-start: 3;
             grid-row-end: 4;
+            border-radius: 0rem 0rem 3rem 3rem;
         }
 
         .picture5 {
@@ -51,29 +52,28 @@
             grid-column-end: 3;
             grid-row-start: 3;
             grid-row-end: 4;
-            border-radius: 0rem 3rem 3rem 3rem;
+            border-radius: 3rem 3rem 0rem 0rem;
         }
     }
 
-    .containerTxt{
-        margin-top : 3.5rem;
-        text-align:center;
+    .containerTxt {
+        margin-top: 3.5rem;
+        text-align: center;
 
-        p:not(:last-of-type){
+        p:not(:last-of-type) {
             margin-bottom: 2rem;
         }
 
-        p:first-of-type{
-            text-transform:uppercase;
-            font-weight:600;
+        p:first-of-type {
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
 
 @media screen and (min-width: 860px) {
-.template3 {
+    .template3 {
         .containerImg {
-           
             .picture0 {
                 grid-column-start: 1;
                 grid-column-end: 2;
@@ -125,4 +125,3 @@
         }
     }
 }
-

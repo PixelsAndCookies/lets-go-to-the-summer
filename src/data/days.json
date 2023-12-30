@@ -13,7 +13,7 @@
                         },
                         {
                             "id": "text2",
-                            "text": "17h - Armé de ses valises et des 74 litres d’alcool, le groupe débarque à la découverte du domaine de la Hardonnière et premier constat : le photographe du site est nul à chier. Le domaine est gigantesque, jardin, piscine, salle des fêtes, jacuzzi, ambiance champêtre au rendez-vous."
+                            "text": "17h - Armé de ses valises et des 74 litres d’alcool, le groupe débarque à la découverte du domaine de la Hardonnière et premier constat : le photographe du site est nul à chier, l'endroit est bien plus beau qu'en photo ! Le domaine est gigantesque, jardin, piscine, salle des fêtes, jacuzzi, ambiance champêtre au rendez-vous."
                         }
                     ],
                     "pictures": [
@@ -74,7 +74,7 @@
                             "id": 2023081301,
                             "src": "pictures/2023/20230813/20230813_1.jpg",
                             "alt": "Photo d'Alex et Axel au barbecue",
-                            "legend":"Le barbecue"
+                            "legend": "Le barbecue"
                         },
                         {
                             "id": 2023081302,
@@ -168,7 +168,7 @@
                     "contents": [
                         {
                             "id": "text1",
-                            "text": "<ul>Règles vestimentaires universelles de la pétanque : <li>Claquettes</li><li>Casquette</li><li>Bermuda</li></ul> Certains se découvrent être de très bons tireurs, d'autres pointeurs ... et certains sont là pour l'ambiance et un bon coup de chance occasionnel&nbsp;!"
+                            "text": "<ul>Règles vestimentaires universelles de la pétanque: <li>Claquettes</li><li>Casquette</li><li>Bermuda</li></ul> Certains se découvrent être de très bons tireurs, d'autres pointeurs ... et certains sont là pour l'ambiance et un bon coup de chance occasionnel&nbsp;!"
                         },
                         {
                             "id": "text2",
@@ -176,7 +176,7 @@
                         },
                         {
                             "id": "text3",
-                            "text": "Insta VS Réalité"
+                            "text": "Insta <br>VS<br> Réalité"
                         },
                         {
                             "id": "text4",
@@ -238,15 +238,7 @@
                     "contents": [
                         {
                             "id": "text1",
-                            "text": "Petite visite de cave matinale pour le petit groupe. Promenade à pied chez les voisins de la Hardonnière pour découvrir de superbes massifs de mures acidulées et un établissement fermés. Quelques cailloux plus tard, nous rejoignons en voiture “le Domaine des 4 vents” à Cravant-les-Côteaux pour une dégustation multiple qui fera des heureux et des nauséeux."
-                        },
-                        {
-                            "id": "text2",
-                            "text": "Visite de la forteresse de Chinon avec au programme Escape Game monumental !"
-                        },
-                        {
-                            "id": "text3",
-                            "text": "Arrivée de Vincent au domaine qui découvre qu’il va dormir... dans sa voiture !"
+                            "text": "Petite visite de cave matinale pour le petit groupe. Promenade à pied chez les voisins de la Hardonnière à la recherche d'un vigneron local. Découverte de superbes massifs de mures acidulées qui finiront en tarte dans l'après-midi. Quelques routes caillouteuses plus tard (<i>tu sors de Cravant-les-Côteaux, tu re-rentres dans Cravant-les-Côteaux, tu re-sors et tu re-reeentres</i>), nous rejoignons en voiture “le Domaine des 4 vents” pour une dégustation multiple qui fera des heureux et des nauséeux.<br/><br/>La journée continue avec la visite de la Forteresse de Chinon et son escape game monumental à la recherche des templiers sous un soleil de plomb !"
                         }
                     ],
                     "pictures": [
