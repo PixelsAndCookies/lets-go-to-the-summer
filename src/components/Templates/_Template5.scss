@@ -8,26 +8,25 @@
             border-radius: 3rem 0 3rem 0;
         }
         .text1 {
-            font-size: 2.5rem;
+            font-size: 2.3rem;
             font-weight: bold;
             margin: 0 0 0 7rem;
             align-self: center;
             color: $color-blue;
-            line-height: 5rem;
+            line-height: 3rem;
         }
     }
     .container2 {
         margin-bottom: 5rem;
-        background: linear-gradient(to right, $color-blue, $color-white 60%);
-        border-radius: 0 0 0 2rem;
-        padding: 2rem;         
+        padding: 0rem;
         .text2 {
-            width: 30%;
-            font-size: 3rem;
+            width: 80%;
+            margin: auto;
+            font-size: 2.3rem;
             font-weight: bolder;
-            
+            text-align: center;
         }
-    }    
+    }
     .container3 {
         display: flex;
         justify-content: center;
