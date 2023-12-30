@@ -9,7 +9,7 @@ export const Faq = () => {
             <main className="main-container">
                 <article className="description">
                     <h2>F A Q</h2>
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>
                             Le site familial est-il visible pour n&apos;importe qui ?
                         </h3>
@@ -19,7 +19,7 @@ export const Faq = () => {
                             mot de passe.
                         </p>
                     </div>
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>
                             Puis-je communiquer mon mot de passe à des amis pour
                             leur montrer ?
@@ -30,7 +30,7 @@ export const Faq = () => {
                             mot de passe.
                         </p>
                     </div>
-                    <div className="faq-licences">
+                    <div className="otherPagesElement">
                         <h3>Puis-je ajouter du contenu moi-même ?</h3>
                         <p>
                             Non, cette fonctionnalité est réservé pour l&apos;instant
@@ -41,7 +41,7 @@ export const Faq = () => {
                             l&apos;un des (trop) nombreux goupe WhatsApp !
                         </p>
                     </div>
-                    <div className="faq-licences no-border">
+                    <div className="otherPagesElement no-border">
                         <p>
                             Si vous avez des questions ou tout autre suggestion,
                             n&apos;hésitez pas à nous contacter{' '}
