@@ -13,7 +13,7 @@ export const Cards = () => {
                         className={cardClass}
                         key={holiday.id}
                     >
-                        <Link to={`/holidays/${holiday.id}`}>
+                        <Link to={`/holidays/${holiday.id}`} title={holiday.info}>
                             <img
                                 className={imageClass}
                                 src={holiday.cover}

@@ -11,7 +11,7 @@ export const Description = (props) => {
                     {items.map((item) => (
                         <div key={item.id}>
                             {item.lien ? (
-                                <a href={item.lien} target="_blank" rel="noreferrer">
+                                <a href={item.lien} target="_blank" rel="noreferrer" title={item.info}>
                                     <img src={item.icon} alt={item.id} />
                                 </a>
                             ) : (
