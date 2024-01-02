@@ -15,7 +15,6 @@
         &__title {
             text-align: center;
             font-size: 3rem;
-            margin-bottom: 1rem;
             font-family: titlePolice;
             color: $color-grey;
         }
@@ -24,6 +23,26 @@
             font-size: 2rem;
             color: $color-grey;
         }
+    }
+}
+
+.dropdown {
+    &__title {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+    }
+    &__icon {
+        transform: rotate(180deg);
+        position: absolute;
+        right: 0;
+        text-align: center;
+    }
+    .active &__content {
+        padding: 0;
+        height: 0;
+        visibility: hidden;
     }
 }
 
@@ -52,7 +71,6 @@
 
             &__title {
                 font-size: 4rem;
-                margin-bottom: 3rem;
             }
 
             p {
