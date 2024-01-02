@@ -7,7 +7,7 @@ export const Licences = () => {
                 <Logo />
             </header>
             <main className="main-container">
-                <article className="description">
+                <article className="description otherElement">
                     <h2>Licences</h2>
 
                     <div className="otherPagesElement">

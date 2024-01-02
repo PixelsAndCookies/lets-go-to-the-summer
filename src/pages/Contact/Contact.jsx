@@ -33,7 +33,7 @@ export const Contact = () => {
                 <Logo />
             </header>
             <main className="main-container">
-                <article className="description">
+                <article className="description otherElement">
                     <h2>Contact</h2>
 
                     <form onSubmit={handleSubmit}>
