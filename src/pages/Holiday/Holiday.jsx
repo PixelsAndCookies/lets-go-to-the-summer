@@ -12,21 +12,55 @@ import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
 import days from '../../data/days.json'
 
+// Fonction pour obtenir le bon template selon le jour
+const getTemplateForDay = (day, isDropdownOpen) => {
+    switch (day.template) {
+        case 'Template1':
+            return <Template1 day={day} />
+        case 'Template2':
+            return <Template2 day={day} />
+        case 'Template3':
+            return <Template3 day={day} />
+        case 'Template4':
+            return <Template4 day={day} />
+        case 'Template5':
+            return <Template5 day={day} isDropdownOpen={isDropdownOpen} />
+        case 'Template6':
+            return <Template6 day={day} />
+        case 'Template7':
+            return <Template7 day={day} />
+        default:
+            return null
+    }
+}
+
 export const Holiday = () => {
     const { year } = useParams()
     const yearsList = days.years[year]
     const [daysList, setDaysList] = useState(null)
     const navigate = useNavigate()
 
-    useEffect(() => {
-        if (yearsList && yearsList.days) {
-            const daysArray = Object.values(yearsList.days)
-            setDaysList(daysArray)
+    // Gère les dropdowns
+    const [activeDropdowns, setActiveDropdowns] = useState([])
+    const activeDropdown = (index) => {
+        setActiveDropdowns((previousState) => {
+            const newActiveDropdowns = [...previousState]
+            newActiveDropdowns[index] = !newActiveDropdowns[index]
+            return newActiveDropdowns
+        })
+    }
 
-            if (daysArray.length === 0) {
-                navigate('/error404')
-            }
-        } else {
+    useEffect(() => {
+        if (!yearsList || !yearsList.days) {
+            navigate('/error404')
+            return
+        }
+
+        const daysArray = Object.values(yearsList.days)
+        setDaysList(daysArray)
+        setActiveDropdowns(Array(daysArray.length).fill(true))
+
+        if (daysArray.length === 0) {
             navigate('/error404')
         }
     }, [year, yearsList, navigate])
@@ -70,35 +104,22 @@ export const Holiday = () => {
                 <Navbar />
             </header>
             <main className="holiday-main">
-                {daysList.map((day) => (
+                {daysList.map((day, index) => (
                     <article key={day.id} className={'dayCard ' + day.template}>
-                        <h2 className={'dayCard__title'}>{day.title}</h2>
-                        {getTemplateForDay(day)}
+                        <div className={`dropdown ${activeDropdowns[index] && 'active'}`}>
+                            <div className="dropdown__title" onClick={() => activeDropdown(index)}>
+                                <h2 className={'dayCard__title'}>{day.title}</h2>
+                                <button className="btn dropdown__icon">
+                                    {activeDropdowns[index] ? '+' : '-'}
+                                </button>
+                            </div>
+                            <div className="dropdown__content">
+                                {getTemplateForDay(day, activeDropdowns[index])}
+                            </div>
+                        </div>
                     </article>
                 ))}
             </main>
         </>
     )
-}
-
-// Fonction pour obtenir le bon template en fonction du jour
-const getTemplateForDay = (day) => {
-    switch (day.template) {
-        case 'Template1':
-            return <Template1 day={day} />
-        case 'Template2':
-            return <Template2 day={day} />
-        case 'Template3':
-            return <Template3 day={day} />
-        case 'Template4':
-            return <Template4 day={day} />
-        case 'Template5':
-            return <Template5 day={day} />
-        case 'Template6':
-            return <Template6 day={day} />
-        case 'Template7':
-            return <Template7 day={day} />
-        default:
-            return null
-    }
 }
