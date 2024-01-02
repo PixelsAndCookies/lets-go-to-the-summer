@@ -1,6 +1,6 @@
 import { Carousel } from '../Carousel/Carousel'
 
-export const Template5 = ({ day }) => {
+export const Template5 = ({ day, isDropdownOpen }) => {
     const firstPicture = day.pictures[0]
     const filteredPictures = day.pictures.slice(1, -1)
     const lastPicture = day.pictures[day.pictures.length - 1]
@@ -9,8 +9,11 @@ export const Template5 = ({ day }) => {
         const matchContent = day.contents.find((content) => content.id === id)
         return (
             matchContent && (
-                <p key={matchContent.id} className={matchContent.id} dangerouslySetInnerHTML={ {__html: matchContent.text}}>
-                </p>
+                <p
+                    key={matchContent.id}
+                    className={matchContent.id}
+                    dangerouslySetInnerHTML={{ __html: matchContent.text }}
+                ></p>
             )
         )
     }
@@ -27,7 +30,7 @@ export const Template5 = ({ day }) => {
                 />
                 {displayContentById('text1')}
             </div>
-            <Carousel slides={filteredPictures} />
+            {!isDropdownOpen && <Carousel slides={filteredPictures} />}
             <div className="container2">
                 <img
                     key={lastPicture.id}
