@@ -10,6 +10,7 @@ export const Template6 = ({ day }) => {
                         src={'/' + firstPicture.src}
                         alt={firstPicture.alt}
                         className="picture0"
+                        loading="lazy"
                     />
                 )}
             </div>
@@ -20,6 +21,7 @@ export const Template6 = ({ day }) => {
                         src={'/' + picture.src}
                         alt={picture.alt}
                         className={'picture' + (index+1)}
+                        loading="lazy"
                     />
                 ))}
                 {day.contents.map((content, index) => (
