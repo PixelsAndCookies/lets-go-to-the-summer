@@ -1,19 +1,41 @@
-.holiday-main {
-    padding: 0;
-}
-
 .holiday-header {
     display: block;
     background-color: $color-white;
 }
 
+.holiday-main {
+    padding: 0;
+    .dayCard {
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: $color-grey 0.1rem 0.1rem 1rem;
+        border-radius: 20px;
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+
+        &__title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: titlePolice;
+            color: $color-grey;
+        }
+
+        p {
+            font-size: 2rem;
+            color: $color-grey;
+        }
+    }
+}
+
 @media screen and (min-width: 860px) {
     body:has(.holiday-header) {
-        background: linear-gradient($color-blue,
-                $color-white,
-                $color-white,
-                $color-white,
-                $color-blue );
+        background: linear-gradient(
+            $color-blue,
+            $color-white,
+            $color-white,
+            $color-white,
+            $color-blue
+        );
     }
     .holiday-header {
         border-radius: 0 0 2rem 2rem;
@@ -24,5 +46,18 @@
     }
     .holiday-main {
         padding: 5rem 3rem;
+        .dayCard {
+            padding: 5rem;
+            margin: 5rem;
+
+            &__title {
+                font-size: 4rem;
+                margin-bottom: 3rem;
+            }
+
+            p {
+                font-size: 2.3rem;
+            }
+        }
     }
 }
