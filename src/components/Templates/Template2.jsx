@@ -32,6 +32,7 @@ export const Template2 = ({ day }) => {
                     <img
                         src={"/"+picture.src}
                         alt={picture.alt}
+                        loading="lazy"
                     />
                     <figcaption>{picture.legend}</figcaption></figure>
                 ))}

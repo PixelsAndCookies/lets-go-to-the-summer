@@ -5,7 +5,7 @@ export const Template3 = ({day}) => {
         <section key={day.id} className={template}>
             <div className="containerImg">
                 {day.pictures.map((picture, index) => (
-                    <img key={"picture"+index} src={"/"+ picture.src} alt={picture.alt} className={"picture"+index}/>
+                    <img key={"picture"+index} src={"/"+ picture.src} alt={picture.alt} className={"picture"+index} loading="lazy"/>
                 ))}
             </div>
             <div className="containerTxt">

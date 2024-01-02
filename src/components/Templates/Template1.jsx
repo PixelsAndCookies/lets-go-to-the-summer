@@ -14,6 +14,7 @@ export const Template1 = ({ day }) => {
                         className={'picture' + index}
                         src={'/' + picture.src}
                         alt={picture.alt}
+                        loading="lazy"
                     />
                 ))}
             </div>

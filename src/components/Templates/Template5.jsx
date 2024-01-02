@@ -23,6 +23,7 @@ export const Template5 = ({ day }) => {
                     src={'/' + firstPicture.src}
                     alt={firstPicture.alt}
                     className={'container1__picture'}
+                    loading="lazy"
                 />
                 {displayContentById('text1')}
             </div>
@@ -33,6 +34,7 @@ export const Template5 = ({ day }) => {
                     src={'/' + lastPicture.src}
                     alt={lastPicture.alt}
                     className={'container2__gif'}
+                    loading="lazy"
                 />
             </div>
             <div className="container3">

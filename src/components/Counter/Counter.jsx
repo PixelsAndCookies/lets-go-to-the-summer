@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import counterLogo from "../../assets/icons/hamac.png";
+
+const CounterLogo = "/public/pictures/icons/hamac.png";
 
 export const Counter = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -29,7 +30,7 @@ export const Counter = () => {
   }, []);
   return (
     <div className="counter-container">
-      <img src={counterLogo} alt="logo counter vacances" />
+      <img src={CounterLogo} alt="logo counter vacances" />
       <p>
         J-{timeLeft.days}
         <span>
