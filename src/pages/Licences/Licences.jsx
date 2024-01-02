@@ -7,22 +7,22 @@ export const Licences = () => {
                 <Logo />
             </header>
             <main className="main-container">
-                <article className="description otherElement">
+                <article className="description otherPages">
                     <h2>Licences</h2>
 
-                    <div className="otherPagesElement">
+                    <div className="otherPages__element">
                         <h3>Emoticons</h3>
                         <p>Designer : Freepik </p>
                         <p>https://www.freepik.com/</p>
                     </div>
 
-                    <div className="otherPagesElement">
+                    <div className="otherPages__element">
                         <h3>Emojis</h3>
                         <p>Designer : Morgane Roulland </p>
                         <p>Application : Avatoon</p>
                     </div>
 
-                    <div className="otherPagesElement">
+                    <div className="otherPages__element">
                         <h3>Photographies et vidéos</h3>
                         <p>
                             Les photos et vidéos des membres des familles
@@ -37,7 +37,7 @@ export const Licences = () => {
                         </p>
                     </div>
 
-                    <div className="otherPagesElement no-border">
+                    <div className="otherPages__element no-border">
                         <h3>Polices</h3>
                         <aside>
                             <p>Designer : Ilham Herry</p>
