@@ -7,7 +7,7 @@ export const About = () => {
                 <Logo />
             </header>
             <main className="main-container">
-                <article className="description otherElement">
+                <article className="description otherPages">
                     <h2>A propos</h2>
                     <p style={{ lineHeight: 1.3 }}>
                         Quelques petites informations concernant ce site.
