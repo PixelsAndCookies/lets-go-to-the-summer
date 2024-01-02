@@ -33,12 +33,12 @@ export const Contact = () => {
                 <Logo />
             </header>
             <main className="main-container">
-                <article className="description otherElement">
+                <article className="description otherPages">
                     <h2>Contact</h2>
 
                     <form onSubmit={handleSubmit}>
                         <div
-                            className={`otherPagesElement ${
+                            className={`otherPages__element ${
                                 lastNameError ? 'error' : ''
                             }`}
                         >
@@ -70,7 +70,7 @@ export const Contact = () => {
                         </div>
 
                         <div
-                            className={`otherPagesElement ${
+                            className={`otherPages__element ${
                                 firstNameError ? 'error' : ''
                             }`}
                         >
@@ -101,7 +101,7 @@ export const Contact = () => {
                             )}
                         </div>
 
-                        <div className="otherPagesElement">
+                        <div className="otherPages__element">
                             <h3>
                                 <label htmlFor="message">Message :</label>
                             </h3>
@@ -120,7 +120,7 @@ export const Contact = () => {
                             ></textarea>
                         </div>
 
-                        <div className="otherPagesElement">
+                        <div className="otherPages__element">
                             <button className="btn" type="submit">
                                 Envoyer
                             </button>
