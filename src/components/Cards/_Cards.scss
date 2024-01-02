@@ -1,58 +1,46 @@
-.cards-container {
+.cards {
     display: flex;
     justify-content: space-around;
-    & .card {
-        width: 30%;
-        min-height: 30rem;
-        display: flex;
+    flex-direction: column;
+    :hover {
+        transform: scale(1.05);
+    }
+    .card {
+        margin: 2rem;
         box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
         background-color: $color-white;
-        overflow: hidden;
         :hover {
-            .card {
-                &__date {
-                    color: $color-yellow;
-                }
-            }
+            transform: scale(1);
         }
-
+        a {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img {
+            min-height: 25rem;
+        }
         &--2023 {
             border-radius: 1.5rem 1.5rem 0rem 1.5rem;
-
-            a {
-                flex-direction: column;
+            &__img {
+                border-radius: 1.5rem 1.5rem 12rem 0rem;
             }
         }
         &--2024 {
             border-radius: 1.5rem 0rem 1.5rem 0rem;
             flex-direction: column-reverse;
+            &__img {
+                border-radius: 12rem 0rem 1.5rem 0rem;
+            }
             a {
                 flex-direction: column-reverse;
             }
         }
         &--2025 {
             border-radius: 0rem 1.5rem 1.5rem 1.5rem;
-            a {
-                flex-direction: column;
-            }
-        }
-
-        &__img {
-            height: 85%;
-            object-fit: cover;
-            &--2023 {
-                border-radius: 1.5rem 1.5rem 12rem 0rem;
-            }
-
-            &--2024 {
-                border-radius: 12rem 0rem 1.5rem 0rem;
-            }
-
-            &--2025 {
+            &__img {
                 border-radius: 0rem 1.5rem 0rem 12rem;
             }
         }
-
         &__date {
             font-family: titlePolice;
             color: $color-grey;
@@ -60,19 +48,29 @@
             text-align: center;
             padding: 1rem;
         }
-
-        a {
-            display: flex;
-            height: 100%;            
+        :hover {
+            .card {
+                &__date {
+                    color: $color-yellow;
+                }
+            }
         }
     }
 }
 
 @media screen and (min-width: 860px) {
-    .cards-container {
+    .cards {
+        flex-direction: row;
         & .card {
             width: 30%;
-            min-height: 52rem;
+            min-height: 50rem;
+            a {
+                height: 100%;
+            }
+            &__img {
+                height: 85%;
+                object-fit: cover;
+            }
             &__date {
                 font-size: 5rem;
                 padding: 3rem 1rem;
