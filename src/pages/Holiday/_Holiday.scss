@@ -1,11 +1,5 @@
-body:has(.holiday-header) {
-    background: linear-gradient(
-        $color-blue,
-        $color-white,
-        $color-white,
-        $color-white,
-        $color-blue
-    );
+.holiday-main {
+    padding: 0;
 }
 
 .holiday-header {
@@ -14,6 +8,13 @@ body:has(.holiday-header) {
 }
 
 @media screen and (min-width: 860px) {
+    body:has(.holiday-header) {
+        background: linear-gradient($color-blue,
+                $color-white,
+                $color-white,
+                $color-white,
+                $color-blue );
+    }
     .holiday-header {
         border-radius: 0 0 2rem 2rem;
         display: flex;
@@ -23,14 +24,5 @@ body:has(.holiday-header) {
     }
     .holiday-main {
         padding: 5rem 3rem;
-    }
-}
-
-@media screen and (max-width: 430px) {
-    body:has(.holiday-header) {
-        background: none;
-    }
-    .holiday-main {
-        padding: 0;
     }
 }
