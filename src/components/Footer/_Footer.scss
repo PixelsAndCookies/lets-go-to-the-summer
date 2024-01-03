@@ -5,6 +5,7 @@ footer {
     font-weight: 600;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     position: 0;
 
@@ -49,6 +50,8 @@ footer {
         .content {
             padding: 2rem;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
 
             li {
                 font-size: 3rem;
