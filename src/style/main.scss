@@ -42,10 +42,6 @@ main {
     position: relative;
 }
 
-.visible {
-    display: block;
-}
-
 .hidden {
     display: none;
 }
@@ -209,10 +205,6 @@ b {
     .App {
         overflow: hidden;
         position: relative;
-    }
-
-    .visible {
-        display: none;
     }
 
     .red-cercle {
