@@ -1,7 +1,12 @@
-.home-header{
+.home-header {
     text-align: center;
     background: rgb(255, 255, 255);
-    background: linear-gradient(14deg, rgba(255, 255, 255, 0) 65%, rgba(250, 164, 51, 1) 100%);
+    background: linear-gradient(
+        14deg,
+        rgba(255, 255, 255, 0) 65%,
+        rgba(250, 164, 51, 1) 100%
+    );
+  
 }
 
 .main-container {
@@ -11,14 +16,14 @@
     & > p {
         color: $color-blue;
         font-family: titlePolice;
-        font-size:5rem;
-        text-align:center;
+        font-size: 5rem;
+        text-align: center;
 
-        span{
-            font-family:mainPolice;
-            font-weight:700;
-            color:$color-grey;
-            font-size:3rem;
+        span {
+            font-family: mainPolice;
+            font-weight: 700;
+            color: $color-grey;
+            font-size: 3rem;
         }
     }
 }
@@ -26,14 +31,13 @@
 @media screen and (min-width: 860px) {
     .main-container {
         width: 80%;
-                
-        & > p{
-            font-size:6.5rem;
-        
-            span{
-                font-size:4.5rem;
+
+        & > p {
+            font-size: 6.5rem;
+
+            span {
+                font-size: 4.5rem;
             }
         }
     }
 }
-

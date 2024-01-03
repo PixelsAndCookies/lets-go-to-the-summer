@@ -1,10 +1,12 @@
 import { Logo } from '../../components/Logo/Logo';
+import { Navbar } from '../../components/Navbar/Navbar';
 
 export const Licences = () => {
     return (
         <>
-            <header className="home-header">
+            <header className="holiday-header">
                 <Logo />
+                <Navbar />
             </header>
             <main className="main-container">
                 <article className="description otherPages">

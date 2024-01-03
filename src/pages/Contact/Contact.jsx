@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Logo } from '../../components/Logo/Logo';
+import { Navbar } from '../../components/Navbar/Navbar';
 
 export const Contact = () => {
     const [lastName, setLastName] = useState('');
@@ -29,8 +30,9 @@ export const Contact = () => {
 
     return (
         <>
-            <header className="home-header">
+            <header className="holiday-header">
                 <Logo />
+                <Navbar />
             </header>
             <main className="main-container">
                 <article className="description otherPages">

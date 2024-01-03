@@ -1,15 +1,16 @@
-nav {   
+nav {
     display: flex;
     width: 60%;
     flex-direction: column;
     justify-content: center;
+   
 
     ul {
         display: flex;
         justify-content: space-around;
 
-        li{
-            display:flex;
+        li {
+            display: flex;
             align-items: center;
             background-color: $color-blue;
             border-radius: 2rem;
@@ -22,12 +23,24 @@ nav {
                 font-weight: bold;
                 padding-bottom: 0.5rem;
             }
-        } 
+        }
+    }
+}
+
+.holiday-header, .home-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    box-shadow: #686868 0.1rem 0.1rem 1rem;
+
+    li {
+        margin: 1rem;
     }
 }
 
 @media screen and (max-width: 860px) {
-    nav{
-        display:none;
+    nav {
     }
 }
