@@ -1,9 +1,9 @@
 @keyframes fadein {
     0% {
-        transform: translateX(100rem);
+        transform: translateY(30rem);
     }
     100% {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -21,7 +21,7 @@
         border-radius: 20px;
         padding: 2rem 1rem;
         margin: 2rem 1rem;
-        animation: fadein 210ms forwards ease-in-out;
+        animation: fadein 1100ms forwards ease-in-out;
         opacity: 0;
         &__title {
             text-align: center;
@@ -71,7 +71,7 @@
         max-height: 0;
         overflow: hidden;
         opacity: 0;
-        transition: max-height 0.3s ease-in-out, opacity 0.7s ease-in-out;
+        transition: max-height 0.3s ease-in-out, opacity 0.5s ease-in-out;
     }
     .active &__content {
         max-height: 100%;
@@ -104,7 +104,7 @@
         .dayCard {
             padding: 5rem;
             margin: 5rem;
-            animation: fadein 2100ms forwards ease-in-out;
+            animation: fadein 1100ms forwards ease-in-out;
 
             &__title {
                 font-size: 4rem;
