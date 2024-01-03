@@ -20,3 +20,13 @@ $color-white: #ffffff;
     font-family: logoPolice;
     src: url(./fonts/bukhari_script.ttf);
 }
+
+@keyframes fadein {
+    0% {
+        transform: translateY(30rem);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
