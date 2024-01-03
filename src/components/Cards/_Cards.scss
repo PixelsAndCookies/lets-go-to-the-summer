@@ -56,6 +56,56 @@
                 }
             }
         }
+
+        &--2023 {
+            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
+
+            a {
+                flex-direction: column;
+            }
+        }
+        &--2024 {
+            border-radius: 1.5rem 0rem 1.5rem 0rem;
+            flex-direction: column-reverse;
+            a {
+                flex-direction: column-reverse;
+            }
+        }
+        &--2025 {
+            border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+            a {
+                flex-direction: column;
+            }
+        }
+
+        &__img {
+            height: 85%;
+            object-fit: cover;
+            &--2023 {
+                border-radius: 1.5rem 1.5rem 12rem 0rem;
+            }
+
+            &--2024 {
+                border-radius: 12rem 0rem 1.5rem 0rem;
+            }
+
+            &--2025 {
+                border-radius: 0rem 1.5rem 0rem 12rem;
+            }
+        }
+
+        &__date {
+            font-family: titlePolice;
+            color: $color-grey;
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        a {
+            display: flex;
+            height: 100%;
+        }
     }
 }
 
@@ -76,6 +126,21 @@
             &__date {
                 font-size: 5rem;
                 padding: 3rem 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        & .card {
+            width: 80%;
+            margin: 1rem auto;
+            min-height: 20rem;
+            & .card__date {
+                font-size: 3rem;
             }
         }
     }

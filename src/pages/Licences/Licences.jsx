@@ -10,19 +10,19 @@ export const Licences = () => {
                 <article className="description otherPages">
                     <h2>Licences</h2>
 
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>Emoticons</h3>
                         <p>Designer : Freepik </p>
                         <p>https://www.freepik.com/</p>
                     </div>
 
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>Emojis</h3>
                         <p>Designer : Morgane Roulland </p>
                         <p>Application : Avatoon</p>
                     </div>
 
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>Photographies et vidéos</h3>
                         <p>
                             Les photos et vidéos des membres des familles

@@ -60,3 +60,11 @@ article.description {
         }
     }
 }
+
+@media screen and (max-width: 860px) {
+    .presentation,
+    .informations {
+        width: 90%;
+        margin: 1rem;
+    }
+}

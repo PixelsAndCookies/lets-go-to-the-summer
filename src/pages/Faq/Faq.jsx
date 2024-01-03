@@ -9,7 +9,7 @@ export const Faq = () => {
             <main className="main-container">
                 <article className="description otherPages">
                     <h2>F A Q</h2>
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>
                             Le site familial est-il visible pour n&apos;importe
                             qui ?
@@ -20,7 +20,7 @@ export const Faq = () => {
                             avez le mot de passe.
                         </p>
                     </div>
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>
                             Puis-je communiquer mon mot de passe à des amis pour
                             leur montrer ?
@@ -31,7 +31,7 @@ export const Faq = () => {
                             pas communiquer le mot de passe.
                         </p>
                     </div>
-                    <div className="otherPages__element">
+                    <div className="otherPages__element border">
                         <h3>Puis-je ajouter du contenu moi-même ?</h3>
                         <p>
                             Non, cette fonctionnalité est réservé pour
@@ -42,7 +42,7 @@ export const Faq = () => {
                             l&apos;un des (trop) nombreux goupe WhatsApp !
                         </p>
                     </div>
-                    <div className="otherPages__element no-border">
+                    <div className="otherPages__element">
                         <p>
                             Si vous avez des questions ou tout autre suggestion,
                             n&apos;hésitez pas à nous contacter{' '}

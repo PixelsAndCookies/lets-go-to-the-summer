@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .section-error h2 {
@@ -39,5 +40,19 @@
         font-family: mainPolice;
         margin-top: 5rem;
         padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .section-error {
+        width: 80%;
+        height: 55rem;
+    }
+
+    .btn {
+        font-size: 3rem;
+        &-return {
+            width: 60%;
+        }
     }
 }
