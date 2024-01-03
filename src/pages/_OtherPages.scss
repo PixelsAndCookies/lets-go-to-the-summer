@@ -88,3 +88,22 @@
         }
     }
 }
+
+@media screen and (max-width: 430px) {
+    article.description.otherPages {
+        margin: auto;
+        padding: 1rem;
+    }
+    .otherPages__element {
+        padding: 1rem;
+    }
+
+    .otherPages__element input,
+    .otherPages__element textarea {
+        width: 85%;
+    }
+    .otherPages__element button.btn {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+}
