@@ -106,9 +106,17 @@ export const Holiday = () => {
             <main className="holiday-main">
                 {daysList.map((day, index) => (
                     <article key={day.id} className={'dayCard ' + day.template}>
-                        <div className={`dropdown ${activeDropdowns[index] && 'active'}`}>
+                        <div className={`dropdown ${activeDropdowns[index] ? '' : 'active'}`}>
                             <div className="dropdown__title" onClick={() => activeDropdown(index)}>
-                                <h2 className={'dayCard__title'}>{day.title}</h2>
+                                <h2
+                                    className={`dayCard__title ${                                        
+                                        day.template === 'Template7' && !activeDropdowns[index]
+                                            ? 'dayCard__title--displayNone'
+                                            : ''
+                                    }`}
+                                >
+                                    {day.title}
+                                </h2>
                                 <button className="btn dropdown__icon">
                                     {activeDropdowns[index] ? '+' : '-'}
                                 </button>
