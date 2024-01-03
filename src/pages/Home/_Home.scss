@@ -12,7 +12,6 @@
 .main-container {
     width: 100%;
     margin: 6rem auto;
-
     & > p {
         color: $color-blue;
         font-family: titlePolice;
@@ -26,8 +25,43 @@
             font-size: 3rem;
         }
     }
+    .descriptionDiv,
+    .counterDiv,
+    .cardsDiv,
+    .infoDiv {
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+        &.visible {
+            opacity: 1;
+        }
+    }    
+    .descriptionDiv {
+        transform: translateY(20%);
+        &.visible {
+            transform: translateY(0);
+        }
+    }
+    .counterDiv {
+        transform: translateX(50%);
+        &.visible {
+            transform: translateX(0);
+        }
+    }
+    .cardsDiv {
+        transform: translateX(-40%);
+        &.visible {
+            transform: translateX(0);
+        }
+    }
+    .infoDiv {
+        transform: translateY(50%);
+        &.visible {
+            transform: translateY(0);
+        }
+    }
 }
 
+// Responsive Desktop
 @media screen and (min-width: 860px) {
     .main-container {
         width: 80%;
@@ -37,6 +71,30 @@
 
             span {
                 font-size: 4.5rem;
+            }
+        }
+        .descriptionDiv {
+            transform: translateY(50%);
+            &.visible {
+                transform: translateY(0);
+            }
+        }
+        .counterDiv {
+            transform: translateX(60%);
+            &.visible {
+                transform: translateX(0);
+            }
+        }
+        .cardsDiv {
+            transform: translateX(-60%);
+            &.visible {
+                transform: translateX(0);
+            }
+        }
+        .infoDiv {
+            transform: translateY(100%);
+            &.visible {
+                transform: translateY(0);
             }
         }
     }
