@@ -1,3 +1,13 @@
+@keyframes fadein {
+    0% {
+        transform: translateX(100rem);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 .holiday-header {
     display: block;
     background-color: $color-white;
@@ -11,17 +21,38 @@
         border-radius: 20px;
         padding: 2rem 1rem;
         margin: 2rem 1rem;
-
+        animation: fadein 210ms forwards ease-in-out;
+        opacity: 0;
         &__title {
             text-align: center;
             font-size: 3rem;
             font-family: titlePolice;
             color: $color-grey;
         }
-
         p {
             font-size: 2rem;
             color: $color-grey;
+        }
+        &.fadein--0 {
+            animation-delay: 300ms;
+        }
+        &.fadein--1 {
+            animation-delay: 600ms;
+        }
+        &.fadein--2 {
+            animation-delay: 900ms;
+        }
+        &.fadein--3 {
+            animation-delay: 1200ms;
+        }
+        &.fadein--4 {
+            animation-delay: 1500ms;
+        }
+        &.fadein--5 {
+            animation-delay: 1800ms;
+        }
+        &.fadein--6 {
+            animation-delay: 2100ms;
         }
     }
 }
@@ -73,6 +104,7 @@
         .dayCard {
             padding: 5rem;
             margin: 5rem;
+            animation: fadein 2100ms forwards ease-in-out;
 
             &__title {
                 font-size: 4rem;
