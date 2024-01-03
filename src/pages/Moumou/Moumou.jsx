@@ -1,8 +1,8 @@
 import { Logo } from '../../components/Logo/Logo';
 import { Navbar } from '../../components/Navbar/Navbar';
-import React, { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 
-const MoumouPlayer = () => {
+const Player = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef(null);
 
@@ -26,11 +26,8 @@ const MoumouPlayer = () => {
                     <h2>Cadeau</h2>
                     <div className="otherPages__element no-border">
                         <video ref={videoRef} controls />
-                        <source
-                            src="C:\Users\Roulland\Desktop\DevDuDimanche\lets-go-to-the-summer\public\pictures\moumou.mp4"
-                            type="video/mp4"
-                        />
-                        <button className="btn" onClick={togglePlay}>
+                        <source src="" type="video/mp4" />
+                        <button onClick={togglePlay}>
                             {isPlaying ? 'Pause' : 'Play'}
                         </button>
                     </div>
@@ -40,4 +37,4 @@ const MoumouPlayer = () => {
     );
 };
 
-export default MoumouPlayer;
+export default Player;
