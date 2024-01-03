@@ -7,6 +7,7 @@ import { Error404 } from './pages/Error404/Error404.jsx'
 import { Faq } from './pages/Faq/Faq.jsx'
 import { Licences } from './pages/Licences/Licences.jsx'
 import { Contact } from './pages/Contact/Contact.jsx'
+import { Moumou } from './pages/Moumou/Moumou.jsx';
 import './style/main.scss'
 
 export default function App() {
@@ -19,9 +20,10 @@ export default function App() {
                 <Route path="/faq" element={<Faq />} />
                 <Route path="/licences" element={<Licences />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/moumou" element={<Moumou />} />
                 <Route path="*" element={<Error404 />} />
             </Routes>
             <Footer />
         </div>
-    )
+    );
 }
