@@ -1,7 +1,7 @@
+import { Survey } from "../Survey/survey";
+
 export const Template2 = ({ day }) => {
     const template = "template2";
-    const sauceBarbecue = "30";
-    const sauceBearnaise = "70";
 
 
 
@@ -14,16 +14,7 @@ export const Template2 = ({ day }) => {
                     {content.text}
                 </p>
                 ))}
-                <form action="#">
-                    <div>  
-                        <input type="radio" value="0" id="barbecue" name="sauce"/> <label htmlFor="barbecue">Team barbecue</label>
-                        <div className="progressBar"><div className="filler" style={{width: sauceBarbecue + '%'}}></div></div>
-                    </div>
-                    <div>
-                        <input type="radio" value="1" id="bearnaise" name="sauce"/> <label htmlFor="bearnaise">Team béarnaise</label>
-                        <div className="progressBar"><div className="filler" style={{width: sauceBearnaise + '%'}}></div></div>
-                    </div>
-                </form>
+                <Survey name="sauces"/>
             </div>
             <div className={template+"__containerImg"}>
                 {day.pictures.map((picture) => (

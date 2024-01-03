@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const CounterLogo = "/public/pictures/icons/hamac.png";
+const CounterLogo = "pictures/icons/hamac.png";
 
 export const Counter = () => {
   const [timeLeft, setTimeLeft] = useState({
