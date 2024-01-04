@@ -22,7 +22,7 @@ export const useObserver = (elementRef, index) => {
             {
                 root: null, // Utiliser l'ensemble du viewport comme racine
                 rootMargin: '0px', // Aucune marge autour de la racine
-                threshold: 0.5, // 50 % de l'élément doit être visible
+                threshold: 0.3, // 50 % de l'élément doit être visible
             }
         )
         // Si la référence est définie, observe l'élément
