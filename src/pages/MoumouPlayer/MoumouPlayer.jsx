@@ -1,19 +1,19 @@
-import { Logo } from '../../components/Logo/Logo';
-import { Navbar } from '../../components/Navbar/Navbar';
-import { useState, useRef } from 'react';
+import { Logo } from '../../components/Logo/Logo'
+import { Navbar } from '../../components/Navbar/Navbar'
+import { useState, useRef } from 'react'
 
-const MoumouPlayer = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const videoRef = useRef(null);
+export const MoumouPlayer = () => {
+    const [isPlaying, setIsPlaying] = useState(false)
+    const videoRef = useRef(null)
 
     const togglePlay = () => {
         if (isPlaying) {
-            videoRef.current.pause();
+            videoRef.current.pause()
         } else {
-            videoRef.current.play();
+            videoRef.current.play()
         }
-        setIsPlaying(!isPlaying);
-    };
+        setIsPlaying(!isPlaying)
+    }
 
     return (
         <>
@@ -34,7 +34,5 @@ const MoumouPlayer = () => {
                 </article>
             </main>
         </>
-    );
-};
-
-export default MoumouPlayer;
+    )
+}
