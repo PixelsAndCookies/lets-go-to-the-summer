@@ -73,6 +73,22 @@
     }
 }
 
+.moumou {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    video {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    button {
+        width: 15%;
+        padding: 1rem;
+    }
+}
+
 @media screen and (max-width: 860px) {
     .otherElement {
         width: 90%;

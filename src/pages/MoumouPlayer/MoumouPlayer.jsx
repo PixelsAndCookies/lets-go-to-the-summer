@@ -24,7 +24,7 @@ export const MoumouPlayer = () => {
             <main className="main-container">
                 <article className="description otherPages">
                     <h2>Cadeau</h2>
-                    <div className="otherPages__element no-border">
+                    <div className="otherPages__element no-border moumou">
                         <video ref={videoRef} controls />
                         <source src="" type="video/mp4" />
                         <button className="btn" onClick={togglePlay}>
