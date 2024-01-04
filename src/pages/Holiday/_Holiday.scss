@@ -1,3 +1,4 @@
+// VERSION MOBILE
 .holiday-header {
     display: block;
     background-color: $color-white;
@@ -54,21 +55,27 @@
         cursor: pointer;
         position: relative;
     }
-    &__icon {
-        display: none;
+    &__btn {
+        position: absolute;
+        right: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $color-lightgrey;
     }
     &__content {
         max-height: 0;
-        overflow: hidden;
         opacity: 0;
+        overflow: hidden;
         transition: max-height 0.3s ease-in-out, opacity 0.5s ease-in-out;
     }
+    // Styles spécifiques lorsque le dropdown est actif
     .active &__content {
         max-height: 100%;
         opacity: 1;
     }
 }
 
+// VERSION DESKTOP
 @media screen and (min-width: 860px) {
     body:has(.holiday-header) {
         background: linear-gradient(
@@ -83,6 +90,7 @@
         );
     }
     .dayCard__title--displayNone {
+        // Pour le titre du template 7
         display: none;
     }
     .holiday-header {
@@ -93,31 +101,30 @@
         padding: 0 3rem;
     }
     .holiday-main {
-        padding: 5rem 3rem;
         .dayCard {
             padding: 5rem;
             margin: 5rem;
-            animation: fadein 1100ms forwards ease-in-out;
-
             &__title {
                 font-size: 4rem;
             }
-
             p {
                 font-size: 2.3rem;
             }
         }
-    }
-    .dropdown {
-        &__title {
-            height: 4rem;
-        }
-        &__icon {
-            display: inline;
-            position: absolute;
-            right: 0rem;
-            height: 3rem;
-            width: 3rem;
+        &.desktop {
+            .dropdown {
+                &__title {
+                    // Pour le titre du template 7
+                    height: 4rem;
+                }
+                &__btn {
+                    display: none;
+                }
+                &__content {
+                    max-height: 100%;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
