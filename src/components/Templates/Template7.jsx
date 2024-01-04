@@ -21,7 +21,7 @@ export const Template7 = ({ day }) => {
                     dangerouslySetInnerHTML={{ __html: content.text }}
                 ></p>
             ))}
-            <div>
+            <div className='moumou'>
                 <Link to="/moumou">
                     <img
                         className="mouette"
