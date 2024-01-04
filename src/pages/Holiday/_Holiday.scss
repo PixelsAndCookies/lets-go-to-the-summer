@@ -19,6 +19,11 @@
             font-size: 3rem;
             font-family: titlePolice;
             color: $color-grey;
+            position: relative;
+            &--white {
+                color: $color-white;
+                text-shadow: 0.1rem 0.1rem $color-grey;
+            }
         }
         p {
             font-size: 2rem;
@@ -54,6 +59,12 @@
         justify-content: center;
         cursor: pointer;
         position: relative;
+        &--relative {
+            position: absolute;
+            top: 4rem;
+            left: 0;
+            right: 1rem;
+        }
     }
     &__btn {
         position: absolute;
@@ -111,19 +122,20 @@
                 font-size: 2.3rem;
             }
         }
-        &.desktop {
-            .dropdown {
-                &__title {
-                    // Pour le titre du template 7
-                    height: 4rem;
+        .dropdown {
+            &__title {
+                // Pour le titre du template 7
+                height: 4rem;
+                &--relative {
+                    top: 10rem;
                 }
-                &__btn {
-                    display: none;
-                }
-                &__content {
-                    max-height: 100%;
-                    opacity: 1;
-                }
+            }
+            &__btn {
+                display: none;
+            }
+            &__content {
+                max-height: 100%;
+                opacity: 1;
             }
         }
     }
