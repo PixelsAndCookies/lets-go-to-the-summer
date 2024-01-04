@@ -51,14 +51,16 @@ export const Holiday = () => {
     }
 
     useEffect(() => {
-        if (!yearsList || !yearsList.days) {
-            navigate('/error404')
-            return
-        }
-
         const daysArray = Object.values(yearsList.days)
         setDaysList(daysArray)
-        setActiveDropdowns(Array(daysArray.length).fill(true))
+
+        // Les dropdowns sont fermés par défaut sur mobile
+        if (window.innerWidth <= 860) {
+            setActiveDropdowns(Array(daysArray.length).fill(false))
+        } else {
+            // Les dropdowns sont ouverts par défaut sur desktop
+            setActiveDropdowns(Array(daysArray.length).fill(true))
+        }
 
         if (daysArray.length === 0) {
             navigate('/error404')
@@ -68,6 +70,8 @@ export const Holiday = () => {
     if (!daysList) {
         return <Error404 />
     }
+
+    const isDesktop = window.innerWidth > 860
 
     return (
         <>
@@ -103,27 +107,29 @@ export const Holiday = () => {
                 <Logo />
                 <Navbar />
             </header>
-            <main className="holiday-main">
+            <main className={`holiday-main ${isDesktop ? 'desktop' : 'mobile'}`}>
                 {daysList.map((day, index) => (
                     <article key={day.id} className={`dayCard ${day.template} fadein--${index}`}>
-                        <div className={`dropdown ${activeDropdowns[index] ? '' : 'active'}`}>
+                        <div className={`dropdown ${activeDropdowns[index] ? 'active' : ''}`}>
                             <div className="dropdown__title" onClick={() => activeDropdown(index)}>
                                 <h2
                                     className={`dayCard__title ${
-                                        day.template === 'Template7' && !activeDropdowns[index]
+                                        day.template === 'Template7' && activeDropdowns[index]
                                             ? 'dayCard__title--displayNone'
                                             : ''
                                     }`}
                                 >
                                     {day.title}
                                 </h2>
-                                <button className="btn dropdown__icon">
-                                    {activeDropdowns[index] ? '+' : '-'}
+                                <button className="btn dropdown__btn">
+                                    {!activeDropdowns[index] ? '+' : '-'}
                                 </button>
                             </div>
+                            {activeDropdowns[index] && (
                             <div className="dropdown__content">
                                 {getTemplateForDay(day, activeDropdowns[index])}
                             </div>
+                            )}
                         </div>
                     </article>
                 ))}
