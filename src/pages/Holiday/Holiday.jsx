@@ -54,12 +54,12 @@ export const Holiday = () => {
         const daysArray = Object.values(yearsList.days)
         setDaysList(daysArray)
 
-        // Les dropdowns sont fermés par défaut sur mobile
-        if (window.innerWidth <= 860) {
-            setActiveDropdowns(Array(daysArray.length).fill(false))
-        } else {
+        if (window.innerWidth > 860) {
             // Les dropdowns sont ouverts par défaut sur desktop
             setActiveDropdowns(Array(daysArray.length).fill(true))
+        } else {
+            // Les dropdowns sont fermés par défaut sur mobile
+            setActiveDropdowns(Array(daysArray.length).fill(false))
         }
 
         if (daysArray.length === 0) {
@@ -70,8 +70,6 @@ export const Holiday = () => {
     if (!daysList) {
         return <Error404 />
     }
-
-    const isDesktop = window.innerWidth > 860
 
     return (
         <>
@@ -107,17 +105,28 @@ export const Holiday = () => {
                 <Logo />
                 <Navbar />
             </header>
-            <main className={`holiday-main ${isDesktop ? 'desktop' : 'mobile'}`}>
+            <main className="holiday-main">
                 {daysList.map((day, index) => (
                     <article key={day.id} className={`dayCard ${day.template} fadein--${index}`}>
                         <div className={`dropdown ${activeDropdowns[index] ? 'active' : ''}`}>
-                            <div className="dropdown__title" onClick={() => activeDropdown(index)}>
+                            <div
+                                className={`dropdown__title ${
+                                    day.template === 'Template6' && activeDropdowns[index]
+                                        ? 'dropdown__title--relative'
+                                        : ''
+                                }`}
+                                onClick={() => activeDropdown(index)}
+                            >
                                 <h2
                                     className={`dayCard__title ${
                                         day.template === 'Template7' && activeDropdowns[index]
                                             ? 'dayCard__title--displayNone'
                                             : ''
-                                    }`}
+                                    }${
+                                        day.template === 'Template6' && activeDropdowns[index]
+                                            ? 'dayCard__title--white'
+                                            : ''
+                                    } `}
                                 >
                                     {day.title}
                                 </h2>
@@ -126,9 +135,9 @@ export const Holiday = () => {
                                 </button>
                             </div>
                             {activeDropdowns[index] && (
-                            <div className="dropdown__content">
-                                {getTemplateForDay(day, activeDropdowns[index])}
-                            </div>
+                                <div className="dropdown__content">
+                                    {getTemplateForDay(day, activeDropdowns[index])}
+                                </div>
                             )}
                         </div>
                     </article>
