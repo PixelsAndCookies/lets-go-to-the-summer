@@ -1,26 +1,27 @@
+// COLORS VARIABLES :
 $color-blue: #0996a5;
 $color-red: #ce4847;
 $color-yellow: #faa433;
 $color-pink: #fddbcb;
-$color-grey: #686868;
-$color-lightgrey:#d3d3d3;
 $color-white: #ffffff;
+$color-lightgrey: darken($color-white, 30%);
+$color-grey: darken($color-white, 60%);
 
+// FONTS VARIABLES :
 @font-face {
     font-family: titlePolice;
     src: url(./fonts/GentyDemo-Regular.woff);
 }
-
 @font-face {
     font-family: mainPolice;
     src: url(./fonts/DarkerGrotesque.ttf);
 }
-
 @font-face {
     font-family: logoPolice;
     src: url(./fonts/bukhari_script.ttf);
 }
 
+// KEYFRAMES VARIABLES :
 @keyframes fadein {
     0% {
         transform: translateY(30rem);
@@ -28,5 +29,98 @@ $color-white: #ffffff;
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@keyframes rotating_1 {
+    from {
+        transform: rotate(0deg);
+        top: 0;
+    }
+    10% {
+        left: 60%;
+        top: 10%;
+    }
+    20% {
+        left: -20%;
+        top: 40%;
+    }
+    30% {
+        left: 10%;
+        top: 80%;
+    }
+    40% {
+        left: 50%;
+        top: 60%;
+    }
+    50% {
+        left: -20%;
+        top: 25%;
+    }
+    60% {
+        left: 25%;
+        top: -20%;
+    }
+    70% {
+        left: 70%;
+        top: 45%;
+    }
+    80% {
+        left: -20%;
+        top: 60%;
+    }
+    90% {
+        left: 25%;
+        top: 70%;
+    }
+    to {
+        top: 0;
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating_2 {
+    from {
+        transform: rotate(0deg);
+        top: 0;
+    }
+    10% {
+        left: 10%;
+        top: 80%;
+    }
+    20% {
+        left: 50%;
+        top: 60%;
+    }
+    30% {
+        left: -20%;
+        top: 25%;
+    }
+    40% {
+        left: 25%;
+        top: -20%;
+    }
+    50% {
+        left: 70%;
+        top: 45%;
+    }
+    60% {
+        left: -20%;
+        top: 60%;
+    }
+    70% {
+        left: 25%;
+        top: 70%;
+    }
+    80% {
+        left: 60%;
+        top: 10%;
+    }
+    90% {
+        left: -20%;
+        top: 40%;
+    }
+    to {
+        top: 0;
+        transform: rotate(360deg);
     }
 }
