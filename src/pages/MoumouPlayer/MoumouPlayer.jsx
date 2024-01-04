@@ -2,7 +2,7 @@ import { Logo } from '../../components/Logo/Logo';
 import { Navbar } from '../../components/Navbar/Navbar';
 import { useState, useRef } from 'react';
 
-const MoumouPlayer = () => {
+export const MoumouPlayer = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const videoRef = useRef(null);
 
@@ -36,5 +36,3 @@ const MoumouPlayer = () => {
         </>
     );
 };
-
-export default MoumouPlayer;
