@@ -11,36 +11,6 @@
             font-size: 2rem;
             font-weight: 400; 
         }
-
-        form{
-            width: 100%;
-            padding:1rem;
-
-            div{
-                max-width:100%;
-                label {
-                    font-size:2rem;
-                    font-family: titlePolice;
-                }
-                input{
-                    margin:0 1rem 0 0;
-                }
-                .progressBar{
-                    max-width: 100%;
-                    background-color:#e0e0de;
-                    height:1rem;
-                    width:90%;
-                    border-radius:5rem;
-                    margin:1rem 0;
-
-                    .filler{
-                        height: 100%;
-                        border-radius: inherit;
-                        background-color: #0996A5;
-                    }
-                }
-            }
-        }
     }  
 
     &__containerImg {
