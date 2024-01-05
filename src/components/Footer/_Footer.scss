@@ -10,6 +10,7 @@ footer {
     position: 0;
 
     .avatars {
+        display:none;
         width: 100%;
         max-width: 1280px;
         margin: 0;
@@ -18,61 +19,35 @@ footer {
     .content {
         width: 100%;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
         position: relative;
         background-color: $color-yellow;
         padding: 2rem;
 
         li {
-            margin: 0 4rem;
-            font-size: 2rem;
+            font-size: 2.3rem;
+            margin: 1rem 2rem;
+            text-align: center;
         }
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 860px) {
     footer {
+        .avatars{
+            display: block;
+        }
         .content {
             padding: 5rem;
-
+            flex-direction: row;
             li {
-                font-size: 3rem;
+                font-size: 2.7rem;
+                margin: 2rem;
             }
         }
     }
 }
 
-@media screen and (max-width: 1000px) {
-    footer {
-        .avatars {
-            display: none;
-        }
-        .content {
-            padding: 2rem;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            li {
-                font-size: 3rem;
-                margin: 1rem 2rem;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 430px) {
-    footer {
-        .avatars {
-            display: none;
-        }
-        .content {
-            flex-direction: column;
-
-            li {
-                font-size: 2.5rem;
-                margin: 0.3rem;
-            }
-        }
-    }
-}
