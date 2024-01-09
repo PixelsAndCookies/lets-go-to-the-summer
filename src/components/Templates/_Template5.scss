@@ -1,4 +1,4 @@
-.template5 {
+.holiday-main .dayCard .template5 {
     .container1 {
         display: flex;
         flex-wrap: wrap;
@@ -10,8 +10,6 @@
             align-self: center;
             text-align: justify;
             color: $color-blue;
-            line-height: 120%;;
-
         }
     }
     .container2 {
@@ -31,18 +29,11 @@
             color: $color-yellow;
             font-size: 3rem;
         }
-        .text3 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-top: 3rem;
-            color: $color-blue;
-            line-height: 5rem;
-        }
     }
 }
 
 @media screen and (min-width: 540px) {
-    .template5 {
+    .holiday-main .dayCard .template5 {
         .container1 {
             flex-wrap: nowrap;
             &__picture{
@@ -70,14 +61,6 @@
 
             &__quote {
                 font-size: 5rem;
-            }
-
-            .text3 {
-                font-size: 2.5rem;
-                font-weight: bold;
-                margin-top: 3rem;
-                color: $color-blue;
-                line-height: 5rem;
             }
         }
     }
