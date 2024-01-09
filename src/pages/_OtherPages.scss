@@ -63,7 +63,17 @@
     }
 }
 
-
+.figure-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3rem;
+    figure {
+        margin: 1.5rem;
+    }
+    img {
+        border-radius: 50%;
+    }
+}
 
 @media screen and (max-width: 860px) {
     .otherElement {
@@ -79,9 +89,6 @@
             width: 90%;
         }
     }
-}
-
-@media screen and (max-width: 860px) {
     article.description.otherPages {
         margin: auto;
         padding: 1rem;
@@ -97,5 +104,8 @@
     .otherPages__element button.btn {
         font-size: 2rem;
         padding: 1rem;
+    }
+    .figure-container{
+        flex-direction: column;
     }
 }
