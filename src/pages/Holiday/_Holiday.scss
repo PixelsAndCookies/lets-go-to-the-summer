@@ -20,6 +20,7 @@
             font-family: titlePolice;
             color: $color-grey;
             position: relative;
+            margin-bottom:2rem;
             &--white {
                 color: $color-white;
                 text-shadow: 0.1rem 0.1rem $color-grey;
@@ -123,8 +124,6 @@
         }
         .dropdown {
             &__title {
-                // Pour le titre du template 7
-                height: 4rem;
                 &--relative {
                     top: 10rem;
                 }
