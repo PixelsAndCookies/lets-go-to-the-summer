@@ -30,11 +30,12 @@
             }
             input {
                 border: 2px solid $color-red;
-            }
-            .btn {
-                padding: 1.5rem;
-            }
+            }                       
         }
+        .btn {
+            background-color: $color-blue;
+            padding: 1.2rem;
+        } 
     }
 
     .border {
@@ -104,7 +105,7 @@
         font-size: 2rem;
         padding: 1rem;
     }
-    .figure-container{
+    .figure-container {
         flex-direction: column;
     }
 }
