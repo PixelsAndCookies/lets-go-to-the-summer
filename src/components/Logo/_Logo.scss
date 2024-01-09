@@ -48,7 +48,6 @@ h1 {
                 font-family: logoPolice;
                 font-size: 4rem;
                 color: $color-blue;
-                text-shadow: 0.2rem 0.2rem #b6cccd;
                 width: 22.7rem;
                 height: 9.3rem;
 
@@ -118,7 +117,7 @@ h1 {
             color: $color-yellow;
             font-size: 8rem;
             text-transform: capitalize;
-            text-shadow: 0.3rem 0.3rem $color-red;
+            text-shadow: 0.2rem 0.2rem $color-red;
         }
     }
 }
@@ -143,7 +142,6 @@ h1 {
 
                 .warp {
                     font-size: 5rem;
-                    text-shadow: 0.3rem 0.3rem #b6cccd;
 
                     .warp__0 {
                         transform: translate(2.2rem, 4rem) rotate(-0.87rad);
@@ -188,7 +186,7 @@ h1 {
             & > span:nth-of-type(3) {
                 top: 10rem;
                 font-size: 11.5rem;
-                text-shadow: 0.4rem 0.4rem $color-red;
+                text-shadow: 0.3rem $color-red;
             }
         }
     }
