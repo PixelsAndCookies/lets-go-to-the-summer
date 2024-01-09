@@ -9,7 +9,7 @@ import { Faq } from './pages/Faq/Faq.jsx'
 import { Licences } from './pages/Licences/Licences.jsx'
 import { Contact } from './pages/Contact/Contact.jsx'
 import { MoumouPlayer } from './pages/MoumouPlayer/MoumouPlayer.jsx'
-import { StudioPC } from './pages/SutdioP&C/StudioPC.jsx'
+import { StudioPC } from './pages/StudioP&C/StudioPC.jsx'
 import './style/main.scss'
 
 export default function App() {
