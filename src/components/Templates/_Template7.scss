@@ -1,4 +1,4 @@
-.template7 {
+.holiday-main .dayCard .template7 {
     display: flex;
     flex-direction: column;
 
@@ -53,33 +53,38 @@
     p.title {
         display: none;
     }
+    .moumou .mouette {
+        border: none;
+        background: none;
+
+        &:hover {
+            animation: bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    }
 }
 
-.moumou .mouette {
-    border: none;
-    background: none;
-    &:hover {
-        animation: bounce 1.5s ease-in-out infinite;
-    }
-    @keyframes bounce {
-        0%,
-        20%,
-        50%,
-        80%,
-        100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-30px);
-        }
-        60% {
-            transform: translateY(-15px);
-        }
-    }
-}
 
 @media screen and (min-width: 860px) {
-    .template7 {
+    .holiday-main .dayCard .template7 {
         display: grid;
         align-items: stretch;
         margin-bottom: -10rem;

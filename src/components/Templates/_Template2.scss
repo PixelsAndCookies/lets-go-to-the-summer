@@ -1,4 +1,4 @@
-.template2 {
+.holiday-main .dayCard .template2 {
 
     &__containerTxt {
         margin-bottom:2rem;
@@ -7,9 +7,6 @@
             padding: 1rem;
             color: $color-yellow;
             text-align: center;
-            font-family: mainPolice;
-            font-size: 2rem;
-            font-weight: 400; 
         }
     }  
 
@@ -32,7 +29,7 @@
 }
 
 @media screen and (min-width: 880px) {
-    .template2 {
+    .holiday-main .dayCard .template2 {
         &__containerTxt {
             border-radius: 0rem 3rem 3rem 3rem;
             background-color: $color-white;
@@ -40,9 +37,7 @@
 
             p {
                 padding: 2.4rem;
-                font-size: 2.3rem;
                 font-weight: 600;
-                line-height: 150%;
             }
 
             form {
@@ -57,6 +52,7 @@
             align-items: flex-start;
             justify-content: space-evenly;
             align-content: center;
+            margin-bottom:2.5rem;
 
             figure {
                 background-color: $color-white;
@@ -80,25 +76,23 @@
             }
 
             figure:nth-of-type(3) {
-                transform: rotate(20deg) translate(-19px, 12px);
+                transform: rotate(20deg) translate(-1.9rem, 1.2rem);
             }
 
             figure:nth-of-type(4) {
-                transform: rotate(-0.6deg) translate(20px, -20px);
+                transform: rotate(-0.6deg) translate(2.0rem, -2.0rem);
                 width: 36%;
             }
 
             figure:nth-of-type(5) {
-                transform: rotate(-12deg) translate(-1px, 19px);
+                transform: rotate(-12deg) translate(-.1rem, 1.9rem);
             }
 
             figure:nth-of-type(6) {
-                transform: translate(-10px, -20px);
+                transform: translate(-1.0rem, -2.0rem);
             }
         }
     }
-
-
 }
 @media screen and (min-width: 1300px) {
     .template2 {

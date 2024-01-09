@@ -1,4 +1,4 @@
-.template3 {
+.holiday-main .dayCard .template3 {
     .containerImg {
         display: grid;
         grid-gap: 2rem;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (min-width: 860px) {
-    .template3 {
+    .holiday-main .dayCard .template3 {
         .containerImg {
             .picture0 {
                 grid-column-start: 1;

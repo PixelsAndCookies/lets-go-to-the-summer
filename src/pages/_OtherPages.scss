@@ -30,11 +30,12 @@
             }
             input {
                 border: 2px solid $color-red;
-            }
-            .btn {
-                padding: 1.5rem;
-            }
+            }                       
         }
+        .btn {
+            background-color: $color-blue;
+            padding: 1.2rem;
+        } 
     }
 
     .border {
@@ -45,35 +46,41 @@
         width: 70%;
         margin: auto;
     }
+
+    .moumou {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+        video {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            width: 15%;
+            padding: 1rem;
+        }
+    }
+
+    .figure-container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 3rem;
+
+        figure {
+            margin: 1.5rem;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    }
 }
 
-.moumou {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    video {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    button {
-        width: 15%;
-        padding: 1rem;
-    }
-}
 
-.figure-container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 3rem;
-    figure {
-        margin: 1.5rem;
-    }
-    img {
-        border-radius: 50%;
-    }
-}
 
 @media screen and (max-width: 860px) {
     .otherElement {
@@ -81,13 +88,6 @@
         margin: auto;
         overflow-wrap: anywhere;
         padding: 1rem;
-    }
-    .otherPagesElement {
-        margin: 0;
-        font-size: 2.5rem;
-        & #message {
-            width: 90%;
-        }
     }
     article.description.otherPages {
         margin: auto;
@@ -105,7 +105,7 @@
         font-size: 2rem;
         padding: 1rem;
     }
-    .figure-container{
+    .figure-container {
         flex-direction: column;
     }
 }

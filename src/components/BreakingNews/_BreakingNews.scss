@@ -13,7 +13,6 @@
     font-weight: 600;
     padding: 2rem 1rem;
     margin: 1.5rem 0;
-    font-size: 2rem;
 }
 .news-container {
     white-space: nowrap;
@@ -21,7 +20,7 @@
 }
 .news-text p {
     display: inline-block;
-    padding-right: 50px;
+    padding-right: 5rem;
     padding-left: 100%;
     animation: text-animation linear 85s infinite;
 }
