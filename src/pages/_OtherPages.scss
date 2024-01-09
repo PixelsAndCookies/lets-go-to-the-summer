@@ -28,34 +28,8 @@
             .error-message {
                 color: $color-red;
             }
-            h3 {
-                font-weight: 800;
-                color: $color-blue;
-                margin-bottom: 0.5rem;
-            }
-            aside {
-                margin: 3rem 0;
-            }
-            input,
-            textarea {
-                margin: 0.5rem;
-                padding: 1rem;
-                font-family: mainPolice;
-                font-size: 2rem;
-            }
-            textarea {
-                width: 90%;
-            }
-            textarea::placeholder {
-                text-align: center;
-            }
-            &.error {
-                .error-message {
-                    color: $color-red;
-                }
-                input {
-                    border: 2px solid $color-red;
-                }
+            input {
+                border: 2px solid $color-red;
             }
             .btn {
                 padding: 1.5rem;
@@ -88,6 +62,8 @@
         padding: 1rem;
     }
 }
+
+
 
 @media screen and (max-width: 860px) {
     .otherElement {
