@@ -30,7 +30,7 @@ export const Template5 = ({ day, isDropdownOpen }) => {
                 />
                 {displayContentById('text1')}
             </div>
-            {!isDropdownOpen && <Carousel slides={filteredPictures} />}
+            {isDropdownOpen && <Carousel slides={filteredPictures} />}
             <div className="container2">
                 <img
                     key={lastPicture.id}
