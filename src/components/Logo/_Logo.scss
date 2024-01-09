@@ -213,8 +213,6 @@ h1 {
 
                 .warp {
                     font-size: 3.5rem;
-                    text-shadow: 0.2rem 0.2rem #b6cccd;
-
                     .warp__0 {
                         transform: translate(6.1rem, 4rem) rotate(-0.87rad);
                     }
@@ -256,7 +254,7 @@ h1 {
             & > span:nth-of-type(3) {
                 top: 8.5rem;
                 font-size: 7rem;
-                text-shadow: 0.3rem 0.3rem $color-red;
+                text-shadow: 0.2rem 0.2rem $color-red;
             }
         }
     }
