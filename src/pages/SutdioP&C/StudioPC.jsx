@@ -15,7 +15,7 @@ export const StudioPC = () => {
                         Et voici les 3 membres du studio qui ont créé ce site.
                     </p>
 
-                    <div>
+                    <div className="figure-container">
                         <figure>
                             <img
                                 src="../public/pictures/mo.jpg"

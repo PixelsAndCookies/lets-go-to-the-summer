@@ -18,7 +18,9 @@ export const Footer = () => {
                 <li>
                     <Link to="/contact">Contact</Link>
                 </li>
-                <li>Made by Studio Pixels & Cookies</li>
+                <li>
+                    <Link to="/studioPC">Made by Studio Pixels & Cookies</Link>
+                </li>
             </ul>
         </footer>
     );
