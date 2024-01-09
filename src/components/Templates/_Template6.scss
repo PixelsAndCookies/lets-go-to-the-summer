@@ -1,6 +1,6 @@
 .template6 {
     .picture0 {
-        border-radius: 20px;
+        border-radius: 2rem;
     }
 
     .container {
@@ -48,9 +48,6 @@
 
 @media screen and (min-width: 860px) {
     .template6 {
-        .picture0 {
-            border-radius: 20px;
-        }
 
         .container {
             grid-template-columns: repeat(12, 1fr);
@@ -105,7 +102,6 @@
             }
 
             p {
-                text-align: center;
                 grid-column: 2/12;
                 margin: 2rem 0;
             }
