@@ -1,75 +1,58 @@
-nav {
+.holiday-header,
+.home-header {
     display: flex;
-    width: 60%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-shadow: #686868 0.1rem 0.1rem 1rem;
 
-    ul {
+    nav {
         display: flex;
-        justify-content: space-around;
-
-        li {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        
+        ul {
             display: flex;
-            align-items: center;
-            background-color: $color-blue;
-            border-radius: 2rem;
-            text-align: center;
-            padding: 1rem 3rem;
-            a {
-                color: $color-white;
-                font-family: mainPolice;
-                font-size: 3rem;
-                font-weight: bold;
-                padding-bottom: 0.5rem;
+            justify-content: space-around;
+    
+            li {
+                display: flex;
+                align-items: center;
+                background-color: $color-blue;
+                border-radius: 2rem;
+                text-align: center;
+                padding: 1rem;
+                margin: 0.5rem;
+    
+                a {
+                    color: $color-white;
+                    font-family: mainPolice;
+                    font-size: 2.3rem;
+                    font-weight: bold;
+                    padding-bottom: 0.5rem;
+                }
             }
         }
     }
 }
 
-.holiday-header,
-.home-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
-    box-shadow: #686868 0.1rem 0.1rem 1rem;
-
-    li {
-        margin: 1rem;
-    }
-}
-
-@media screen and (max-width: 860px) {
+@media screen and (min-width: 860px) {
     .holiday-header,
     .home-header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        box-shadow: #686868 0.1rem 0.1rem 1rem;
-
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
         nav {
-            width: 100%;
-            justify-content: center;
-            align-items: center;
+            width: 60%;
+            flex-direction: column;
+            padding: 1rem 0;
+            ul li a {
+                font-size: 3rem;
+            }
         }
     }
 }
 
-@media screen and (max-width: 430px) {
-    .holiday-header nav {
-        padding: 1rem 0;
-        li {
-            margin: 0.5rem;
-            padding: 1rem;
-        }
-        a {
-            font-size: 2rem;
-        }
-    }
-    nav ul li a {
-        font-size: 2.3rem;
-    }
-}

@@ -30,7 +30,7 @@ body {
     margin: auto;
     font-family: mainPolice;
     font-size: 2.3rem;
-    line-height: 1;
+    line-height: normal;
 }
 
 main {
@@ -64,37 +64,15 @@ b {
 }
 
 .red-cercle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100rem;
-    height: 100rem;
-    z-index: -10;
-    border-radius: 50%;
-    background: linear-gradient(
-        330deg,
-        rgba(255, 255, 255, 0) 35%,
-        rgba(206, 72, 71, 1) 100%
-    );
+    display: none;
 }
 
 .blue-triangle {
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    width: 100rem;
-    height: 100rem;
-    z-index: -10;
-}
-.rotating_1 {
-    animation: rotating_1 120s linear infinite;
+    display: none;
 }
 
-.rotating_2 {
-    animation: rotating_2 120s linear infinite;
-}
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 860px) {
     html {
         font-size: 62.5%;
     }
@@ -106,17 +84,34 @@ b {
         font-size: 2.3rem;
         line-height: 1;
     }
-
-    .App {
-        overflow: hidden;
-        position: relative;
-    }
-
+    
     .red-cercle {
-        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100rem;
+        height: 100rem;
+        z-index: -10;
+        border-radius: 50%;
+        background: linear-gradient(330deg,
+                rgba(255, 255, 255, 0) 35%,
+                rgba(206, 72, 71, 1) 100%);
+    }
+    
+    .blue-triangle {
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: 100rem;
+        height: 100rem;
+        z-index: -10;
     }
 
-    .blue-triangle {
-        display: none;
+    .rotating_1 {
+        animation: rotating_1 120s linear infinite;
+    }
+
+    .rotating_2 {
+        animation: rotating_2 120s linear infinite;
     }
 }

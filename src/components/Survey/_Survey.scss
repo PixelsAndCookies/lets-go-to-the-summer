@@ -14,7 +14,7 @@ form {
                 margin: 0 1rem 0 0;
             }
             label {
-                font-size: 2rem;
+                font-size: 2.3rem;
                 font-family: titlePolice;
                 display: flex;
                 justify-content: space-between;
@@ -24,7 +24,7 @@ form {
                 span{
                     font-family: mainPolice;
                     font-style: italic;
-                    font-size:0.9em;
+                    font-size:2rem;
                 }
             }
         }
@@ -46,8 +46,7 @@ form {
 }
 
 
-@media screen and (min-width: 880px) {
-    
+@media screen and (min-width: 860px) {
     form {
         padding: 2.4rem;
     }
