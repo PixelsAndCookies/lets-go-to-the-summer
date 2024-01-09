@@ -30,12 +30,12 @@
             }
             input {
                 border: 2px solid $color-red;
-            }                       
+            }
         }
         .btn {
             background-color: $color-blue;
             padding: 1.2rem;
-        } 
+        }
     }
 
     .border {
@@ -77,10 +77,13 @@
         img {
             border-radius: 50%;
         }
+        figcaption {
+            color: $color-grey;
+            font-family: titlePolice;
+            margin-top: 1rem;
+        }
     }
 }
-
-
 
 @media screen and (max-width: 860px) {
     .otherElement {
