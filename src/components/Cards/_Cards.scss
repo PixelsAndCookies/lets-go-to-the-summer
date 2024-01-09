@@ -2,54 +2,20 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column; 
+    width: 70%;
+    margin: auto;
+
     :hover {
         transform: scale(1.05);
     }
+
     .card {
-        margin: 2rem;
+        margin: 1rem auto;
         box-shadow: 0rem 1rem 2rem -0.7rem $color-grey;
         background-color: $color-white;
+        
         :hover {
             transform: scale(1);
-        }
-        a {
-            display: flex;
-            flex-direction: column;
-        }
-        &__img {
-            min-height: 25rem;
-            max-height: 25rem;
-        }
-        &--2023 {
-            border-radius: 1.5rem 1.5rem 0rem 1.5rem;
-            &__img {
-                border-radius: 1.5rem 1.5rem 12rem 0rem;
-            }
-        }
-        &--2024 {
-            border-radius: 1.5rem 0rem 1.5rem 0rem;
-            flex-direction: column-reverse;
-            &__img {
-                border-radius: 12rem 0rem 1.5rem 0rem;
-            }
-            a {
-                flex-direction: column-reverse;
-            }
-        }
-        &--2025 {
-            border-radius: 0rem 1.5rem 1.5rem 1.5rem;
-            &__img {
-                border-radius: 0rem 1.5rem 0rem 12rem;
-            }
-        }
-        &__date {
-            font-family: titlePolice;
-            color: $color-grey;
-            font-size: 3rem;
-            text-align: center;
-            padding: 2rem;
-        }
-        :hover {
             .card {
                 &__date {
                     color: $color-yellow;
@@ -57,9 +23,22 @@
             }
         }
 
+        a {
+            display: flex;
+            flex-direction: column;
+        }
+        &__img {
+            height: 85%;
+            object-fit: cover;
+            min-height: 25rem;
+            max-height: 25rem;
+        }
+
         &--2023 {
             border-radius: 1.5rem 1.5rem 0rem 1.5rem;
-
+            &__img {
+                border-radius: 1.5rem 1.5rem 12rem 0rem;
+            }
             a {
                 flex-direction: column;
             }
@@ -67,39 +46,29 @@
         &--2024 {
             border-radius: 1.5rem 0rem 1.5rem 0rem;
             flex-direction: column-reverse;
+            &__img {
+                border-radius: 12rem 0rem 1.5rem 0rem;
+            }
             a {
                 flex-direction: column-reverse;
             }
         }
         &--2025 {
             border-radius: 0rem 1.5rem 1.5rem 1.5rem;
+            &__img {
+                border-radius: 0rem 1.5rem 0rem 12rem;
+            }
             a {
                 flex-direction: column;
-            }
-        }
-
-        &__img {
-            height: 85%;
-            object-fit: cover;
-            &--2023 {
-                border-radius: 1.5rem 1.5rem 12rem 0rem;
-            }
-
-            &--2024 {
-                border-radius: 12rem 0rem 1.5rem 0rem;
-            }
-
-            &--2025 {
-                border-radius: 0rem 1.5rem 0rem 12rem;
             }
         }
 
         &__date {
             font-family: titlePolice;
             color: $color-grey;
-            font-size: 2rem;
+            font-size: 3rem;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
         }
 
         a {
@@ -109,9 +78,18 @@
     }
 }
 
+@media screen and (min-width:430px) {
+    .cards {
+        & .card {
+            margin: 2rem;
+        }
+    }
+}
+
 @media screen and (min-width: 860px) {
     .cards {
         flex-direction: row;
+        width:100%;
         & .card {
             width: 30%;
             min-height: 50rem;
@@ -131,25 +109,3 @@
     }
 }
 
-@media screen and (max-width: 430px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-        & .card {
-            width: 90%;
-            margin: 1rem auto;
-            min-height: 20rem;
-            & .card__date {
-                font-size: 3rem;
-            }
-        }
-    }
-}
-
-
-@media screen and (max-width: 860px) {
-    .cards{
-        width: 70%;
-        margin: auto;
-    }
-}
