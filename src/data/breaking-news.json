@@ -12,7 +12,7 @@
     {
         "id": 2,
         "title": "FAIT DIVERS",
-        "content": "Un homme brutalise une adolescente avec un luminaire."
+        "content": "Un homme d'origine asiatique brutalise une adolescente avec un luminaire."
     },
     {
         "id": 3,
@@ -38,5 +38,15 @@
         "id": 7,
         "title": "NATURE",
         "content": "Un viticulteur abasourdis suite à la disparition de ses vignes dans la nuit, le mystère reste entier."
+    },
+    {
+        "id": 8,
+        "title": "FAIT DIVERS",
+        "content": "Une femme ivre demande à sa famille ''si elle est une frite''"
+    },
+    {
+        "id": 9,
+        "title": "CULINAIRE",
+        "content": "Le record de température dans un four à pizza battu !"
     }
 ]
