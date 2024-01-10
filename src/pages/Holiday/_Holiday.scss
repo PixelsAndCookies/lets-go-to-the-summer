@@ -1,9 +1,4 @@
 // VERSION MOBILE
-.holiday-header {
-    display: block;
-    background-color: $color-white;
-}
-
 .holiday-main {
     padding: 0;
     .dayCard {
@@ -89,30 +84,11 @@
 }
 
 // VERSION DESKTOP
-@media screen and (min-width: 860px) {
-    body:has(.holiday-header) {
-        background: linear-gradient(
-            $color-blue,
-            $color-white,
-            $color-white,
-            $color-white,
-            $color-white,
-            $color-white,
-            $color-white,
-            $color-blue
-        );
-    }
+@media screen and (min-width: 860px) {    
     .dayCard__title--displayNone {
         // Pour le titre du template 7
         display: none;
-    }
-    .holiday-header {
-        border-radius: 0 0 2rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        height: 15rem;
-        padding: 0 3rem;
-    }
+    }    
     .holiday-main {
         .dayCard {
             padding: 5rem;
