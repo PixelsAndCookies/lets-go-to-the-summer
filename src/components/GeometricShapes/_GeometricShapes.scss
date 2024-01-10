@@ -1,0 +1,41 @@
+.red-cercle {
+    display: none;
+}
+
+.blue-triangle {
+    display: none;
+}
+
+@media screen and (min-width: 860px) {
+    .red-cercle {
+        display:block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100rem;
+        height: 100rem;
+        z-index: -10;
+        border-radius: 50%;
+        background: linear-gradient(330deg,
+                rgba(255, 255, 255, 0) 35%,
+                rgba(206, 72, 71, 1) 100%);
+    }
+
+    .blue-triangle {
+        display:block;
+        position: absolute;
+        top: 100%;
+        left: 100%;
+        width: 100rem;
+        height: 100rem;
+        z-index: -10;
+    }
+
+    .rotating_1 {
+        animation: rotating_1 120s linear infinite;
+    }
+
+    .rotating_2 {
+        animation: rotating_2 120s linear infinite;
+    }
+}
