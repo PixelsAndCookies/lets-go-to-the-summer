@@ -10,12 +10,12 @@
     padding: 4rem 0;
   
 }
-.headerNav {
+.header-nav {
     display: block;
     background-color: $color-white;
 }
 .header h1,
-.headerNav h1 {
+.header-nav h1 {
     display: block;
     min-height: 17rem;
     width: 100%;
@@ -25,7 +25,7 @@
 // VERSION DESKTOP
 @media screen and (min-width: 860px) {
     
-    body:has(.headerNav) {
+    body:has(.header-nav) {
         background: linear-gradient(
             $color-blue,
             $color-white,
@@ -37,7 +37,7 @@
             $color-blue
         );
     }
-    .headerNav {
+    .header-nav {
         border-radius: 0 0 2rem 2rem;
         display: flex;
         justify-content: space-between;
