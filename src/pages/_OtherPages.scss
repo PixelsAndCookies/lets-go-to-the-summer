@@ -73,7 +73,7 @@
 
     .figure-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding-top: 3rem;
         opacity: 0;
         animation: fadeInBottom 1000ms forwards ease-in-out;
@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (min-width: 860px) {
     .otherElement {
         width: 90%;
         margin: auto;
@@ -117,6 +117,6 @@
         padding: 1rem;
     }
     .otherPages .figure-container {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
