@@ -20,7 +20,6 @@
             font-family: titlePolice;
             color: $color-grey;
             position: relative;
-            margin-bottom:2rem;
             &--white {
                 color: $color-white;
                 text-shadow: 0.1rem 0.1rem $color-grey;
@@ -30,6 +29,7 @@
             font-size: 2rem;
             color: $color-grey;
         }
+        // Animation d'apparition des template lors du chargement de la page
         &.fadein--0 {
             animation-delay: 300ms;
         }
@@ -60,11 +60,12 @@
         justify-content: center;
         cursor: pointer;
         position: relative;
+        // Placement du titre du Template6 ( jeudi 17 )
         &--relative {
             position: absolute;
             top: 4rem;
-            left: 0;
-            right: 1rem;
+            left: 5.3rem;
+            right: 5.3rem;
         }
     }
     &__btn {
