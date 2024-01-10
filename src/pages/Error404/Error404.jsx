@@ -1,14 +1,10 @@
 import { Link } from 'react-router-dom';
-import { Logo } from '../../components/Logo/Logo';
-import { Navbar } from '../../components/Navbar/Navbar';
+import { Header } from '../../components/Header/Header';
 
 export const Error404 = () => {
     return (
         <>
-            <header className="holiday-header">
-                <Logo />
-                <Navbar />
-            </header>
+            <Header />
             <main className="main-error">
                 <section className="section-error">
                     <h2>Oupsi</h2>

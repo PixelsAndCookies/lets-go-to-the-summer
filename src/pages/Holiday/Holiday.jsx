@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Error404 } from '../Error404/Error404'
-import { Logo } from '../../components/Logo/Logo'
-import { Navbar } from '../../components/Navbar/Navbar'
 import { Template1 } from '../../components/Templates/Template1'
 import { Template2 } from '../../components/Templates/Template2'
 import { Template3 } from '../../components/Templates/Template3'
@@ -11,6 +9,7 @@ import { Template5 } from '../../components/Templates/Template5'
 import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
 import days from '../../data/days.json'
+import { Header } from '../../components/Header/Header'
 
 // Fonction pour obtenir le bon template selon le jour
 const getTemplateForDay = (day, isDropdownOpen) => {
@@ -101,10 +100,7 @@ export const Holiday = () => {
                 </defs>
             </svg>
 
-            <header className="holiday-header">
-                <Logo />
-                <Navbar />
-            </header>
+            <Header />
             <main className="holiday-main">
                 {daysList.map((day, index) => (
                     <article key={day.id} className={`dayCard ${day.template} fadein--${index}`}>
