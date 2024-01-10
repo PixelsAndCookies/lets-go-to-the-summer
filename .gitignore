@@ -13,6 +13,7 @@ dist-ssr
 *.local
 
 public/pictures/2023/*
+public/videos/*
 src/style/main.css
 src/style/main.css.map
 
