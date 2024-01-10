@@ -19,7 +19,7 @@ export const Survey = (props) => {
         var datas = {};
 
         const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "http://localhost/lets-go-to-the-summer/src/api/survey.php?id="+id+"&name="+Name);
+        xhttp.open("GET", "https://pixelsandcookies.fr/src/api/survey.php?id="+id+"&name="+Name);
         xhttp.onreadystatechange = function () {
             if (xhttp.readyState == 4 && xhttp.status == 200){
                 datas = JSON.parse(xhttp.responseText);

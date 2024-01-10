@@ -1,0 +1,8 @@
+
+# DO NOT REMOVE THIS LINE AND THE LINES BELOW PWPROTECTID:gVRZBf2nds
+AuthType Basic
+AuthName "Restricted Access"
+AuthUserFile /home/u729986740/domains/pixelsandcookies.fr/public_html/.htpasswd
+Require valid-user
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE gVRZBf2nds:PWPROTECTID
+

@@ -23,7 +23,7 @@ export const MoumouPlayer = () => {
                     <div className="otherPages__element no-border moumou">
                         <video ref={videoRef} controls />
                         <source
-                            src="../public\pictures\moumou.mp4"
+                            src="/videos/moumou.mp4"
                             type="video/mp4"
                         />
                         <button className="btn" onClick={togglePlay}>

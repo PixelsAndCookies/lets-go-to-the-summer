@@ -1,7 +1,7 @@
 <?php
-header('Access-Control-Allow-Origin: http://localhost:5173');
+header('Access-Control-Allow-Origin: https://pixelsandcookies.fr');
 
-$path = "../data/survey.json";
+$path = "/data/survey.json";
 $file = file_get_contents($path);
 $datas = json_decode($file,true);
 

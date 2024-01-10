@@ -25,7 +25,7 @@ export const Template7 = ({ day }) => {
                 <Link to="/moumou">
                     <img
                         className="mouette"
-                        src="../public\pictures\icons\seagull-64.png"
+                        src="/pictures/icons/seagull-64.png"
                         alt="icone de mouette"
                     ></img>
                 </Link>
