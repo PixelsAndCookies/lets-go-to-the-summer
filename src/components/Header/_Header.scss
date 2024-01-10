@@ -6,16 +6,27 @@
         14deg,
         rgba(255, 255, 255, 0) 65%,
         rgba(250, 164, 51, 1) 100%
-    );
+    );    
+    padding: 4rem 0;
   
 }
 .holiday-header {
     display: block;
     background-color: $color-white;
 }
+.home-header h1,
+.holiday-header h1 {
+    display: block;
+    min-height: 17rem;
+    width: 100%;
+    margin: auto;
+}
 
 // VERSION DESKTOP
 @media screen and (min-width: 860px) {
+    .home-header h1 {
+        min-height: 21rem;
+    }
     body:has(.holiday-header) {
         background: linear-gradient(
             $color-blue,
@@ -34,5 +45,10 @@
         justify-content: space-between;
         height: 15rem;
         padding: 0 3rem;
+    }
+    .holiday-header h1 {
+        min-height: auto;
+        width: 26rem;
+        margin: 0;
     }
 }
