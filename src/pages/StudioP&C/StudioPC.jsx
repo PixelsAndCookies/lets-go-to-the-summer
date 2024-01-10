@@ -10,7 +10,7 @@ export const StudioPC = () => {
             </header>
             <main className="main-container">
                 <article className="description otherPages">
-                    <h2>Pixels & Cookies</h2>
+                    <h2 >Pixels & Cookies</h2>
                     <p>
                         Et voici les 3 membres du studio qui ont créé ce site.
                     </p>
