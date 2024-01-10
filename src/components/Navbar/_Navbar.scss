@@ -1,58 +1,41 @@
-.holiday-header,
-.home-header {
+nav {
     display: flex;
-    flex-direction: column;
+    width: 100%;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    box-shadow: #686868 0.1rem 0.1rem 1rem;
+    padding: 2rem;
 
-    nav {
+    ul {
         display: flex;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        
-        ul {
+        justify-content: space-around;
+
+        li {
             display: flex;
-            justify-content: space-around;
-    
-            li {
-                display: flex;
-                align-items: center;
-                background-color: $color-blue;
-                border-radius: 2rem;
-                text-align: center;
-                padding: 1rem;
-                margin: 0.5rem;
-    
-                a {
-                    color: $color-white;
-                    font-family: mainPolice;
-                    font-size: 2.3rem;
-                    font-weight: bold;
-                    padding-bottom: 0.5rem;
-                }
+            align-items: center;
+            background-color: $color-blue;
+            border-radius: 2rem;
+            text-align: center;
+            padding: 1rem;
+            margin: 0.5rem;
+
+            a {
+                color: $color-white;
+                font-family: mainPolice;
+                font-size: 2.3rem;
+                font-weight: bold;
+                padding-bottom: 0.5rem;
             }
         }
     }
 }
 
 @media screen and (min-width: 860px) {
-    .holiday-header,
-    .home-header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-        nav {
-            width: 60%;
-            flex-direction: column;
-            padding: 1rem 0;
-            ul li a {
-                font-size: 3rem;
-            }
+    nav {
+        width: 60%;
+        flex-direction: column;
+        padding: 1rem 0;
+        ul li a {
+            font-size: 3rem;
         }
     }
 }
-
