@@ -61,7 +61,7 @@
         cursor: pointer;
         position: relative;
         // Placement du titre du Template6 ( jeudi 17 )
-        &--relative {
+        &--absolute {
             position: absolute;
             top: 4rem;
             left: 5.3rem;
@@ -125,7 +125,7 @@
         }
         .dropdown {
             &__title {
-                &--relative {
+                &--absolute {
                     top: 10rem;
                 }
             }
