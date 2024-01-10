@@ -1,10 +1,10 @@
 import { useRef } from 'react'
 import { useObserver } from '../../utils/observer'
-import { Logo } from '../../components/Logo/Logo'
 import { Counter } from '../../components/Counter/Counter'
 import { BreakingNews } from '../../components/BreakingNews/BreakingNews'
 import { Cards } from '../../components/Cards/Cards'
 import { Description } from '../../components/Description/Description'
+import { Header } from '../../components/Header/Header'
 
 export const Home = () => {
     // Références aux éléments du DOM pour observer leur visibilité
@@ -49,9 +49,7 @@ export const Home = () => {
                 </defs>
             </svg>
 
-            <header className="home-header">
-                <Logo />
-            </header>
+            <Header isHomePage={true} />
             <BreakingNews />
             <main className="home-main">
                 <div className="main-container">

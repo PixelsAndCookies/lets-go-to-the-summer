@@ -53,16 +53,19 @@
     p.title {
         display: none;
     }
-    .moumou .mouette {
+    .moumou {
+        text-align: center;
+
+        .mouette {
         border: none;
         background: none;
+        text-align: center;}
 
         &:hover {
             animation: bounce 1.5s ease-in-out infinite;
         }
 
         @keyframes bounce {
-
             0%,
             20%,
             50%,
@@ -81,7 +84,6 @@
         }
     }
 }
-
 
 @media screen and (min-width: 860px) {
     .holiday-main .dayCard .template7 {
