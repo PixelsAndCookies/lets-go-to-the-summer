@@ -112,7 +112,7 @@ export const Holiday = () => {
                             <div
                                 className={`dropdown__title ${
                                     day.template === 'Template6' && activeDropdowns[index]
-                                        ? 'dropdown__title--relative'
+                                        ? 'dropdown__title--absolute'
                                         : ''
                                 }`}
                                 onClick={() => activeDropdown(index)}
