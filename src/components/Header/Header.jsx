@@ -3,7 +3,7 @@ import { Navbar } from '../../components/Navbar/Navbar'
 
 export const Header = ({ isHomePage }) => {
     return (
-        <header className={isHomePage ? 'home-header' : 'holiday-header'}>
+        <header className={isHomePage ? 'header' : 'headerNav'}>
             <Logo />
             {!isHomePage && <Navbar />}
         </header>

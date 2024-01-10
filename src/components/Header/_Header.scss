@@ -1,5 +1,5 @@
 // VERSION MOBILE
-.home-header {
+.header {
     text-align: center;
     background: rgb(255, 255, 255);
     background: linear-gradient(
@@ -10,12 +10,12 @@
     padding: 4rem 0;
   
 }
-.holiday-header {
+.headerNav {
     display: block;
     background-color: $color-white;
 }
-.home-header h1,
-.holiday-header h1 {
+.header h1,
+.headerNav h1 {
     display: block;
     min-height: 17rem;
     width: 100%;
@@ -24,10 +24,8 @@
 
 // VERSION DESKTOP
 @media screen and (min-width: 860px) {
-    .home-header h1 {
-        min-height: 21rem;
-    }
-    body:has(.holiday-header) {
+    
+    body:has(.headerNav) {
         background: linear-gradient(
             $color-blue,
             $color-white,
@@ -39,16 +37,11 @@
             $color-blue
         );
     }
-    .holiday-header {
+    .headerNav {
         border-radius: 0 0 2rem 2rem;
         display: flex;
         justify-content: space-between;
         height: 15rem;
         padding: 0 3rem;
-    }
-    .holiday-header h1 {
-        min-height: auto;
-        width: 26rem;
-        margin: 0;
-    }
+    }    
 }

@@ -112,7 +112,8 @@ h1 {
 }
 
 @media screen and (min-width: 860px) {
-    .home-header h1 {
+    .header h1 {
+        min-height: 21rem;
         a {
             & > span:first-of-type {
                 &::before,
@@ -177,7 +178,11 @@ h1 {
                 text-shadow: 0.3rem $color-red;
             }
         }
-    }    
+    }
+    .headerNav h1 {
+        min-height: auto;
+        width: 26rem;
+        margin: 0;   
         a {
             & > span:first-of-type {
                 &::before,
@@ -240,7 +245,7 @@ h1 {
                 text-shadow: 0.2rem 0.2rem $color-red;
             }
         }
-    
+    }     
 }
 
 
