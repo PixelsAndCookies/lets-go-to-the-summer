@@ -24,7 +24,26 @@ $color-grey: darken($color-white, 60%);
 // KEYFRAMES VARIABLES :
 @keyframes fadein {
     0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInBottom {
+    0% {
         transform: translateY(30rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadeInTop {
+    0% {
+        transform: translateY(-30rem);
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
