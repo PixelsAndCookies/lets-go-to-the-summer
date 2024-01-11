@@ -89,7 +89,7 @@ h1 {
 
         & > span:nth-of-type(2) {
             font-family: mainPolice;
-            top: 6.5rem;
+            top: 7rem;
             font-weight: 800;
             color: $color-red;
             font-size: 2.5rem;
@@ -101,7 +101,7 @@ h1 {
         }
 
         & > span:nth-of-type(3) {
-            top: 9rem;
+            top: 8rem;
             font-family: titlePolice;
             color: $color-yellow;
             font-size: 8rem;
@@ -179,7 +179,7 @@ h1 {
             }
         }
     }
-    .headerNav h1 {
+    .header-nav h1 {
         min-height: auto;
         width: 26rem;
         margin: 0;   
@@ -236,7 +236,8 @@ h1 {
             }
 
             & > span:nth-of-type(2) {
-                font-size: 2rem;
+                font-size: 2.2rem;
+                top:6.5rem;
             }
 
             & > span:nth-of-type(3) {
