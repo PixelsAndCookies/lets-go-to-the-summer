@@ -1,6 +1,9 @@
+
 .holiday-main .dayCard .template2 {
+   
     &__containerTxt {
         margin-bottom: 2rem;
+
 
         p {
             padding: 1rem;
@@ -29,6 +32,7 @@
 // VERSION DESKTOP
 @media screen and (min-width: 880px) {
     .holiday-main .dayCard .template2 {
+    
         &__containerTxt {
             border-radius: 0rem 3rem 3rem 3rem;
             background-color: $color-white;
