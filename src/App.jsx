@@ -17,7 +17,7 @@ export default function App() {
         <div className="App">
             <GoToTopPage>
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route exact path="/" element={<Home />} />
                     <Route path="/holidays/:year" element={<Holiday />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/faq" element={<Faq />} />
