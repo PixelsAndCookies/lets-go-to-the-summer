@@ -7,7 +7,7 @@ export const Footer = () => {
             <img src={avatargroup} alt="" className="avatars" />
             <ul className="content">
                 <li>
-                    <Link to="/about">A propos</Link>
+                    <Link to="/about">À propos</Link>
                 </li>
                 <li>
                     <Link to="/faq">FAQ</Link>
