@@ -16,15 +16,14 @@ export const Licences = () => {
 
                     <div className="otherPages__element border">
                         <h3>Emojis</h3>
-                        <p>Designer : Morgane Roulland </p>
+                        <p>Designer : Morgane</p>
                         <p>Application : Avatoon</p>
                     </div>
 
                     <div className="otherPages__element border">
                         <h3>Photographies et vidéos</h3>
                         <p>
-                            Les photos et vidéos des membres des familles
-                            Pargaud, Roulland, Bellettre et Perret sont
+                            Les photos et vidéos des membres des familles sont
                             strictement réservées à un usage privé et non
                             commercial. Tous les droits sont réservés aux
                             auteurs et/ou sujets des dites photos/vidéos.

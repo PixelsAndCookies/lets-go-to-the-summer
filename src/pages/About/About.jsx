@@ -6,7 +6,7 @@ export const About = () => {
             <Header />
             <main className="main-container">
                 <article className="description otherPages">
-                    <h2>À propos</h2>
+                    <h2>A propos</h2>
                     <p style={{ lineHeight: 1.3 }}>
                         Quelques petites informations concernant ce site.
                         <br></br>

@@ -13,7 +13,7 @@ export const Faq = () => {
                             qui ?
                         </h3>
                         <p>
-                            Non, le site n&apos;est visible que par les membres
+                            Le site n&apos;est visible que par les membres
                             de celui-ci. Il n&apos;est accessible que si vous
                             avez le mot de passe.
                         </p>
@@ -24,7 +24,7 @@ export const Faq = () => {
                             leur montrer ?
                         </h3>
                         <p>
-                            Non, pour la sécurité et le respect de
+                            Pour la sécurité et le respect de
                             l&apos;intimité de chacun, nous vous demandons de ne
                             pas communiquer le mot de passe.
                         </p>
@@ -32,12 +32,12 @@ export const Faq = () => {
                     <div className="otherPages__element border">
                         <h3>Puis-je ajouter du contenu moi-même ?</h3>
                         <p>
-                            Non, cette fonctionnalité est réservé pour
+                            Cette fonctionnalité est réservé pour
                             l&apos;instant aux développeurs. Mais vous pouvez
                             leur communiquer des annecdotes/photos/idées via
                             {/* des annecdotes/photos/idées via le formulaire de
                             contact ou */}{' '}
-                            l&apos;un des (trop) nombreux goupe WhatsApp !
+                            l&apos;un des (trop) nombreux goupes WhatsApp !
                         </p>
                     </div>
                     <div className="otherPages__element">
