@@ -25,7 +25,7 @@ export default function App() {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/moumou" element={<MoumouPlayer />} />
                     <Route path="/studioPC" element={<StudioPC />} />
-                    <Route path="*" element={<Error404 />} />
+                    <Route path="/*" element={<Error404 />} />
                 </Routes>
                 <Footer />
             </GoToTopPage>
