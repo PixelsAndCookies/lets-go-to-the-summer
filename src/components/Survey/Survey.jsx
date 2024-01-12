@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const apiUrl = "http://localhost/lets-go-to-the-summer/server/api";
+const apiUrl = "https://pixelsandcookies.fr/server/api";
 const apiEndpoint = apiUrl+"/survey.php";
 
 
