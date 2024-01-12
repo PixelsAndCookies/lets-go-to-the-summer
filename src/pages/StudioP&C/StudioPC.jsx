@@ -14,7 +14,7 @@ export const StudioPC = () => {
                     <div className="figure-container">
                         <figure>
                             <img
-                                src="../public/pictures/mo.jpg"
+                                src="/pictures/mo.jpg"
                                 alt="photo de Morgane"
                                 loading="lazy"
                             />
@@ -22,7 +22,7 @@ export const StudioPC = () => {
                         </figure>
                         <figure>
                             <img
-                                src="../public/pictures/lau.jpg"
+                                src="/pictures/lau.jpg"
                                 alt="photo de Laurine"
                                 loading="lazy"
                             />
@@ -30,7 +30,7 @@ export const StudioPC = () => {
                         </figure>
                         <figure>
                             <img
-                                src="../public/pictures/ax.jpg"
+                                src="/pictures/ax.jpg"
                                 alt="photo de Axel"
                                 loading="lazy"
                             />
