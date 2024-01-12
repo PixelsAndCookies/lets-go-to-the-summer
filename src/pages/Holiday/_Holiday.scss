@@ -77,15 +77,13 @@
         transition: max-height 0.3s ease-in-out, opacity 0.5s ease-in-out;
     }
     // Styles spécifiques lorsque le dropdown est actif
-    .active &__title{
-        h2{
-            padding-bottom: 2rem;
-        }
-        &__content {
+    .active &__title h2{
+        padding-bottom: 2rem;
+        
+    }
+    .active &__content {
         max-height: 100%;
         opacity: 1;
-
-        }
     }
 }
 
