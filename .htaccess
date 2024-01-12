@@ -1,6 +1,15 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.html [QSA,L]
+</IfModule>
+
 AuthType Basic
 AuthName "Restricted Access"
 AuthUserFile /home/u729986740/domains/pixelsandcookies.fr/public_html/.htpasswd
 Require valid-user
 
-ErrorDocument 404 /error404
+ErrorDocument 404 /error404  
