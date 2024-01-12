@@ -20,6 +20,7 @@ const getTemplateForDay = (day, isDropdownOpen) => {
         case 'Template2':
             return <Template2 day={day} />
         case 'Template3':
+            0
             return <Template3 day={day} />
         case 'Template4':
             return <Template4 day={day} />
@@ -51,7 +52,7 @@ export const Holiday = () => {
     }
 
     useEffect(() => {
-        const daysArray = Object.values(yearsList.days)
+        const daysArray = yearsList ? Object.values(yearsList.days) : []
         setDaysList(daysArray)
 
         if (window.innerWidth > 860) {
@@ -62,7 +63,7 @@ export const Holiday = () => {
             setActiveDropdowns(Array(daysArray.length).fill(false))
         }
 
-        if (daysArray.length === 0) {
+        if (daysArray.length === 0 || !yearsList) {
             navigate('/error404')
         }
     }, [year, yearsList, navigate])
