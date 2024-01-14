@@ -21,7 +21,7 @@ export const MoumouPlayer = () => {
                 <article className="description otherPages">
                     <h2>Cadeau</h2>
                     <div className="otherPages__element no-border moumou">
-                        <video ref={videoRef} controls>
+                        <video ref={videoRef} controls controlsList='nodownload'>
                             <source
                                 src="/videos/moumou.mp4"
                                 type="video/mp4"
