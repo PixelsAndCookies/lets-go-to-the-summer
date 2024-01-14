@@ -21,11 +21,12 @@ export const MoumouPlayer = () => {
                 <article className="description otherPages">
                     <h2>Cadeau</h2>
                     <div className="otherPages__element no-border moumou">
-                        <video ref={videoRef} controls />
-                        <source
-                            src="/videos/moumou.mp4"
-                            type="video/mp4"
-                        />
+                        <video ref={videoRef} controls>
+                            <source
+                                src="/videos/moumou.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
                         <button className="btn" onClick={togglePlay}>
                             {isPlaying ? 'Pause' : 'Play'}
                         </button>
