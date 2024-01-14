@@ -12,4 +12,9 @@ AuthName "Restricted Access"
 AuthUserFile /home/u729986740/domains/pixelsandcookies.fr/public_html/.htpasswd
 Require valid-user
 
+<Files "logo.png">
+    Allow from all
+    Satisfy any
+</Files>
+
 ErrorDocument 404 /error404  

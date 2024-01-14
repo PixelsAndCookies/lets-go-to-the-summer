@@ -1,29 +1,46 @@
 import { useState } from 'react';
 import { Header } from '../../components/Header/Header';
 
-export const Contact = () => {
-    const [lastName, setLastName] = useState('');
-    const [lastNameError, setLastNameError] = useState(false);
-    const [firstName, setFirstName] = useState('');
-    const [firstNameError, setFirstNameError] = useState(false);
-    const [message, setMessage] = useState('');
+const apiUrl = "https://pixelsandcookies.fr/server/api";
+const apiEndpoint = apiUrl+"/mailer.php";
 
+export const Contact = () => {
+    const [formData, setFormData] = useState({'firstName':'', 'name':'', 'message':''});
+    const [formErrors, setFormErrors] = useState({'firstNameError':false,'nameError':false});
+    const [submitted, setSubmitted] = useState(false);
     // Définie le format de nom de famille/prénom valide ( RegEx )
     const validName = (input) => /^[a-zA-Z\s]+$/.test(input);
 
     // Gère les changements de contenu dans les inputs
-    const handleInputChange = (event, setInput, setError) => {
-        const inputValue = event.target.value;
-        setInput(inputValue);
+    const handleInputChange = (event) => {
+        setFormData({
+            ...formData, 
+            [event.target.name] : event.target.value
+        });
+        
         // Vérifie la validité du nom/prénom
-        setError(!validName(inputValue));
+        setFormErrors({
+            ...formErrors,
+            [event.target.name] :  !validName(event.target.value)
+        });
     };
 
-    // Gère l'envoi du message en redirigeant vers la boite mail
-    const handleSubmit = (event) => {
+    // Gère l'envoi du message en redirigeant vers l'API mailer
+    const handleSubmit = async (event) => {
         event.preventDefault();
-        if (!lastNameError && !firstNameError) {
-            window.location.href = `mailto:studiobalignon@gmail.com?subject=Message%20de%20${lastName}%20${firstName}&body=${message}`;
+        if (!formErrors['firstNameError'] && !formErrors['nameError']) {
+            try{
+                console.log(formData);
+                console.log(apiEndpoint);
+                const response = await fetch(apiEndpoint, {
+                    method:'POST',
+                    headers:{'Content-Type':''},
+                    body:JSON.stringify(formData)
+                });
+                if(response.status === 200) setSubmitted(true);
+            } catch(error){
+                console.log("Erreur lors de l'appel API", error);
+            }
         }
     };
 
@@ -34,10 +51,13 @@ export const Contact = () => {
                 <article className="description otherPages">
                     <h2>Contact</h2>
 
+                    {submitted ? (
+                    <p className="submitted">Votre message a bien été envoyé</p>
+                    ) : (
                     <form onSubmit={handleSubmit}>
                         <div
                             className={`otherPages__element ${
-                                lastNameError ? 'error' : ''
+                                formErrors['name'] ? 'error' : ''
                             }`}
                         >
                             <h3>
@@ -50,17 +70,11 @@ export const Contact = () => {
                                 placeholder="Tapez votre nom ici"
                                 minLength="3"
                                 maxLength="33"
-                                value={lastName}
-                                onChange={(event) =>
-                                    handleInputChange(
-                                        event,
-                                        setLastName,
-                                        setLastNameError
-                                    )
-                                }
+                                value={formData.name}
+                                onChange={handleInputChange}
                                 required
                             />
-                            {lastNameError && (
+                            {formErrors['name'] && (
                                 <p className="error-message">
                                     Veuillez renseigner un nom de famille valide
                                 </p>
@@ -69,7 +83,7 @@ export const Contact = () => {
 
                         <div
                             className={`otherPages__element ${
-                                firstNameError ? 'error' : ''
+                                formErrors['firstName'] ? 'error' : ''
                             }`}
                         >
                             <h3>
@@ -82,17 +96,11 @@ export const Contact = () => {
                                 placeholder="Tapez votre prénom ici"
                                 minLength="3"
                                 maxLength="33"
-                                value={firstName}
-                                onChange={(event) =>
-                                    handleInputChange(
-                                        event,
-                                        setFirstName,
-                                        setFirstNameError
-                                    )
-                                }
+                                value={formData.firstName}
+                                onChange={handleInputChange}
                                 required
                             />
-                            {firstNameError && (
+                            { formErrors['firstName'] && (
                                 <p className="error-message">
                                     Veuillez renseigner un prénom valide
                                 </p>
@@ -110,10 +118,8 @@ export const Contact = () => {
                                 cols="100"
                                 placeholder="Une question ?&#10;Un avis à donner ?&#10;On vous écoute ici ! &#10;&#x1F60A;"
                                 maxLength="2000"
-                                value={message}
-                                onChange={(event) =>
-                                    setMessage(event.target.value)
-                                }
+                                value={formData.message}
+                                onChange={handleInputChange}
                                 required
                             ></textarea>
                         </div>
@@ -124,6 +130,7 @@ export const Contact = () => {
                             </button>
                         </div>
                     </form>
+                    )}
                 </article>
             </main>
         </>
