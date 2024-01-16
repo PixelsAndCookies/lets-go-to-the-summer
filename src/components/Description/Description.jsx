@@ -1,4 +1,4 @@
-import descriptionJson from '../../data/description.json'
+import descriptionJson from '../../data/public/description.json'
 
 export const Description = (props) => {
     const content = descriptionJson[props.content]
