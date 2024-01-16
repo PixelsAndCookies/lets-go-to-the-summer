@@ -22,7 +22,7 @@ export const Template7 = ({ day }) => {
                 ></p>
             ))}
             <div className='moumou'>
-                <Link to="/moumou">
+                <Link to="/holidays/moumou">
                     <img
                         className="mouette"
                         src="/pictures/icons/seagull-64.png"
