@@ -1,5 +1,5 @@
 import React from 'react';
-import breakingNews from '../../data/breaking-news';
+import breakingNews from '../../data/public/breakingNews';
 
 export const BreakingNews = () => {
 
