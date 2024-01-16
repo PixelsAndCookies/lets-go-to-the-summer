@@ -1,0 +1,42 @@
+{
+    "presentation": {
+      "id": "presentation",
+      "title": null,
+      "text": "<p><b>Fames ac turpis egestas</b></p><p><i>Dui ut ornare lectus sit. \"Aenean vel\"</i></p><p><i>Faucibus nisl tincidunt</i></p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas maecenas pharetra convallis posuere morbi leo. Purus viverra accumsan in nisl nisi scelerisque eu ultrices. In aliquam sem fringilla ut. In ante metus dictum at tempor. Dignissim suspendisse in </p><p>Ut ornare lectus sit amet est placerat in. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Tortor pretium viverra suspendisse potenti nullam ac. Sagittis orci a scelerisque purus semper eget duis at tellus. Turpis in eu mi bibendum neque egestas congue quisque egestas. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Placerat vestibulum lectus mauris ultrices eros in cursus.</p><p><b>Lorem sed risus ultricies</b></p>"
+    },
+  
+    "informations": {
+      "id": "informations",
+      "title": "Informations",
+      "items": [
+        {
+          "id": "calendrier",
+          "text": "Prochaines vacances <br /> Du XX au XX Ipsum XXXX",
+          "lien": "",
+          "icon": "pictures/icons/calendrier.png"
+        },
+        {
+          "id": "localisation",
+          "text": "France, <br />75000 Paris",
+          "lien": "https://www.google.fr/maps/place/Paris/@48.4279542,1.1567071,8.67z/data=!4m6!3m5!1s0x47e66e1f06e2b70f:0x40b82c3688c9460!8m2!3d48.856614!4d2.3522219!16zL20vMDVxdGo?entry=ttu",
+          "icon": "pictures/icons/carte.png",
+          "info": "Ce lien vous redirigera vers l'emplacement Google Map"
+        },
+        {
+          "id": "organisation",
+          "text": "Fichier excel partagé",
+          "lien": "https://docs.google.com/spreadsheets/",
+          "icon": "pictures/icons/exceller.png",
+          "info": "Ce lien vous redirigera vers Google Sheet"
+        },
+        {
+          "id": "cagnotte",
+          "text": "Cagnotte",
+          "lien": "https://www.lyf.eu/fr/",
+          "icon": "pictures/icons/tirelire.png",
+          "info": "Ce lien vous redirigera vers l'application Lyf"
+        }
+      ]
+    }
+  }
+  
