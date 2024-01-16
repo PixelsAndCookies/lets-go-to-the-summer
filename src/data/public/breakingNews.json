@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "title": "ÉVÉNEMENT LOCAUX",
+        "content": "Inauguration réussie d'un nouveau parc de loisirs."
+    },
+    {
+        "id": 1,
+        "title": "SANTÉ ET BIEN-ÊTRE",
+        "content": "Conseils pour rester hydraté pendant les journées chaudes de l'été."
+    },
+    {
+        "id": 2,
+        "title": "CULTURE ET ART",
+        "content": "Un festival de la musique en plein air cet été."
+    },
+    {
+        "id": 3,
+        "title": "ENVIRONNEMENT",
+        "content": "Initiative communautaire pour la préservation des vignes."
+    },
+    {
+        "id": 4,
+        "title": "CURIOSITÉ INSOLITE",
+        "content": "Nouveau défi culinaire : records de température dans les fours à pizza."
+    },
+    {
+        "id": 5,
+        "title": "ANIMALIER",
+        "content": "Des chercheurs découvrent une nouvelle espèce de papillon fluorescent."
+    },
+    {
+        "id": 6,
+        "title": "ENVIRONNEMENT",
+        "content": "Projet de reboisement pour restaurer les écosystèmes locaux."
+    },
+    {
+        "id": 7,
+        "title": "SPORT",
+        "content": "Un nouvel espace de fitness en plein air ouvre ses portes."
+    },
+    {
+        "id": 8,
+        "title": "GASTRONOMIE",
+        "content": "Les spécialités locales enchantent les papilles des vacanciers."
+    }
+]
