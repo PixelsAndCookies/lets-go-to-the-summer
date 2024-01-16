@@ -23,7 +23,7 @@ export default function App() {
                     <Route path="/faq" element={<Faq />} />
                     <Route path="/licences" element={<Licences />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/moumou" element={<MoumouPlayer />} />
+                    <Route path="/holidays/moumou" element={<MoumouPlayer />} />
                     <Route path="/studioPC" element={<StudioPC />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>
