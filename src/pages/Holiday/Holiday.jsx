@@ -8,7 +8,7 @@ import { Template4 } from '../../components/Templates/Template4'
 import { Template5 } from '../../components/Templates/Template5'
 import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
-import days from '../../data/days.json'
+import days from '../../data/public/days.json'
 import { Header } from '../../components/Header/Header'
 import { GeometricShapes } from '../../components/GeometricShapes/GeometricShapes'
 
@@ -20,7 +20,6 @@ const getTemplateForDay = (day, isDropdownOpen) => {
         case 'Template2':
             return <Template2 day={day} />
         case 'Template3':
-            0
             return <Template3 day={day} />
         case 'Template4':
             return <Template4 day={day} />
