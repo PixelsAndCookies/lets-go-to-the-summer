@@ -14,6 +14,7 @@ dist-ssr
 
 public/pictures/2023/*
 public/videos/*
+src/data/private/*
 src/style/main.css
 src/style/main.css.map
 
