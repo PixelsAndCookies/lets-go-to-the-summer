@@ -1,0 +1,40 @@
+.privacyMain {
+    width: 40%;
+    text-align: center;
+    p {
+        font-size: 5rem;
+        color: $color-yellow;
+        font-family: titlePolice;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        height: 20rem;
+        &__choice {
+            height: 100%;
+            width: 100%;
+            &__btn {
+                height: 100%;
+                width: 100%;
+                font-family: titlePolice;
+                color: $color-grey;
+                font-size: 4rem;
+                background-color: white;
+                transition: background-color 0.5s ease-in-out;
+                &--public {
+                    border-right: none;
+                    border-radius: 10rem 0 0 0rem;
+                }
+                &--private {
+                    border-left: none;
+                    border-radius: 0 0rem 10rem 0;
+                }
+            }
+            :hover {
+                color: $color-yellow;
+                background-color: $color-blue;
+                transition: background-color 0.5s ease-in-out;
+            }
+        }
+    }
+}
