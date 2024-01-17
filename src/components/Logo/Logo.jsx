@@ -25,7 +25,7 @@ export const Logo = ({ isLink = true }) => {
     ) : (
         <h1>
             {/*Lien volontairement vide pour conserver le style de Logo.scss*/}
-            <a>{content}</a>
+            <Link to="">{content}</Link>
         </h1>
     )
 }
