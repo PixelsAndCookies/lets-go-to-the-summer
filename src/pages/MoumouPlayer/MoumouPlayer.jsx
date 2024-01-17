@@ -1,31 +1,27 @@
-import { Header } from '../../components/Header/Header';
-import { useState, useRef } from 'react';
+// Import React
+import { useState, useRef } from 'react'
 
 export const MoumouPlayer = () => {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false)
+    const videoRef = useRef(null)
 
     const togglePlay = () => {
         if (isPlaying) {
-            videoRef.current.pause();
+            videoRef.current.pause()
         } else {
-            videoRef.current.play();
+            videoRef.current.play()
         }
-        setIsPlaying(!isPlaying);
-    };
+        setIsPlaying(!isPlaying)
+    }
 
     return (
         <>
-            <Header />
             <main className="main-container">
                 <article className="description otherPages">
                     <h2>Cadeau</h2>
                     <div className="otherPages__element no-border moumou">
-                        <video ref={videoRef} controls controlsList='nodownload'>
-                            <source
-                                src="/videos/moumou.mp4"
-                                type="video/mp4"
-                            />
+                        <video ref={videoRef} controls controlsList="nodownload">
+                            <source src="/videos/moumou.mp4" type="video/mp4" />
                         </video>
                         <button className="btn" onClick={togglePlay}>
                             {isPlaying ? 'Pause' : 'Play'}
@@ -34,5 +30,5 @@ export const MoumouPlayer = () => {
                 </article>
             </main>
         </>
-    );
-};
+    )
+}
