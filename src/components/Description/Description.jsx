@@ -1,17 +1,33 @@
-import descriptionJson from '../../data/public/description.json'
+import descriptionPublic from '../../data/public/description.json'
+import descriptionPrivate from '../../data/private/descriptionPrivate.json'
 
-export const Description = (props) => {
-    const content = descriptionJson[props.content]
-    if (content.id === 'informations') {
-        const items = content.items
+export const Description = ({ content, isLogin }) => {
+    if (!content) {
+        return null
+    }
+
+    const contentData = isLogin ? descriptionPrivate[content] : descriptionPublic[content]
+
+    if (!contentData) {
+        return null;
+    }
+
+    if (contentData.id === 'informations') {
+        const items = contentData.items
+
         return (
-            <article key={content.id} className={content.id + ' description'}>
-                <h2>{content.title}</h2>
+            <article key={contentData.id} className={contentData.id + ' description'}>
+                <h2>{contentData.title}</h2>
                 <div className="content">
-                    {items.map((item) => (
+                    {items && items.map((item) => (
                         <div key={item.id}>
                             {item.lien ? (
-                                <a href={item.lien} target="_blank" rel="noreferrer" title={item.info}>
+                                <a
+                                    href={item.lien}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    title={item.info}
+                                >
                                     <img src={item.icon} alt={item.id} />
                                 </a>
                             ) : (
@@ -26,9 +42,9 @@ export const Description = (props) => {
     } else {
         return (
             <article
-                key={content.id}
-                className={content.id + ' description'}
-                dangerouslySetInnerHTML={{ __html: content.text }}
+                key={contentData.id}
+                className={contentData.id + ' description'}
+                dangerouslySetInnerHTML={{ __html: contentData.text }}
             ></article>
         )
     }
