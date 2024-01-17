@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom'
 
-export const Logo = () => {
-    return (
-        
-            <h1>
-                <Link to="/">
-                <span><span className="warp">  
+export const Logo = ({ isLink = true }) => {
+    const content = (
+        <>
+            <span>
+                <span className="warp">
                     <span className="warp__0">L</span>
                     <span className="warp__1">e</span>
                     <span className="warp__2">t</span>
@@ -14,11 +13,19 @@ export const Logo = () => {
                     <span className="warp__5"> </span>
                     <span className="warp__6">g</span>
                     <span className="warp__7">o</span>
-                </span></span>
-                <span>to the</span> <span>summer</span>
-                </Link>
-            </h1>
-        
+                </span>
+            </span>
+            <span>to the</span> <span>summer</span>
+        </>
+    )
+    return isLink ? (
+        <h1>
+            <Link to="/home">{content}</Link>
+        </h1>
+    ) : (
+        <h1>
+            {/*Lien volontairement vide pour conserver le style de Logo.scss*/}
+            <a>{content}</a>
+        </h1>
     )
 }
-
