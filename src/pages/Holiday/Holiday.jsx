@@ -1,6 +1,10 @@
+// Import React
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+// Import Page
 import { Error404 } from '../Error404/Error404'
+// Import Composants
+import { GeometricShapes } from '../../components/GeometricShapes/GeometricShapes'
 import { Template1 } from '../../components/Templates/Template1'
 import { Template2 } from '../../components/Templates/Template2'
 import { Template3 } from '../../components/Templates/Template3'
@@ -8,35 +12,34 @@ import { Template4 } from '../../components/Templates/Template4'
 import { Template5 } from '../../components/Templates/Template5'
 import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
-import days from '../../data/public/days.json'
-import { Header } from '../../components/Header/Header'
-import { GeometricShapes } from '../../components/GeometricShapes/GeometricShapes'
+// Import Data
+import daysPublic from '../../data/public/days.json'
+import daysPrivate from '../../data/private/daysPrivate.json'
 
-// Fonction pour obtenir le bon template selon le jour
-const getTemplateForDay = (day, isDropdownOpen) => {
-    switch (day.template) {
-        case 'Template1':
-            return <Template1 day={day} />
-        case 'Template2':
-            return <Template2 day={day} />
-        case 'Template3':
-            return <Template3 day={day} />
-        case 'Template4':
-            return <Template4 day={day} />
-        case 'Template5':
-            return <Template5 day={day} isDropdownOpen={isDropdownOpen} />
-        case 'Template6':
-            return <Template6 day={day} />
-        case 'Template7':
-            return <Template7 day={day} />
-        default:
-            return null
+export const Holiday = ({ isLogin }) => {
+    // Fonction pour obtenir le bon template selon le jour
+    const getTemplate = (day, isDropdownOpen) => {
+        switch (day.template) {
+            case 'Template1':
+                return <Template1 isLogin={isLogin} day={day} />
+            case 'Template2':
+                return <Template2 isLogin={isLogin} day={day} />
+            case 'Template3':
+                return <Template3 isLogin={isLogin} day={day} />
+            case 'Template4':
+                return <Template4 isLogin={isLogin} day={day} />
+            case 'Template5':
+                return <Template5 isLogin={isLogin} day={day} isDropdownOpen={isDropdownOpen} />
+            case 'Template6':
+                return <Template6 isLogin={isLogin} day={day} />
+            case 'Template7':
+                return <Template7 isLogin={isLogin} day={day} />
+            default:
+                return null
+        }
     }
-}
-
-export const Holiday = () => {
     const { year } = useParams()
-    const yearsList = days.years[year]
+    const yearsList = isLogin ? daysPrivate.years[year] : daysPublic.years[year]
     const [daysList, setDaysList] = useState(null)
     const navigate = useNavigate()
 
@@ -74,7 +77,6 @@ export const Holiday = () => {
     return (
         <>
             <GeometricShapes />
-            <Header />
             <main className="holiday-main">
                 {daysList.map((day, index) => (
                     <article key={day.id} className={`dayCard fadein--${index}`}>
@@ -106,7 +108,7 @@ export const Holiday = () => {
                             </div>
                             {activeDropdowns[index] && (
                                 <div className="dropdown__content">
-                                    {getTemplateForDay(day, activeDropdowns[index])}
+                                    {getTemplate(day, activeDropdowns[index])}
                                 </div>
                             )}
                         </div>
