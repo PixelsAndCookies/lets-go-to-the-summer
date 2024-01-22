@@ -1,5 +1,5 @@
 // Import React
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 // Import JS
 import { LoadPageFromTop } from './utils/LoadPageFromTop.jsx'
@@ -21,16 +21,38 @@ import { Header } from './components/Header/Header.jsx'
 import './style/main.scss'
 
 export default function App() {
-    // Défini l'état d'authentification initial de l'utilisateur à false
+    // Défini l'état de connexion initial de l'utilisateur à false
     const [isLogin, setIsLogin] = useState(false)
     const location = useLocation()
     // Défini si la page doit être publique ou privée
     const isPrivate = location.state?.private || isLogin
 
-    // Défini l'état d'authentification à true lorsqu'elle est appelée
+    // Défini l'état de connexion à true lorsqu'elle est appelée
     const handleLogin = async () => {
-        setIsLogin(true)
+        try {
+            // Stock l'état de connexion dans le localStorage
+            localStorage.setItem('isLogin', 'true')
+            setIsLogin(true)
+        } catch (error) {
+            console.error("Une erreur s'est produite lors de la connexion :", error)
+        }
     }
+
+    // Gère la déconnexion de l'utilisateur
+    const handleLogout = () => {
+        // Réinitialise l'état de connexion
+        setIsLogin(false)
+        // Supprime l'état  de connexion du localStorage
+        localStorage.removeItem('isLogin')
+    }
+
+    // Charge l'état de connexion du localStorage lors du chargement/rechargement de la page
+    useEffect(() => {
+        const storedIsLogin = localStorage.getItem('isLogin')
+        if (storedIsLogin === 'true') {
+            setIsLogin(true)
+        }
+    }, [])   
 
     return (
         <div className="App">
@@ -38,7 +60,7 @@ export default function App() {
                 <Routes>
                     <Route
                         path="/"
-                        element={<SelectPrivacy isLogin={isPrivate} handleLogin={handleLogin} />}
+                        element={<SelectPrivacy isLogin={isPrivate} handleLogin={handleLogin} handleLogout={handleLogout} />}
                     />
                     <Route
                         path="/home"
