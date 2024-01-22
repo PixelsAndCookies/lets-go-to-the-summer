@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import { GeometricShapes } from '../../components/GeometricShapes/GeometricShapes'
 import { Logo } from '../../components/Logo/Logo'
 
-export const SelectPrivacy = ({ handleLogin }) => {
+export const SelectPrivacy = ({ handleLogin, handleLogout  }) => {
     const navigate = useNavigate()
     const [selectPrivacy, setSelectPrivacy] = useState(null)
 
@@ -17,6 +17,8 @@ export const SelectPrivacy = ({ handleLogin }) => {
     // Gère la redirection de l'utilisateur en fonction de son choix
     const handleEnterWebsite = async () => {
         if (selectPrivacy === 'public') {
+            // Supprimer l'entrée de localStorage lors du choix "Public"
+            handleLogout()
             // Redirige sur la page d'accueil et charge les données publique
             navigate('/home')
         } else if (selectPrivacy === 'private') {
