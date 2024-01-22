@@ -43,9 +43,8 @@ export const SelectPrivacy = ({ handleLogin }) => {
             <main className="privacyMain">
                 <p>Veuillez choisir une version :</p>
                 <div className="privacyMain__container">
-                    <div className="privacyMain__container__choice">
                         <button
-                            className="privacyMain__container__choice__btn privacyMain__container__choice__btn--public"
+                            className="privacyMain__container__choiceBtn privacyMain__container__choiceBtn--public"
                             onClick={() => {
                                 handlePrivacyChoice('public')
                                 handleEnterWebsite()
@@ -53,10 +52,8 @@ export const SelectPrivacy = ({ handleLogin }) => {
                         >
                             Public
                         </button>
-                    </div>
-                    <div className="privacyMain__container__choice">
                         <button
-                            className="privacyMain__container__choice__btn privacyMain__container__choice__btn--private"
+                            className="privacyMain__container__choiceBtn privacyMain__container__choiceBtn--private"
                             onClick={() => {
                                 handlePrivacyChoice('private')
                                 handleEnterWebsite()
@@ -64,7 +61,6 @@ export const SelectPrivacy = ({ handleLogin }) => {
                         >
                             Privé
                         </button>
-                    </div>
                 </div>
             </main>
         </>
