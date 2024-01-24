@@ -9,7 +9,7 @@ import { Counter } from '../../components/Counter/Counter'
 import { Description } from '../../components/Description/Description'
 import { Cards } from '../../components/Cards/Cards'
 
-export const Home = ({ isLogin }) => {
+export const Home = () => {
     // Références aux éléments du DOM pour observer leur visibilité
     const descriptionElementRef = useRef(null)
     const counterElementRef = useRef(null)
@@ -25,7 +25,7 @@ export const Home = ({ isLogin }) => {
     return (
         <>
             <GeometricShapes />
-            <BreakingNews isLogin={isLogin} />
+            <BreakingNews />
             <main className="home-main">
                 <div className="main-container">
                     <p>
@@ -36,7 +36,7 @@ export const Home = ({ isLogin }) => {
                         ref={descriptionElementRef}
                         className={`descriptionDiv ${isDescriptionVisible ? 'visible' : ''}`}
                     >
-                        <Description isLogin={isLogin} content="presentation" />
+                        <Description content="presentation" />
                     </div>
                     <div
                         ref={counterElementRef}
@@ -54,7 +54,7 @@ export const Home = ({ isLogin }) => {
                         ref={infoElementRef}
                         className={`infoDiv ${isInfoVisible ? 'visible' : ''}`}
                     >
-                        <Description isLogin={isLogin} content="informations" />
+                        <Description content="informations" />
                     </div>
                 </div>
             </main>
