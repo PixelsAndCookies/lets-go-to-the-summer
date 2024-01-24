@@ -13,7 +13,7 @@ import { Template5 } from '../../components/Templates/Template5'
 import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
 // Import Data
-import daysPublic from '../../data/public/days.json'
+import days from '../../data/public/days.json'
 
 export const Holiday = () => {
     // Fonction pour obtenir le bon template selon le jour
@@ -38,7 +38,7 @@ export const Holiday = () => {
         }
     }
     const { year } = useParams()
-    const yearsList = daysPublic.years[year]
+    const yearsList = days.years[year]
     const [daysList, setDaysList] = useState(null)
     const navigate = useNavigate()
 
