@@ -1,11 +1,11 @@
-import descriptionPublic from '../../data/public/description.json'
+import descriptionJson from '../../data/public/description.json'
 
 export const Description = ({ content }) => {
     if (!content) {
         return null
     }
 
-    const contentData =  descriptionPublic[content]
+    const contentData =  descriptionJson[content]
 
     if (!contentData) {
         return null;
