@@ -23,6 +23,7 @@ export default function App() {
         <div className="App">
             <LoadPageFromTop>
                 <Routes>
+                    {/* Route Home */}
                     <Route
                         path="/"
                         element={
@@ -33,6 +34,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route Holiday */}
                     <Route
                         path="/holidays/:year"
                         element={
@@ -43,6 +45,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route A Propos */}
                     <Route
                         path="/about"
                         element={
@@ -53,6 +56,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route FAQ */}
                     <Route
                         path="/faq"
                         element={
@@ -63,6 +67,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route Licences */}
                     <Route
                         path="/licences"
                         element={
@@ -73,6 +78,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route Contact */}
                     <Route
                         path="/contact"
                         element={
@@ -83,6 +89,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route Studio Pixels And Cookies */}
                     <Route
                         path="/studioPC"
                         element={
@@ -93,6 +100,7 @@ export default function App() {
                             </>
                         }
                     />
+                    {/* Route Erreur404 */}
                     <Route
                         path="*"
                         element={
