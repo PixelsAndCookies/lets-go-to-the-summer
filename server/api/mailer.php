@@ -1,7 +1,6 @@
 <?php
 
 header('Access-Control-Allow-Origin: https://pixelsandcookies.fr');
-header('Access-Control-Allow-Origin: http://localhost:5173');
 header('Access-Control-Allow-Headers: Content-Type');
 $mail_contact = "pixelscookies@gmail.com";
 $subject = "Contact via Pixels & Cookies";
