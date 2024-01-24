@@ -1,22 +1,5 @@
-import { Link } from 'react-router-dom'
-
-export const Template7 = ({ day, isLogin }) => {
+export const Template7 = ({ day }) => {
     const template = 'template7'
-
-    const moumouLink = () => {
-        const moumouContent = (
-            <img
-                className="mouette"
-                src="/pictures/icons/seagull-64.png"
-                alt="icone de mouette"
-            ></img>
-        )
-        if (isLogin) {
-            return <Link to="/holidays/moumou">{moumouContent}</Link>
-        } else {
-            return <Link to="">{moumouContent}</Link>
-        }
-    }
 
     return (
         <section key={day.id} className={template}>
@@ -37,7 +20,6 @@ export const Template7 = ({ day, isLogin }) => {
                     dangerouslySetInnerHTML={{ __html: content.text }}
                 ></p>
             ))}
-            <div className="moumou">{moumouLink()}</div>
         </section>
     )
 }
