@@ -30,8 +30,6 @@ export const Contact = () => {
         event.preventDefault()
         if (!formErrors['firstNameError'] && !formErrors['nameError']) {
             try {
-                console.log(formData)
-                console.log(apiEndpoint)
                 const response = await fetch(apiEndpoint, {
                     method: 'POST',
                     headers: { 'Content-Type': '' },
