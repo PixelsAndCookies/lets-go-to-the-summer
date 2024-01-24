@@ -14,32 +14,31 @@ import { Template6 } from '../../components/Templates/Template6'
 import { Template7 } from '../../components/Templates/Template7'
 // Import Data
 import daysPublic from '../../data/public/days.json'
-import daysPrivate from '../../data/private/daysPrivate.json'
 
-export const Holiday = ({ isLogin }) => {
+export const Holiday = () => {
     // Fonction pour obtenir le bon template selon le jour
     const getTemplate = (day, isDropdownOpen) => {
         switch (day.template) {
             case 'Template1':
-                return <Template1 isLogin={isLogin} day={day} />
+                return <Template1 day={day} />
             case 'Template2':
-                return <Template2 isLogin={isLogin} day={day} />
+                return <Template2 day={day} />
             case 'Template3':
-                return <Template3 isLogin={isLogin} day={day} />
+                return <Template3 day={day} />
             case 'Template4':
-                return <Template4 isLogin={isLogin} day={day} />
+                return <Template4 day={day} />
             case 'Template5':
-                return <Template5 isLogin={isLogin} day={day} isDropdownOpen={isDropdownOpen} />
+                return <Template5 day={day} isDropdownOpen={isDropdownOpen} />
             case 'Template6':
-                return <Template6 isLogin={isLogin} day={day} />
+                return <Template6 day={day} />
             case 'Template7':
-                return <Template7 isLogin={isLogin} day={day} />
+                return <Template7 day={day} />
             default:
                 return null
         }
     }
     const { year } = useParams()
-    const yearsList = isLogin ? daysPrivate.years[year] : daysPublic.years[year]
+    const yearsList = daysPublic.years[year]
     const [daysList, setDaysList] = useState(null)
     const navigate = useNavigate()
 
