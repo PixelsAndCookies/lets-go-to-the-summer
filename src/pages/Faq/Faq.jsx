@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export const Faq = () => {
     return (
         <>
@@ -23,16 +25,18 @@ export const Faq = () => {
                         <p>
                             Cette fonctionnalité est réservé pour l&apos;instant aux développeurs.
                             Mais vous pouvez leur communiquer des annecdotes/photos/idées via
-                            {/* des annecdotes/photos/idées via le formulaire de
-                            contact ou */}{' '}
                             l&apos;un des (trop) nombreux goupes WhatsApp !
                         </p>
                     </div>
                     <div className="otherPages__element">
                         <p>
                             Si vous avez des questions ou tout autre suggestion, n&apos;hésitez pas
-                            à nous contacter {/*<Link>ici</Link> */}!
+                            à nous contacter !
                         </p>
+                        <br />
+                        <button className='btn'>
+                            <Link to="/contact">Contact</Link>
+                        </button>
                     </div>
                 </article>
             </main>
