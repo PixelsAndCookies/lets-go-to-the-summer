@@ -1,12 +1,11 @@
 import descriptionPublic from '../../data/public/description.json'
-import descriptionPrivate from '../../data/private/descriptionPrivate.json'
 
-export const Description = ({ content, isLogin }) => {
+export const Description = ({ content }) => {
     if (!content) {
         return null
     }
 
-    const contentData = isLogin ? descriptionPrivate[content] : descriptionPublic[content]
+    const contentData =  descriptionPublic[content]
 
     if (!contentData) {
         return null;
