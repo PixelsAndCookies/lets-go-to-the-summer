@@ -10,7 +10,7 @@ export const Error404 = () => {
                     <p>La page que vous recherchez n&apos;est actuellement pas disponible.</p>
                     <button className="btn btn-return">
                         <Link to={'/'}>
-                            <p>Retour</p>
+                            <span>Retour</span>
                         </Link>
                     </button>
                 </section>
