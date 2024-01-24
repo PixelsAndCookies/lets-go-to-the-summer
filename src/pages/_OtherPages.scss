@@ -53,47 +53,27 @@
         margin: auto;
     }
 
-    .moumou {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-
-        video {
-            width: 100%;
-            margin-bottom: 2rem;
-        }
-
-        button {
-            width: 15%;
-            padding: 1rem;
-        }
-    }
-
     .figure-container {
         display: flex;
         flex-direction: column;
         padding-top: 3rem;
         opacity: 0;
         animation: fadeInBottom 1000ms forwards ease-in-out;
-
         figure {
             margin: 1.5rem;
-        }
-
-        img {
-            border-radius: 50%;
-        }
-        figcaption {
-            color: $color-grey;
-            font-family: titlePolice;
-            margin-top: 1rem;
+            img {
+                border-radius: 50%;
+            }
+            figcaption {
+                color: $color-grey;
+                font-family: titlePolice;
+                margin-top: 1rem;
+            }
         }
     }
 
-    .submitted{
-        margin-bottom:3rem;
+    .submitted {
+        margin-bottom: 3rem;
     }
 }
 
