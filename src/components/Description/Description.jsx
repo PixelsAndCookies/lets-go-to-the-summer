@@ -1,15 +1,7 @@
 import descriptionJson from '../../data/public/description.json'
 
 export const Description = ({ content }) => {
-    if (!content) {
-        return null
-    }
-
     const contentData =  descriptionJson[content]
-
-    if (!contentData) {
-        return null;
-    }
 
     if (contentData.id === 'informations') {
         const items = contentData.items
