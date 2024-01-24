@@ -1,11 +1,13 @@
+// Import React
 import { useRef } from 'react'
+// Import JS
 import { useObserver } from '../../utils/observer'
-import { Counter } from '../../components/Counter/Counter'
-import { BreakingNews } from '../../components/BreakingNews/BreakingNews'
-import { Cards } from '../../components/Cards/Cards'
-import { Description } from '../../components/Description/Description'
-import { Header } from '../../components/Header/Header'
+// Import Composants
 import { GeometricShapes } from '../../components/GeometricShapes/GeometricShapes'
+import { BreakingNews } from '../../components/BreakingNews/BreakingNews'
+import { Counter } from '../../components/Counter/Counter'
+import { Description } from '../../components/Description/Description'
+import { Cards } from '../../components/Cards/Cards'
 
 export const Home = () => {
     // Références aux éléments du DOM pour observer leur visibilité
@@ -23,7 +25,6 @@ export const Home = () => {
     return (
         <>
             <GeometricShapes />
-            <Header isHomePage={true} />
             <BreakingNews />
             <main className="home-main">
                 <div className="main-container">

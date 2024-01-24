@@ -5,12 +5,17 @@
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^ index.html [QSA,L]
-</IfModule>
 
-AuthType Basic
-AuthName "Restricted Access"
-AuthUserFile /home/u729986740/domains/pixelsandcookies.fr/public_html/.htpasswd
-Require valid-user
+    SetEnvIf Query_String "private=true" PRIVATE_ACCESS
+
+    AuthType Basic
+    AuthName "Restricted Access"
+    AuthUserFile /home/u729986740/domains/pixelsandcookies.fr/public_html/.htpasswd
+    Require valid-user
+    Order Deny,Allow
+    Deny from env=PRIVATE_ACCESS
+    Satisfy any
+</IfModule>
 
 <Files "logo.png">
     Allow from all

@@ -1,5 +1,5 @@
-import React from 'react';
-import breakingNews from '../../data/public/breakingNews';
+import React from 'react'
+import breakingNews from '../../data/public/breakingNews.json'
 
 export const BreakingNews = () => {
 
@@ -11,9 +11,7 @@ export const BreakingNews = () => {
                     {breakingNews.map((news) => (
                         <React.Fragment key={news.id}>
                             {' '}
-                            <strong className="news-text-title">
-                                {news.title}
-                            </strong>
+                            <strong className="news-text-title">{news.title}</strong>
                             {' : '}
                             {news.content}
                         </React.Fragment>
@@ -21,5 +19,5 @@ export const BreakingNews = () => {
                 </p>
             </div>
         </div>
-    );
-};
+    )
+}

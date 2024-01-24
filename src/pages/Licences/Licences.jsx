@@ -1,9 +1,6 @@
-import { Header } from '../../components/Header/Header';
-
 export const Licences = () => {
     return (
         <>
-            <Header />
             <main className="main-container">
                 <article className="description otherPages">
                     <h2>Licences</h2>
@@ -23,14 +20,13 @@ export const Licences = () => {
                     <div className="otherPages__element border">
                         <h3>Photographies et vidéos</h3>
                         <p>
-                            Les photos et vidéos des membres des familles sont
-                            strictement réservées à un usage privé et non
-                            commercial. Tous les droits sont réservés aux
+                            Les photos et vidéos des membres des familles sont strictement réservées
+                            à un usage privé et non commercial. Tous les droits sont réservés aux
                             auteurs et/ou sujets des dites photos/vidéos.
                         </p>
                         <p>
-                            Toutes autres photos et images sont libres de droit
-                            (source : Pexels et Canva)
+                            Toutes autres photos et images sont libres de droit (source : Pexels et
+                            Canva)
                         </p>
                     </div>
 
@@ -57,5 +53,5 @@ export const Licences = () => {
                 </article>
             </main>
         </>
-    );
-};
+    )
+}

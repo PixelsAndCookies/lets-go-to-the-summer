@@ -53,36 +53,6 @@
     p.title {
         display: none;
     }
-    .moumou {
-        text-align: center;
-
-        .mouette {
-        border: none;
-        background: none;
-        text-align: center;}
-
-        &:hover {
-            animation: bounce 1.5s ease-in-out infinite;
-        }
-
-        @keyframes bounce {
-            0%,
-            20%,
-            50%,
-            80%,
-            100% {
-                transform: translateY(0);
-            }
-
-            40% {
-                transform: translateY(-30px);
-            }
-
-            60% {
-                transform: translateY(-15px);
-            }
-        }
-    }
 }
 
 @media screen and (min-width: 860px) {

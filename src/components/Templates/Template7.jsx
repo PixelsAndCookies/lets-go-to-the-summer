@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom';
-
 export const Template7 = ({ day }) => {
-    const template = 'template7';
+    const template = 'template7'
+
     return (
         <section key={day.id} className={template}>
             <p className="title">{day.title}</p>
@@ -21,15 +20,6 @@ export const Template7 = ({ day }) => {
                     dangerouslySetInnerHTML={{ __html: content.text }}
                 ></p>
             ))}
-            <div className='moumou'>
-                <Link to="/holidays/moumou">
-                    <img
-                        className="mouette"
-                        src="/pictures/icons/seagull-64.png"
-                        alt="icone de mouette"
-                    ></img>
-                </Link>
-            </div>
         </section>
-    );
-};
+    )
+}
