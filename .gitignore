@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+public/ax.jpg
+public/lau.jpg
+public/mo.jpg
 src/style/main.css
 src/style/main.css.map
 
