@@ -1,0 +1,54 @@
+form {
+    width: 100%;
+    padding: 1rem;
+
+    div {
+        max-width: 100%;
+
+        .input{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+
+            input {
+                margin: 0 1rem 0 0;
+            }
+            label {
+                font-size: 2.3rem;
+                font-family: titlePolice;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                width: 100%;
+
+                span{
+                    font-family: mainPolice;
+                    font-style: italic;
+                    font-size:2rem;
+                }
+            }
+        }
+        .progressBar {
+            max-width: 100%;
+            background-color: #e0e0de;
+            height: 1rem;
+            border-radius: 5rem;
+            margin: 1rem 0;
+
+            .filler {
+                height: 100%;
+                border-radius: inherit;
+                background-color: #0996A5;
+            }
+        }
+        
+    }
+}
+
+
+@media screen and (min-width: 860px) {
+    form {
+        padding: 2.4rem;
+    }
+        
+}

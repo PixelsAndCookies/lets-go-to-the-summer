@@ -1,0 +1,120 @@
+// VERSION MOBILE
+.holiday-main {
+    margin: 0;
+    .dayCard {
+        background-color: rgba(255, 255, 255, 0.7);
+        box-shadow: $color-grey 0.1rem 0.1rem 1rem;
+        border-radius: 20px;
+        padding: 2rem 1rem;
+        margin: 2rem 1rem;
+        animation: fadeInBottom 1100ms forwards ease-in-out;
+        opacity: 0;
+        &__title {
+            text-align: center;
+            font-size: 3rem;
+            font-family: titlePolice;
+            color: $color-grey;
+            position: relative;
+            &--white {
+                color: $color-white;
+                text-shadow: 0.1rem 0.1rem $color-grey;
+            }
+        }
+        p {
+            font-size: 2rem;
+            color: $color-grey;
+        }
+        // Animation d'apparition des template lors du chargement de la page
+        &.fadein--0 {
+            animation-delay: 300ms;
+        }
+        &.fadein--1 {
+            animation-delay: 600ms;
+        }
+        &.fadein--2 {
+            animation-delay: 900ms;
+        }
+        &.fadein--3 {
+            animation-delay: 1200ms;
+        }
+        &.fadein--4 {
+            animation-delay: 1500ms;
+        }
+        &.fadein--5 {
+            animation-delay: 1800ms;
+        }
+        &.fadein--6 {
+            animation-delay: 2100ms;
+        }
+    }
+}
+
+.dropdown {
+    &__title {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        // Placement du titre du Template6 ( jeudi 17 )
+        &--absolute {
+            position: absolute;
+            top: 4rem;
+            left: 5.3rem;
+            right: 5.3rem;
+        }
+    }
+    &__btn {
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        background-color: $color-lightgrey;
+    }
+    &__content {
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.3s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    // Styles spécifiques lorsque le dropdown est actif
+    .active &__title h2{
+        padding-bottom: 2rem;
+        
+    }
+    .active &__content {
+        max-height: 100%;
+        opacity: 1;
+    }
+}
+
+// VERSION DESKTOP
+@media screen and (min-width: 860px) {    
+    .dayCard__title--displayNone {
+        // Pour le titre du template 7
+        display: none;
+    }    
+    .holiday-main {
+        margin: auto;
+        .dayCard {
+            padding: 5rem;
+            margin: 5rem;
+            &__title {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 2.3rem;
+            }
+        }
+        .dropdown {
+            &__title {
+                &--absolute {
+                    top: 10rem;
+                }
+            }
+            &__content {
+                max-height: 100%;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.holiday-main .dayCard .template5 {
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        &__picture {
+            border-radius: 3rem 0 3rem 0;
+            margin-bottom:1rem;
+        }
+        .text1 {
+            align-self: center;
+            text-align: justify;
+            color: $color-blue;
+        }
+    }
+    .container2 {
+        margin: 1rem 0;
+        text-align: center;
+        &__gif {
+            width: 100%;
+            border-radius: 2rem;
+        }
+    }
+
+    .container3 {
+        text-align: center;
+        margin: 2rem 0;
+        &__quote {
+            font-family: titlePolice;
+            color: $color-yellow;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    .holiday-main .dayCard .template5 {
+        .container1 {
+            flex-wrap: nowrap;
+            &__picture{
+                width: 25%;
+                object-fit: cover;
+                object-position: left;
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 860px){
+    .template5 {
+        .container2 {
+            &__gif {
+                width: 80%;
+            }
+        }
+
+        .container3 {
+            text-align: center;
+            margin: 5rem 0;
+
+            &__quote {
+                font-size: 5rem;
+            }
+        }
+    }
+}

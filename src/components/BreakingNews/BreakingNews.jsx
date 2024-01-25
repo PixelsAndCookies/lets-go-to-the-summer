@@ -1,27 +1,23 @@
-import { useState, useEffect } from 'react'
-import breakingNews from '../../data/breaking-news'
+import React from 'react'
+import breakingNews from '../../data/public/breakingNews.json'
 
 export const BreakingNews = () => {
-    const [selectedId, setSelectedId] = useState(0)
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSelectedId((prevId) => (prevId + 1) % breakingNews.length)
-        }, 7500)
-
-        return () => {
-            clearInterval(interval)
-        }
-    }, [])
 
     return (
-        <div>
-            {breakingNews.map((news) => (
-                <div key={news.id} className={`news-container ${news.id === selectedId ? 'visible' : 'hidden'}`}>
-                    <p className="news-categ">BREAKING NEWS : {news.title}</p>
-                    <p className="news-text">{news.content}</p>
-                </div>
-            ))}
+        <div className="news-container">
+            <p className="news-categ">BREAKING NEWS</p>
+            <div className="news-text-bg news-text">
+                <p>
+                    {breakingNews.map((news) => (
+                        <React.Fragment key={news.id}>
+                            {' '}
+                            <strong className="news-text-title">{news.title}</strong>
+                            {' : '}
+                            {news.content}
+                        </React.Fragment>
+                    ))}
+                </p>
+            </div>
         </div>
     )
 }

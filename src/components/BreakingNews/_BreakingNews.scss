@@ -1,22 +1,52 @@
 .news-categ {
     background-color: $color-red;
     color: $color-white;
-    font-family: glacialIndifference;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    font-family: mainPolice;
+    padding: 0.5rem 0 0.5rem 1rem;
+    font-size: 3rem;
+    font-weight: 800;
 }
-.news-text {
+.news-text-bg {
     background-color: $color-pink;
     color: $color-grey;
-    font-family: glacialIndifference;
-    padding: 0.5rem;
-    margin: 0.5rem 0;
+    font-family: mainPolice;
+    font-weight: 600;
+    padding: 2rem 1rem;
+    margin: 1.5rem 0;
+}
+.news-container {
+    white-space: nowrap;
+    overflow: hidden;
+}
+.news-text p {
+    display: inline-block;
+    padding-right: 5rem;
+    padding-left: 100%;
+    animation: text-animation linear 85s infinite;
 }
 
-.visible {
-    display: block;
+.news-text-title {
+    font-weight: 900;
+    margin-left: 3rem;
 }
 
-.hidden {
-    display: none;
+@keyframes text-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .news-categ {
+        font-size: 4rem;
+        padding: 0.5rem 0 0.5rem 5rem;
+    }
+
+    .news-text {
+        font-size: 3rem;
+    }
 }

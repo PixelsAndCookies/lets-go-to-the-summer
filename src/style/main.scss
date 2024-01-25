@@ -1,9 +1,84 @@
 @import './reset.scss';
 @import './variables.scss';
-@import '../components/Header/Header';
-@import '../pages/Home/Home';
 @import '../components/BreakingNews/BreakingNews';
-@import '../components/Description/Description';
-@import '../components/Counter/Coutner';
 @import '../components/Cards/Cards';
-@import '../components/Footer/Footer'
+@import '../components/Carousel/Carousel';
+@import '../components/Counter/Coutner';
+@import '../components/Description/Description';
+@import '../components/Footer/Footer';
+@import '../components/GeometricShapes/GeometricShapes';
+@import '../components/Header/Header';
+@import '../components/Logo/Logo';
+@import '../components/Navbar/Navbar';
+@import '../components/Survey/Survey';
+@import '../components/Templates/Template1';
+@import '../components/Templates/Template2';
+@import '../components/Templates/Template3';
+@import '../components/Templates/Template4';
+@import '../components/Templates/Template5';
+@import '../components/Templates/Template6';
+@import '../components/Templates/Template7';
+@import '../pages/Error404/Error404';
+@import '../pages/Holiday/Holiday';
+@import '../pages/Home/Home';
+@import '../pages/OtherPages';
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    margin: auto;
+    font-family: mainPolice;
+    font-size: 2.3rem;
+    line-height: normal;
+}
+
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.App {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.btn {
+    font-size: 2rem;
+    font-weight: bold;
+    color: $color-white;
+    border: none;
+    border-radius: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+i {
+    font-style: italic;
+}
+
+b {
+    font-weight: 600;
+}
+
+@media screen and (min-width: 860px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    body {
+        position: relative;
+        margin: auto;
+        font-family: mainPolice;
+        font-size: 2.3rem;
+        line-height: 1;
+    }
+}

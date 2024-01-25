@@ -1,0 +1,201 @@
+.holiday-main .dayCard .template7 {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        padding: 1rem;
+        ul {
+            list-style-type: disc;
+            list-style-position: outside;
+            margin: 1rem 0 0 3rem;
+        }
+    }
+    img {
+        border-radius: 1rem;
+    }
+    p,
+    img {
+        position: relative;
+        object-fit: cover;
+        margin: 1rem;
+    }
+
+    .txt0 {
+        order: 1;
+    }
+    .txt1 {
+        order: 8;
+    }
+    .txt2 {
+        order: 10;
+    }
+    .picture0 {
+        order: 2;
+    }
+    .picture1 {
+        order: 7;
+    }
+    .picture2 {
+        order: 3;
+    }
+    .picture3 {
+        order: 4;
+    }
+    .picture4 {
+        order: 9;
+    }
+    .txt2 {
+        order: 6;
+    }
+    .picture6 {
+        order: 5;
+    }
+    p.title {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .holiday-main .dayCard .template7 {
+        display: grid;
+        align-items: stretch;
+        margin-bottom: -10rem;
+
+        p {
+            padding: 2rem;
+            ul {
+                margin: 1rem 0 0 3rem;
+            }
+        }
+        img {
+            border-radius: 0;
+        }
+        p,
+        img {
+            background-color: $color-white;
+            border: 0.1rem $color-lightgrey solid;
+            padding: 1rem;
+            margin: 1rem;
+        }
+        p.title {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: titlePolice;
+            font-size: 3rem;
+            width: 110%;
+            height: 110%;
+            transform: translate(-2rem, -3rem);
+            z-index: 3;
+        }
+
+        .txt0 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            transform: translate(-1.7rem, 5rem) rotate(-3deg);
+            z-index: 1;
+            width: 105%;
+        }
+
+        .txt1 {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 6;
+            grid-row-end: 8;
+            z-index: 30;
+            transform: translate(-1rem, -1.4rem);
+            width: 90%;
+        }
+        .txt2 {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 5;
+            grid-row-end: 7;
+            z-index: 35;
+            transform: translate(1rem, -3.5rem) rotate(3deg);
+        }
+        .txt3 {
+            grid-column-start: 6;
+            grid-column-end: 9;
+            grid-row-start: 6;
+            grid-row-end: 8;
+            transform: translate(2.4rem, 6.5rem) rotate(-5deg);
+            z-index: 45;
+        }
+
+        .picture0 {
+            grid-column-start: 4;
+            grid-column-end: 7;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            transform: translate(-1rem, 1.5rem);
+        }
+
+        .picture1 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 7;
+            grid-row-end: 10;
+            transform: translate(1.1rem, -6.7rem) rotate(2deg);
+            z-index: 40;
+            max-width: 120%;
+        }
+
+        .picture2 {
+            grid-column-start: 7;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 4;
+            transform: translate(-1.5rem, 3rem) rotate(2deg);
+        }
+
+        .picture3 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 6;
+            z-index: 10;
+            transform: translate(1rem, 2rem);
+        }
+
+        .picture4 {
+            grid-column-start: 7;
+            grid-column-end: 9;
+            grid-row-start: 4;
+            grid-row-end: 7;
+            transform: translate(-1rem, -1.7rem) rotate(-2deg);
+            z-index: 20;
+        }
+        .picture5 {
+            grid-column-start: 1;
+            grid-column-end: 9;
+            grid-row-start: 10;
+            grid-row-end: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .template7 {
+        transform: translateX(-1rem);
+        padding: 0 8rem;
+
+        p.title {
+            font-size: 4rem;
+        }
+        .txt1 {
+            width: 80%;
+        }
+
+        .picture1 {
+            transform: translate(-2rem, -12.7rem) rotate(2deg);
+        }
+    }
+}

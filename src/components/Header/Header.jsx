@@ -1,9 +1,12 @@
-import logo from '../../assets/logo/Logo_sans_fond.svg'
+// Import Composants
+import { Logo } from '../../components/Logo/Logo'
+import { Navbar } from '../../components/Navbar/Navbar'
 
-export const Header = () => {
+export const Header = ({ isHomePage }) => {
     return (
-        <header>
-            <img src={logo} alt="Logo Summer" />
+        <header className={isHomePage ? 'header' : 'header-nav'}>
+            <Logo />
+            {!isHomePage && <Navbar />}
         </header>
     )
 }

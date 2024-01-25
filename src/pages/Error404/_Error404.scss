@@ -1,0 +1,43 @@
+.main-error {
+    display: flex;
+    justify-content: center;
+    .section-error {
+        width: 80%;
+        height: 50rem;
+        margin: 6rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h2 {
+            text-align: center;
+            font-family: titlePolice;
+            color: $color-pink;
+            font-size: 10rem;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.btn-return {
+    font-family: mainPolice;
+    background-color: $color-blue;
+    font-size: 3rem;
+    width: 60%;
+    margin-top: 5rem;
+    padding-bottom: 0.5rem;
+}
+
+// VERSION DESKTOP
+@media screen and (min-width: 860px) {
+    .section-error {
+        width: 50%;
+        height: auto;
+        .btn {
+            &-return {
+                width: 20%;
+            }
+        }
+    }
+}

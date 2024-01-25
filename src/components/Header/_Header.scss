@@ -1,4 +1,41 @@
-header {
-    display: flex;
-    justify-content: center;
+// VERSION MOBILE
+.header {
+    padding: 4rem 0;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(14deg, rgba(255, 255, 255, 0) 65%, rgba(250, 164, 51, 1) 100%);
+}
+.header-nav {
+    display: block;
+    background-color: $color-white;
+}
+.header h1,
+.header-nav h1 {
+    display: block;
+    min-height: 17rem;
+    width: 100%;
+    margin: auto;
+}
+
+// VERSION DESKTOP
+@media screen and (min-width: 860px) {
+    body:has(.header-nav) {
+        background: linear-gradient(
+            $color-blue,
+            $color-white,
+            $color-white,
+            $color-white,
+            $color-white,
+            $color-white,
+            $color-white,
+            $color-blue
+        );
+    }
+    .header-nav {
+        border-radius: 0 0 2rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        height: 15rem;
+        padding: 0 3rem;
+    }
 }

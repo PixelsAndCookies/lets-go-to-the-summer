@@ -1,0 +1,106 @@
+.otherPages {
+    width: 95%;
+    animation: fadein 1000ms ease-in-out;
+    h2 {
+        animation: fadeInTop 1000ms ease-in-out;
+    }
+
+    &__element {
+        padding: 3rem 0;
+
+        h3 {
+            font-weight: 800;
+            color: $color-blue;
+            margin-bottom: 0.5rem;
+        }
+
+        aside {
+            margin: 0 0 3rem 0;
+        }
+        input,
+        textarea {
+            margin: 0.5rem;
+            padding: 1rem;
+            font-family: mainPolice;
+            font-size: 2rem;
+        }
+        textarea {
+            width: 50%;
+        }
+        textarea::placeholder {
+            text-align: center;
+        }
+        &.error {
+            .error-message {
+                color: $color-red;
+            }
+            input {
+                border: 2px solid $color-red;
+            }
+        }
+        .btn {
+            background-color: $color-blue;
+            padding: 1.2rem;
+        }
+    }
+
+    .border {
+        border-bottom: 1px solid $color-lightgrey;
+    }
+
+    .otherElement {
+        width: 70%;
+        margin: auto;
+    }
+
+    .figure-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+        opacity: 0;
+        animation: fadeInBottom 1000ms forwards ease-in-out;
+        figure {
+            margin: 1.5rem;
+            img {
+                border-radius: 50%;
+            }
+            figcaption {
+                color: $color-grey;
+                font-family: titlePolice;
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    .submitted {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .otherElement {
+        width: 90%;
+        margin: auto;
+        overflow-wrap: anywhere;
+        padding: 1rem;
+    }
+    article.description.otherPages {
+        margin: auto;
+        padding: 4rem;
+    }
+    .otherPages__element {
+        padding: 1rem;
+    }
+
+    .otherPages__element input,
+    .otherPages__element textarea {
+        width: 85%;
+    }
+    .otherPages__element button.btn {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .otherPages .figure-container {
+        flex-direction: row;
+    }
+}

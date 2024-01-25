@@ -1,29 +1,27 @@
-import avatargroup from '../../../public/pictures/avatars_group.png'
+import avatargroup from '/pictures/avatars_group_cut.png';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
     return (
-        <footer className="footer">
-            <img className="footer__avatar" src={avatargroup} alt="" />
-            <div className="footer__text">
-                <ul>
-                    <h3>Lorem Ipsum</h3>
-                    <li>dolor sit amet</li>
-                    <li>consectetur adipiscing elit</li>
-                    <li>sed do eiusmod</li>
-                </ul>
-                <ul>
-                    <h3>Cicero Finibus </h3>
-                    <li>tempor incididunt</li>
-                    <li>labore et dolore</li>
-                    <li>magna aliqua</li>
-                </ul>
-                <ul>
-                    <h3>Bonorum Malorum</h3>
-                    <li>Ut enim ad minim veniam</li>
-                    <li>quis nostrud exercitation</li>
-                    <li>ullamco laboris</li>
-                </ul>
-            </div>
+        <footer>
+            <img src={avatargroup} alt="" className="avatars" />
+            <ul className="content">
+                <li>
+                    <Link to="/about">À propos</Link>
+                </li>
+                <li>
+                    <Link to="/faq">FAQ</Link>
+                </li>
+                <li>
+                    <Link to="/licences">Licences</Link>
+                </li>
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                    <Link to="/studioPC">Made by Studio Pixels & Cookies</Link>
+                </li>
+            </ul>
         </footer>
-    )
-}
+    );
+};

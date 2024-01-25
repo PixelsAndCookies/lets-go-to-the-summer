@@ -1,8 +1,53 @@
-.footer {
-    &__avatar {
+footer {
+    color: white;
+    width: 100%;
+    position: relative;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: 0;
+
+    .avatars {
+        display:none;
         width: 100%;
+        max-width: 1280px;
+        margin: 0;
+        transform: translateY(10%);
     }
-    &__text {
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
         background-color: $color-yellow;
+        padding: 2rem;
+
+        li {
+            font-size: 2.3rem;
+            margin: 1rem 2rem;
+            text-align: center;
+        }
     }
 }
+
+@media screen and (min-width: 860px) {
+    footer {
+        .avatars{
+            display: block;
+        }
+        .content {
+            padding: 5rem;
+            flex-direction: row;
+            li {
+                font-size: 2.7rem;
+                margin: 2rem;
+            }
+        }
+    }
+}
+
