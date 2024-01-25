@@ -7,25 +7,25 @@ export const Faq = () => {
                 <article className="description otherPages">
                     <h2>F A Q</h2>
                     <div className="otherPages__element border">
-                        <h3>Le site familial est-il visible pour n&apos;importe qui ?</h3>
+                        <h3>Pellentesque id nibh tortor id aliquet lectus proin nibh nisl.</h3>
                         <p>
-                            Le site n&apos;est visible que par les membres de celui-ci. Il
-                            n&apos;est accessible que si vous avez le mot de passe.
+                            Tortor pretium viverra suspendisse potenti nullam ac. Sagittis orci
+                            a scelerisque purus semper eget duis at tellus.
                         </p>
                     </div>
                     <div className="otherPages__element border">
-                        <h3>Puis-je communiquer mon mot de passe à des amis pour leur montrer ?</h3>
+                        <h3>Tincidunt eget nullam non nisi est sit amet facilisis magna.</h3>
                         <p>
-                            Pour la sécurité et le respect de l&apos;intimité de chacun, nous vous
-                            demandons de ne pas communiquer le mot de passe.
+                            Commodo odio aenean sed adipiscing diam donec adipiscing. At risus
+                            viverra adipiscing at in tellus.
                         </p>
                     </div>
                     <div className="otherPages__element border">
-                        <h3>Puis-je ajouter du contenu moi-même ?</h3>
+                        <h3>Nullam vel dui vel arcu pellentesque convallis a ac elit.</h3>
                         <p>
-                            Cette fonctionnalité est réservé pour l&apos;instant aux développeurs.
-                            Mais vous pouvez leur communiquer des annecdotes/photos/idées via
-                            l&apos;un des (trop) nombreux goupes WhatsApp !
+                            Pulvinar mattis nunc sed blandit libero volutpat. Donec ac odio tempor 
+                            orci dapibus ultrices in. Nunc sed id semper risus in hendrerit 
+                            gravida rutrum quisque !
                         </p>
                     </div>
                     <div className="otherPages__element">
