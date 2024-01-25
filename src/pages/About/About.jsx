@@ -5,12 +5,12 @@ export const About = () => {
                 <article className="description otherPages">
                     <h2>A propos</h2>
                     <p style={{ lineHeight: 1.3 }}>
-                        Quelques petites informations concernant ce site.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         <br></br>
-                        Ce site est crée par la famille, pour la famille ! Par ailleurs, tout ce qui
-                        s&apos;y trouve est protégé et n&apos;est en aucun cas divulgué sur la
-                        toile. Afin de préserver notre intimité et continuer à partager nos
-                        souvenirs et nos annecdotes en toute confiance.
+                        Ut ornare lectus sit amet est placerat in. Pellentesque id nibh tortor id 
+                        aliquet lectus proin nibh nisl. Tortor pretium viverra suspendisse potenti 
+                        nullam ac. Sagittis orci a scelerisque purus semper eget duis at tellus.
+                        Turpis in eu mi bibendum neque egestas congue quisque egestas.
                     </p>
                 </article>
             </main>
