@@ -18,11 +18,11 @@ export const Licences = () => {
                     </div>
 
                     <div className="otherPages__element border">
-                        <h3>Photographies et vidéos</h3>
+                        <h3>Photographies</h3>
                         <p>
-                            Les photos et vidéos des membres des familles sont strictement réservées
-                            à un usage privé et non commercial. Tous les droits sont réservés aux
-                            auteurs et/ou sujets des dites photos/vidéos.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel dui 
+                            vel arcu pellentesque convallis a ac elit. In euismod nunc vitae augue 
+                            cursus, non congue dolor finibus.
                         </p>
                         <p>
                             Toutes autres photos et images sont libres de droit (source : Pexels et
