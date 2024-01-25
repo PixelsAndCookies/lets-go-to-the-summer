@@ -78,29 +78,10 @@
 }
 
 @media screen and (min-width: 860px) {
-    .otherElement {
-        width: 90%;
-        margin: auto;
-        overflow-wrap: anywhere;
-        padding: 1rem;
-    }
-    article.description.otherPages {
-        margin: auto;
-        padding: 4rem;
-    }
-    .otherPages__element {
-        padding: 1rem;
-    }
-
-    .otherPages__element input,
-    .otherPages__element textarea {
-        width: 85%;
-    }
-    .otherPages__element button.btn {
-        font-size: 2rem;
-        padding: 1rem;
-    }
-    .otherPages .figure-container {
-        flex-direction: row;
+    .otherPages {
+        .otherPages__element input,
+        .otherPages__element textarea {
+            width: 85%;
+        }
     }
 }
