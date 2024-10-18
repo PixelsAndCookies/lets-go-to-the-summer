@@ -8,6 +8,9 @@ Le site est disponible à l'URL suivante : https://summer.pixelsandcookies.fr/
 * React 18.2
 * ViteJS
 
+## Backoffice
+Le backoffice du projet est développé en Symfony : https://github.com/PixelsAndCookies/summer-bo 
+
 ## Auteurs
 Réalisé par Pixels & Cookies (Axel Perret, Laurine Roulland et Morgane Bellettre).
 
